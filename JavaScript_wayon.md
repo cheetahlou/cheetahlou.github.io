@@ -357,3 +357,18 @@ function openInWebview () {
 
 ------
 
+- **npm 安装包时 npm ERR! code Z_BUF_ERROR**
+
+ 2019.02.05 安装hexo的git部署模块hexo-deploy-git的时候屡次报错
+
+`npm ERR! code Z_BUF_ERROR`
+
+由google后在爆栈网中找到错误原因为npm缓存的问题，所以照着answer清除npm缓存
+
+`npm cache clean --force` 
+
+`npm cache verify`
+
+重试之后可行。但是感觉隐隐约约不是这个问题，就看了看其他中文回答，说是访问外网网络不稳定原因（我想了下是有可能的，因为中间切换了一下自己SSR的配置），用配置阿里npm代理的cnpm`npm install -g cnpm --registry=https://registry.npm.taobao.org`。几个方法都列举了下，谨作参考。
+
+***
