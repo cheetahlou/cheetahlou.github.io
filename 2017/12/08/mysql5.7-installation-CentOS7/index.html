@@ -96,24 +96,25 @@
 
 
 
-  <meta name="description" content="Windows Redis start/stop 安装目录CMDredis-server redis.windows.conf 作为服务启动： --service-start```1&amp;gt;```redis-server --service-stop">
+  <meta name="description" content="CentOS7环境下安装MySQL 5.7记录Remarks一哈。">
+<meta name="keywords" content="linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Frequently-Used-Snippets">
-<meta property="og:url" content="https://cheetahlou.github.io/2019/02/01/Frequently-Used-Snippets/index.html">
+<meta property="og:title" content="mysql5.7-installation-CentOS7">
+<meta property="og:url" content="https://cheetahlou.github.io/2017/12/08/mysql5.7-installation-CentOS7/index.html">
 <meta property="og:site_name" content="Chee Daily">
-<meta property="og:description" content="Windows Redis start/stop 安装目录CMDredis-server redis.windows.conf 作为服务启动： --service-start```1&amp;gt;```redis-server --service-stop">
+<meta property="og:description" content="CentOS7环境下安装MySQL 5.7记录Remarks一哈。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-05T16:31:01.573Z">
+<meta property="og:updated_time" content="2019-02-05T16:34:45.761Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Frequently-Used-Snippets">
-<meta name="twitter:description" content="Windows Redis start/stop 安装目录CMDredis-server redis.windows.conf 作为服务启动： --service-start```1&amp;gt;```redis-server --service-stop">
+<meta name="twitter:title" content="mysql5.7-installation-CentOS7">
+<meta name="twitter:description" content="CentOS7环境下安装MySQL 5.7记录Remarks一哈。">
 
 
 
 
 
 
-  <link rel="canonical" href="https://cheetahlou.github.io/2019/02/01/Frequently-Used-Snippets/">
+  <link rel="canonical" href="https://cheetahlou.github.io/2017/12/08/mysql5.7-installation-CentOS7/">
 
 
 
@@ -123,7 +124,7 @@
   };
 </script>
 
-  <title>Frequently-Used-Snippets | Chee Daily</title>
+  <title>mysql5.7-installation-CentOS7 | Chee Daily</title>
   
 
 
@@ -377,7 +378,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://cheetahlou.github.io/2019/02/01/Frequently-Used-Snippets/">
+    <link itemprop="mainEntityOfPage" href="https://cheetahlou.github.io/2017/12/08/mysql5.7-installation-CentOS7/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Cheelou">
@@ -394,7 +395,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Frequently-Used-Snippets
+          <h1 class="post-title" itemprop="name headline">mysql5.7-installation-CentOS7
 
               
             
@@ -420,7 +421,7 @@
                 
               
 
-              <time title="创建时间：2019-02-01 23:37:00" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+              <time title="创建时间：2017-12-08 10:37:59" itemprop="dateCreated datePublished" datetime="2017-12-08T10:37:59+08:00">2017-12-08</time>
             
 
             
@@ -437,7 +438,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-06 00:31:01" itemprop="dateModified" datetime="2019-02-06T00:31:01+08:00">2019-02-06</time>
+                <time title="修改时间：2019-02-06 00:34:45" itemprop="dateModified" datetime="2019-02-06T00:34:45+08:00">2019-02-06</time>
               
             
           </span>
@@ -471,17 +472,127 @@
       
 
       
-        <ul>
-<li><strong>Windows Redis start/stop</strong><ol>
-<li>安装目录CMD<code>redis-server redis.windows.conf</code></li>
-<li>作为服务启动：<blockquote>
-<figure class="highlight plain"><figcaption><span>--service-start```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;```redis-server --service-stop</span><br></pre></td></tr></table></figure>
+        <p>CentOS7环境下安装MySQL 5.7记录Remarks一哈。</p>
+<a id="more"></a>
+<h3 id="核心思想——东拼西凑"><a href="#核心思想——东拼西凑" class="headerlink" title="核心思想——东拼西凑"></a>核心思想——东拼西凑</h3><ul>
+<li>卸载<blockquote>
+<ul>
+<li>查看已安装server<br>rpm -qa | grep -i mysql  </li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>mysql-community-common-5.7.20-1.el7.x86_64<br>mysql57-community-release-el7-8.noarch<br>mysql-community-libs-5.7.20-1.el7.x86_64<br>mysql-community-server-5.7.20-1.el7.x86_64<br>mysql-community-client-5.7.20-1.el7.x86_64</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>yum卸载<blockquote>
+<blockquote>
+<p>yum remove mysql-community-common-5.7.20-1.el7.x86_64 mysql-community-server-5.7.20-1.el7.x86_64 …（空格隔开） </p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<p>安装参考：</p>
+<blockquote>
+<p><a href="http://www.jianshu.com/p/e54ff5283f18" target="_blank" rel="noopener">（笔记）CentOS 7 安装与卸载MySQL 5.7跳坑</a><br><a href="http://blog.csdn.net/cmzsteven/article/details/78515756" target="_blank" rel="noopener">CentOS 7.4使用Yum源安装MySQL 5.7.20</a></p>
+</blockquote>
+<p>步骤：</p>
+<blockquote>
+<ol>
+<li>首先进入本机的源文件目录<br>cd /usr/local/src</li>
+<li>使用wget下载官方yum源的rpm包：</li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>安装rpm包：<br><code>rpm -ivh mysql57-community-release-el7-11.noarch.rpm</code></li>
+<li>再次使用yum来安装mysql-server:<br>yum install -y mysql-server</li>
+<li>安装完成后，启动mysqld服务：<br><code>systemctl start mysqld</code><br>查看是否成功启动：<br><code>ps aux|grep mysqld</code></li>
+<li>设置mysqld服务开机自启动：<br><code>systemctl enable mysqld</code></li>
+<li>使用初始密码登录<br>由于MySQL从5.7开始不允许首次安装后，使用空密码进行登录，系统会随机生成一个密码以供管理员首次登录使用，这个密码记录在/var/log/mysqld.log文件中，使用下面的命令可以查看此密码：<br><code>cat /var/log/mysqld.log|grep &#39;A temporary password&#39;</code><blockquote>
+<blockquote>
+<p>2017-11-12T13:35:37.013617Z 1 [Note] A temporary password is generated for root@localhost: bkv,dy,)o7Ss</p>
+</blockquote>
 </blockquote>
 </li>
 </ol>
+<p>最后一行冒号后面的部分bkv,dy,)o7Ss就是初始密码。<br>使用此密码登录MySQL:<br><code>mysql -u root -p</code></p>
+<ol start="8">
+<li><p>更改默认密码：<br>切换数据库：<br><code>use mysql;</code><br>修改root密码：<br><code>alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;your_password&#39;;</code><br>密码要求包含大小写字母、数字及标点符号，长度应该在6位以上。<br>重新使用新的密码登录，如果可以正常登录说明你的MySQL已经成功安装在CentOS 7.4上了</p>
+<ul>
+<li>授权远程登录</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>mysql -uroot -pxxxxx<br>//切换至mysql的数据库<br>use mysql;<br>select user,host from user;<br>+———–+———–+<br>| user | host |<br>+———–+———–+<br>| mysql.sys | localhost |<br>| root | localhost |<br>| user1 | localhost |<br>+———–+———–+<br>3 rows in set (0.00 sec)<br>//我们能看到root 用户 后面跟的是localhost 如果需要指定具体的ip，那么就修改为具体的ip，如果需要开通所有就修改为%<br>update user set host = ‘%’ where user = ‘root’;<br>//修改完成退出mysql<br>+———–+———–+<br>| user | host |<br>+———–+———–+<br>| root | % |<br>| mysql.sys | localhost |<br>| user1 | localhost |<br>+———–+———–+<br>3 rows in set (0.00 sec)</p>
+</blockquote>
+<ul>
+<li><ul>
+<li>设置root用户远程登录：</li>
+</ul>
 </li>
 </ul>
-<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$mysql -u root -p</span><br><span class="line">mysql&gt;use mysql;</span><br><span class="line">mysql&gt;update user set host=&apos;%&apos; where user=&apos;root&apos;;//设置可以远程访问</span><br><span class="line">mysql&gt;grant all privileges on *.* to &apos;root&apos;@&apos;%&apos; with grant option;</span><br><span class="line">mysql&gt;flush privileges;    //设置远程访问权限</span><br></pre></td></tr></table></figure>
+<ul>
+<li><ul>
+<li><ul>
+<li>或 添加一个远程登录用户：<blockquote>
+<p>mysql&gt; GRANT ALL PRIVILEGES ON <em>.</em> TO ‘admin‘@’%’ IDENTIFIED BY ‘secret’ WITH GRANT OPTION;</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><ul>
+<li>修改或添加/etc/my.cnf目录下的my.cnf文件里面<br>bind-address = 0.0.0.0</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>防火墙开放3306端口</p>
+<blockquote>
+<p>1.阿里云服务器安全组策略中入方向打开3306端口</p>
+<p>2.其他（未验证）：</p>
+<blockquote>
+<p>1、打开防火墙配置文件<br>vi  /etc/sysconfig/iptables<br>2、增加下面一行<br>-A INPUT -m state –state NEW -m tcp -p tcp –dport 3306 -j ACCEPT<br>3、重启防火墙<br>service  iptables restart<br>注意：增加的开放3306端口的语句一定要在icmp-host-prohibited之前</p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>配置默认编码为 utf8</p>
+</li>
+</ul>
+<p>MySQL 默认为 latin1, 一般修改为 UTF-8</p>
+<blockquote>
+<p>$ vi /etc/my.cnf<br>[mysqld]</p>
+</blockquote>
+<p> #在myslqd下添加如下键值对<br>character_set_server=utf8<br>init_connect=’SET NAMES utf8’<br>修改前：</p>
+<blockquote>
+<blockquote>
+<p>mysql&gt; SHOW VARIABLES LIKE ‘character%’;<br>+————————–+—————————-+<br>| Variable_name            | Value                      |<br>+————————–+—————————-+<br>| character_set_client     | utf8                       |<br>| character_set_connection | utf8                       |<br>| character_set_database   | latin1                     |<br>| character_set_filesystem | binary                     |<br>| character_set_results    | utf8                       |<br>| character_set_server     | latin1                     |<br>| character_set_system     | utf8                       |<br>| character_sets_dir       | /usr/share/mysql/charsets/ |<br>+————————–+—————————-+<br>8 rows in set (0.00 sec)</p>
+</blockquote>
+</blockquote>
+<p>修改后：</p>
+<blockquote>
+<blockquote>
+<p>mysql&gt; SHOW VARIABLES LIKE ‘character%’;<br>+————————–+—————————-+<br>| Variable_name            | Value                      |<br>+————————–+—————————-+<br>| character_set_client     | utf8                       |<br>| character_set_connection | utf8                       |<br>| character_set_database   | utf8                       |<br>| character_set_filesystem | binary                     |<br>| character_set_results    | utf8                       |<br>| character_set_server     | utf8                       |<br>| character_set_system     | utf8                       |<br>| character_sets_dir       | /usr/share/mysql/charsets/ |<br>+————————–+—————————-+<br>8 rows in set (0.00 sec)</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>重启mysql服务使配置生效：<br><code>systemctl restart mysqld</code></p>
+</blockquote>
+<ul>
+<li>默认配置文件：<blockquote>
+<p><strong>默认配置文件路径：  </strong><br>配置文件：/etc/my.cnf<br>日志文件：/var/log/mysqld.log<br>服务启动脚本：/usr/lib/systemd/system/mysqld.service<br>socket文件：/var/run/mysqld/mysqld.pid</p>
+</blockquote>
+</li>
+</ul>
+
       
     </div>
 
@@ -502,6 +613,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+        </div>
+      
 
       
       
@@ -511,18 +628,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/01/java-interview/" rel="next" title="java-interview">
-                <i class="fa fa-chevron-left"></i> java-interview
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/02/01/Mybatis-one-many-retrieve/" rel="prev" title="Mybatis-one-many-retrieve">
-                Mybatis-one-many-retrieve <i class="fa fa-chevron-right"></i>
+              <a href="/2019/02/01/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -568,8 +681,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -654,6 +776,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#核心思想——东拼西凑"><span class="nav-number">1.</span> <span class="nav-text">核心思想——东拼西凑</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
