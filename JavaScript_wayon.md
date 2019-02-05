@@ -359,7 +359,7 @@ function openInWebview () {
 
 - **npm 安装包时 npm ERR! code Z_BUF_ERROR**
 
- 2019.02.05 安装hexo的git部署模块hexo-deploy-git的时候屡次报错
+ 2019.02.05 安装hexo的git部署模块 *hexo-deploy-git* 的时候屡次报错
 
 `npm ERR! code Z_BUF_ERROR`
 
