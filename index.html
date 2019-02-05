@@ -1,0 +1,2920 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="./css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/cheetah_icon.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="./images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: './',
+    scheme: 'Mist',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Chee Daily">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Chee Daily">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chee Daily">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Chee Daily</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="./" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Chee Daily</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">你好world</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-schedule">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/Android-opensource-framework-20160806/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="./images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/Android-opensource-framework-20160806/" class="post-title-link" itemprop="url">开源框架推荐</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:47" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>###开源框架推荐</p>
+<p>####网络</p>
+<ul>
+<li><a href="squarehttp · GitHub">okhttp</a></li>
+<li><a href="loopj/android-async-http · GitHub">android-async-http</a></li>
+</ul>
+<p>####事件总线</p>
+<ul>
+<li><a href="square/otto · GitHub">otto</a></li>
+<li><a href="greenrobot/EventBus · GitHub">EventBus</a></li>
+</ul>
+<p>####依赖注入</p>
+<ul>
+<li><a href="square/dagger · GitHub">Dagger</a></li>
+<li><a href="roboguice/roboguice · GitHub">RoboGuice</a></li>
+<li><a href="JakeWhartontterknife · GitHub">ButterKnife</a></li>
+</ul>
+<p>####图片</p>
+<ul>
+<li><a href="facebook/fresco · GitHub">Fresco</a></li>
+<li><a href="bumptech/glide · GitHub">Glide</a></li>
+<li><a href="square/picasso · GitHub">picasso</a></li>
+</ul>
+<p>####数据库</p>
+<ul>
+<li><a href="greenrobot/greenDAO · GitHub">greenDao</a></li>
+<li><a href="j256/ormlite-android · GitHub">ormlite</a></li>
+<li><a href="LitePalFramework/LitePal · GitHub">LitePal</a></li>
+</ul>
+<p>####响应式编程</p>
+<ul>
+<li><a href="ReactiveX/RxJava · GitHub">RxJava</a></li>
+<li><a href="ReactiveX/RxAndroid: RxJava bindings for An...">RxAndroid</a></li>
+</ul>
+<p>####日志输出</p>
+<ul>
+<li><a href="orhanobut/logger: Simple, pretty and powerf...">logger</a></li>
+<li><a href="liaohuqiu/android-CLog">android-CLog</a></li>
+<li><a href="ZhaoKaiQiang/KLog · GitHub">KLog</a></li>
+<li><a href="pengwei1024/LogUtils · GitHub">LogUtils</a></li>
+</ul>
+<p>####崩溃统计平台</p>
+<ul>
+<li><a href="腾讯Bugly - Android Crash(崩溃">腾讯bugly</a>_iOS Crash(崩溃)<em>ANR</em>卡顿)</li>
+<li><a href="Crittercism - Developer Home">Crittercism</a> </li>
+<li><a href="The most powerful, yet lightest weight crash reporting solution for iOS and Android developers.">Crashlytics</a></li>
+</ul>
+<p>###架构设计<br>这个肯定得了解下MVC，MVP，MVVM还有设计模式这些，这里有几个开源项目推荐下</p>
+<p>#####philm<br>Movie collection and information app for Android.<br>Github地址：chrisbanes/philm: Movie collection and info…</p>
+<p>#####SimpleNews<br>基于Material Design和MVP的新闻客户端<br>Github地址：GitHub - liuling07/SimpleNews: 基于Material Design和MVP的新闻客户端</p>
+<p>#####GankDaily<br>A application show technical information every working days, use MVP pattern.<br>Github地址：maoruibin/GankDaily</p>
+<p>#####SimplifyReader<br>Github地址：GitHub - SkillCollege/SimplifyReader: 一款基于Google Material Design设计开发的Android客户端，包括新闻简读，图片浏览，视频爽看 ，音乐轻听以及二维码扫描五个子模块。项目采取的是MVP架构开发，由于还是摸索阶段，可能不是很规范。但基本上应该是这么个套路，至少我个人认为是这样的~恩，就是这样的！</p>
+<p>#####NBAPlus<br>Github地址：SilenceDut/NBAPlus · GitHub</p>
+<p>#####PhotoNoter<br>Github地址：yydcdut/PhotoNoter</p>
+<p>#####Meizhi<br>Github地址：drakeet/Meizhi: gank.io unofficial client, RxJava &amp; Retrofit</p>
+<p>###其他</p>
+<p>#####leakcanary<br>检查内存泄露<br>Github地址：GitHub - square/leakcanary: A memory leak detection library for Android and Java.</p>
+<p>#####DebugDrawer<br>Android Debug Drawer for faster development<br>Github地址：palaima/DebugDrawer · GitHub</p>
+<p>#####ViewServer<br>Local server for Android’s HierarchyViewer<br>Github地址：romainguy/ViewServer · GitHub</p>
+<p>#####AndroidWiFiADB<br>IntelliJ/AndroidStudio plugin which provides a button to connect your Android device over WiFi to install, run and debug your applications without a USB connected.<br>Github地址：<a href="https://github.com/pedrovgs/AndroidWiFiADB" target="_blank" rel="noopener">https://github.com/pedrovgs/AndroidWiFiADB</a></p>
+<p>####PS：开源框架虽然好用，但最好要了解框架存在的一些bug和坑，遇到问题可以给作者提issue，一般这些有名的框架，作者都会很积极的回答。推荐下自己的<a href="GitHub - ruijun/Android-Dev-Favorites: The repository is Android development favorites, It used to collect the knowledge of Android Development.">Android-Dev-Favorites</a>，里面收集了Android开发的干货，希望能帮到题主。编辑于 2016-01-15作者保留权利</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/coder-inspiration/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="./images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/coder-inspiration/" class="post-title-link" itemprop="url">程序员随想</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:28" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="程序员随想"><a href="#程序员随想" class="headerlink" title="程序员随想"></a>程序员随想</h2><hr>
+<ul>
+<li>2016.5.30杂谈<br> 今天先记录几个关键词吧(Android学习方面)，也很迟了zzz: 多线程、反编译（dex2jar和jdgui）、okhttp、retrofit（对okhttp进行封装）、学习网站：CSDN、Github、appxcode、博客园（cnblogs）、极客学院、CSDN学院、Android官网、Segmentfault、cnbeta（资讯类）。</li>
+</ul>
+<hr>
+<ul>
+<li><p>2016.5.31随想</p>
+<p>今天还是主要在学习之前下好安装好的IntelliJ IDEA的使用，上手也不算难，也试了一个web项目和一个用了SSH框架的web项目，很爽 (≧▽≦)/和Eclipse、Myeclipse相比较只能用四个字形容感受：相见恨晚！╮(╯▽╰)╭ 1.8的JDK环境加Tomcat8的本地服务器，不知道是IDE优化了还是各种加成，重新部署项目很快,点一下Run汤姆猫6,7秒就Redeploy好了，这可真是比用Myeclipse+JDK1.6+Tomcat7快的多了。还有一个必须提的就是代码提示很强大，快键键也很多（因为和Android Studio是同平台产品的所以快捷键完全一样）。说说遇到的问题吧，最令我印象深刻的是，这Spring的applicationContext.xml里面配的数据库连接改了之后还是原来那个数据库，很怪，用IDEA自带的Database管理工具改变了连接的数据库参数好像也是没有什么变化，后台的Hibernate的DAO还是会到原来那个数据库那里去访问数据，甚至我把applicationContext.xml数据库的连接信息的        </p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;property name=&quot;url&quot;value=&quot;jdbc:mysql://localhost:3306/xyb&quot;&gt;&lt;/property&gt;</span><br></pre></td></tr></table></figure>
+<p>去掉最后的数据库名字（xyb）变成 “jdbc:mysql://localhost:3306/“ 这样居然也能对数据访问和操作，而且还是最初的那个数据库（xyb），这真是日了鬼了，确实是没怎么想明白——6月2日补充：是可以在hbm.xml中更改连接的数据库名字的，疏忽了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//Account.hbm.xml</span><br><span class="line">&lt;hibernate-mapping&gt;</span><br><span class="line">	&lt;class name=&quot;com.po.Account&quot; table=&quot;account&quot; catalog=&quot;xyb&quot;&gt;</span><br><span class="line">	……</span><br><span class="line">&lt;/hibernate-mapping&gt;</span><br></pre></td></tr></table></figure>
+<p>，对了，IDEA里用SQL语句也有代码提示，，挺方便的吧。还有Android Studio里菜单栏下面有一排工具栏，怎么IDEA里一个都没了，嗯，原来是要手动显示菜单栏中的View-&gt;Toolbar，打上勾就出来了。<br><img src="http://img.blog.csdn.net/20160601014020690" alt="默认不显示工具栏Toolbar"><br><img src="http://img.blog.csdn.net/20160601014103362" alt="打开了Toolbar"><br>    然后今天还更熟悉了foreach遍历集合，发现（对于我算是发现了）当集合中没有元素时（不为NULL）用foreach去遍历并且在遍历中使用遍历的对象并不会报出异常，这就很明显了，当遇到不为NULL的空集合时foreach一次也不会循环，这真是奈斯。</p>
+<hr>
+<ul>
+<li>2016.6.1记录</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">	IDEA关闭重复代码检测：Settings-&gt;搜索Duplicated code，把勾取消。</span><br><span class="line">	 </span><br><span class="line">SSH框架下的用JUnit和Spring-test进行单元测试（直接在单元测试类中操作和验证数据库中的数据）。参看文章《SSH框架下用JUnit+spring-test单元测试》。</span><br><span class="line">今天还熟悉了Map用entrySet遍历的方法，并且将Map对象作为List集合的元素。entry就相当于Map中的一个实体。通过entry.getKey( )和entry.getValue( )方法可以很方便地得到这个实体的键和值。上代码了。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">List&lt;Map&lt;String,String&gt;&gt; list1=new ArrayList&lt;Map&lt;String,String&gt;&gt;();</span><br><span class="line"> Map&lt;String,String&gt; map1=new HashMap&lt;String, String&gt;();</span><br><span class="line"> map1.put(&quot;heihei&quot;, &quot;heihei&quot;);</span><br><span class="line"> map1.put(&quot;haha&quot;, &quot;haha&quot;);</span><br><span class="line"> Map&lt;String,String&gt; map2=new HashMap&lt;String, String&gt;();</span><br><span class="line"> map2.put(&quot;lel&quot;, &quot;lele&quot;);</span><br><span class="line"> map2.put(&quot;nunu&quot;, &quot;nunu&quot;);</span><br><span class="line"></span><br><span class="line"> list1.add(map1);</span><br><span class="line"> list1.add(map2);</span><br><span class="line"> String ke;</span><br><span class="line"> String va;</span><br><span class="line"> for(Map.Entry entry2:map2.entrySet())&#123;</span><br><span class="line">     ke=entry2.getKey().toString();</span><br><span class="line">     va=entry2.getValue().toString();</span><br><span class="line">     System.out.println(&quot;key:&quot;+ke+&quot;, &quot;+&quot;value:&quot;+va);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>输出：<br>key:lel, value:lele<br>key:nunu, value:nunu</p>
+<p>遍历以Map为集合元素的List：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">for(Map&lt;String, String&gt; map3:list1)&#123;</span><br><span class="line">    Iterator iterator2=map3.entrySet().iterator();</span><br><span class="line">    while(iterator2.hasNext())&#123;</span><br><span class="line">        Map.Entry entry=(Map.Entry)iterator2.next();</span><br><span class="line">        ke=entry.getKey().toString();</span><br><span class="line">        va=entry.getValue().toString();</span><br><span class="line">        System.out.println(&quot;key:&quot;+ke+&quot;, &quot;+&quot;value:&quot;+va);</span><br><span class="line">        System.out.println(&quot;&quot;);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>输出：<br>key:haha, value:haha</p>
+<p>key:heihei, value:heihei</p>
+<p>key:lel, value:lele</p>
+<p>key:nunu, value:nunu</p>
+<hr>
+<ul>
+<li>2016.6.4记录<br>Java判断字符串内容是否为数字方法之一：利用正则表达式</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String str=&quot;64738&quot;;</span><br><span class="line">boolean result=str.matches(&quot;[0-9]+&quot;);//result为true或false</span><br><span class="line">//matches方法判断是否匹配所给的正则表达式</span><br></pre></td></tr></table></figure>
+<p>判断是否为浮点数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public static boolean isDouble(String str) &#123;    </span><br><span class="line">  Pattern pattern = Pattern.compile(&quot;^[-\\+]?[.\\d]*$&quot;);    </span><br><span class="line">  return pattern.matcher(str).matches();    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>final关键字修饰<strong>类</strong>时该类<strong>不能被继承</strong>，<br>final关键字修饰<strong>方法</strong>时该方法<strong>不能被其子类方法覆盖</strong>(覆盖表示子类方法中参数类型、或参数个数、或参数顺序不同)<br>final关键字修饰<strong>变量</strong>时该变量的<strong>值不能改变</strong>，该变量不能再去指向别的对象，一旦初始化后无法改变。但其指向的对象的值可以改变，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">static String b=&quot;222&quot;;</span><br><span class="line">final static String a=b;</span><br><span class="line">System.out.println(a);//输出&quot;222&quot;</span><br><span class="line">b=&quot;3333&quot;;  </span><br><span class="line">System.out.println(b); //输出&quot;3333&quot;</span><br><span class="line">System.out.println(a);//还是输出&quot;222&quot;，因为前面已经初始化赋值了b的值&quot;222&quot;，值不再更改</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2016.6.9随想<br>Java中一个方法中的匿名内部类调用该方法中的局部变量时，该变量必须在方法中声明为final，如</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">final TextView tvtopkymn=(TextView)popupView.findViewById(R.id.tvtopktmn);</span><br><span class="line">tvtopkymn.setOnClickListener(new View.OnClickListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onClick(View v) &#123;</span><br><span class="line">        tvtopkymn.setText(&quot;我是调用final变量&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>这是为了克服局部变量和内部类之间生命周期的不一致性，内部类的生命周期比方法（等同于局部变量的生命周期）要长。设想一下：方法f被调用,从而在它的调用栈中生成了变量i,此时产生了一个局部内部类对象 inner_object,它访问了该局部变量i .当方法f()运行结束后,局部变量i就已死亡了,不存在了.但:局部内部类对象 inner_object还可能一直存在(只能没有人再引用该对象时,它才会死亡),它不会随着方法f()运行结束死亡.这时:出现了一个”荒唐”结果:局部内部类对象 inner_object要访问一个已不存在的局部变量i!    </p>
+<hr>
+<ul>
+<li>2016.6.16记录<br>java.lang.String中的<strong>split方法</strong>，实现方法为<br> <strong><code>public String[] split(String regex)</code></strong>根据给定正则表达式的匹配拆分此字符串，将所有符合条件的都拆分完全，相当于下面一种的limit参数为0。<br> 或者<br> <strong><code>public String[] split(String regex,int limit)</code></strong>根据匹配给定的正则表达式来拆分此字符串，limit参数限制目标数组中的元素个数，即该模式最多应用（limit-1）次就不再继续往下拆分；如果limit为0，则拆完为止，和不带这个limit参数结果一样。<br> 举个栗子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">public class Test&#123;</span><br><span class="line">   public static void main(String args[])&#123;</span><br><span class="line">      String Str = new String(&quot;Welcome-to-cheetahlou-cheetah.com&quot;);</span><br><span class="line"></span><br><span class="line">      for (String retval: Str.split(&quot;-&quot;, 2))&#123;</span><br><span class="line">         System.out.println(retval);</span><br><span class="line">      &#125;</span><br><span class="line">      System.out.println(&quot;&quot;);</span><br><span class="line"></span><br><span class="line">      for (String retval: Str.split(&quot;-&quot;, 3))&#123;</span><br><span class="line">         System.out.println(retval);</span><br><span class="line">      &#125;</span><br><span class="line">      System.out.println(&quot;&quot;);</span><br><span class="line"></span><br><span class="line">//limit参数为0</span><br><span class="line">      for (String retval: Str.split(&quot;-&quot;, 0))&#123;</span><br><span class="line">         System.out.println(retval);</span><br><span class="line">      &#125;</span><br><span class="line">      System.out.println(&quot;&quot;);</span><br><span class="line">//无limit参数，其实就是limit参数为0</span><br><span class="line">      for (String retval: Str.split(&quot;-&quot;))&#123;</span><br><span class="line">         System.out.println(retval);</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出结果将是：</p>
+<p>Welcome<br>to-cheetahlou-cheetah.com</p>
+<p>Welcome<br>to<br>cheetahlou-cheetah.com</p>
+<p>Welcome<br>to<br>cheetahlou<br>cheetah.com</p>
+<p>Welcome<br>to<br>cheetahlou<br>cheetah.com</p>
+<p>另外，<br>1、如果用“.”作为分隔的话，必须是如下写法：<code>String.split(&quot;\\.&quot;)</code>,这样才能正确的分隔开，不能用<code>String.split(&quot;.&quot;)</code>;<br>2、如果用“|”作为分隔的话，必须是如下写法：<code>String.split(&quot;\\|&quot;)</code>,这样才能正确的分隔开，不能用<code>String.split(&quot;|&quot;)</code>;<br>“.”和“|”都是转义字符，必须得加”\“;<br>3、如果在一个字符串中有多个分隔符，可以用“|”作为连字符，比如：“a=1 and b =2 or c=3”,把三个都分隔出来，可以用<code>String.split(&quot;and|or&quot;)</code>; 再比如：<code>String str=&quot;Java string-split#test&quot;</code>,可以用<code>Str.split(&quot; |-|#&quot;)</code>把每个字符串分开。</p>
+<hr>
+<ul>
+<li>2016.6.19记录<br>CSS中margin和padding的区别用图表示为<br> <img src="http://img.blog.csdn.net/20160619194914629" alt="这里写图片描述"></li>
+</ul>
+<hr>
+<p> -2016.6.24感想<br> 没什么具体的代码方面的想说，只是想到今天考完了可能是大学最后一门考试，也是有些感慨，感慨里夹杂着一丝丝害怕，一丝丝莫名的害怕，也许是我的内心不够强大，还是会有对未知未来的不确定，有时候还真是会想未来啊你来的慢一点，But，the only thing we can do is KEEP GOING! </p>
+<hr>
+<ul>
+<li>2016.7.6记录<br>用shiro框架验证登录：根据url过滤用户，设计用户组和权限，密码加密，记住密码登录</li>
+</ul>
+<hr>
+<ul>
+<li>2016.8.6记录<br>对于 Android 深入的点会问一些自定义组件、性能优化，屏幕适配，IPC、Binder的理解，插件化，常用开源库以及原理等等。</li>
+</ul>
+<hr>
+<ul>
+<li>2016.10.6记录<br>回调方法，另见摘录的博文《Java中的回调（摘录）》。</li>
+</ul>
+<hr>
+<ul>
+<li>2016.11.7记录<br>jQuery是一个类数组对象，而DOM对象就是一个单独的DOM元素。</li>
+</ul>
+<hr>
+<ul>
+<li>2017.1.2记录<br>好的命名相当于给代码加了一段有用的注释</li>
+</ul>
+<hr>
+<ul>
+<li>2017.2.13记录<br><strong>jQuery的常用功能总结</strong><ul>
+<li>在 DOM 树中进行查询</li>
+<li>修改 DOM 树及 DOM 相关操作</li>
+<li>事件处理</li>
+<li>Ajax</li>
+<li>Deferred 和 Promise</li>
+<li>对象和数组处理</li>
+<li>还有一个一直在用却很难在列清单时想到的——跨浏览器</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>2017.3.5记录<br><strong>Java中String的拆箱装箱</strong><br> 先看个例子：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">String str1 =&quot;abc&quot;;</span><br><span class="line">String str2 =&quot;abc&quot;;</span><br><span class="line">System.out.println(str2==str1);  //输出为 true </span><br><span class="line">System.out.println(str2.equals(str1));  //输出为 true </span><br><span class="line">           </span><br><span class="line">String str3 =new String(&quot;abc&quot;);</span><br><span class="line">String str4 =new String(&quot;abc&quot;); </span><br><span class="line">System.out.println(str3==str4);  //输出为 false </span><br><span class="line">System.out.println(str3.equals(str4));  //输出为 true</span><br></pre></td></tr></table></figure>
+<p>再看个例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String d =&quot;2&quot;; </span><br><span class="line">String e =&quot;23&quot;;</span><br><span class="line">e = e.substring(0, 1);</span><br><span class="line">System.out.println(e.equals(d)); //输出为 true </span><br><span class="line">System.out.println(e==d); //输出为 false</span><br></pre></td></tr></table></figure>
+<p>第二个例子中，e的初始值与d并不同，因此e与d是各自创建了个对象，（e==d）为false 。<br>同理可知，第一个例子中的str3与str4也是各自new了个对象，而str1与str2却是引用了同一个对象。<br><strong>补充</strong>：obj1==obj2 判断是obj1,obj2这两个引用变量是否相等，即它们所指向的对象是否为同一个对象。言外之意就是要求两个变量所指内存地址相等的时候，才能返回true，每个对象都有自己的一块内存，因此必须指向同一个对象才返回ture。</p>
+<hr>
+<ul>
+<li>2017.3.10记录<br><strong>Java跳出多重循环</strong><br>在Java中，如何跳出当前的多重嵌套循环？<br>答：在最外层循环前加一个标记如A，然后用break A;可以跳出多重循环。（Java中支持带标签的break和continue语句，作用有点类似于C和C++中的goto语句，但是就像要避免使用goto一样，应该避免使用带标签的break和continue，因为它不会让你的程序变得更优雅，很多时候甚至有相反的作用，所以这种语法其实不知道更好）</li>
+</ul>
+<hr>
+<ul>
+<li><p>2017.3.19记录<br><strong>类加载器工作机制</strong></p>
+<p>1.装载：将Java二进制代码导入jvm中，生成Class文件。</p>
+<p>2.连接：a）校验：检查载入Class文件数据的正确性 b）准备：给类的静态变量分配存储空间 c）解析：将符号引用转成直接引用</p>
+<p>3：初始化：对类的静态变量，静态方法和静态代码块执行初始化工作。</p>
+<p>双亲委派模型：类加载器收到类加载请求，首先将请求委派给父类加载器完成</p>
+<p>用户自定义加载器-&gt;应用程序加载器-&gt;扩展类加载器-&gt;启动类加载器。</p>
+</li>
+</ul>
+<hr>
+<p>2017.4.20记录<br><strong>Android Studio 项目push到GitHub报错</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Can&apos;t finish GitHub sharing process</span><br><span class="line">		Successfully created project &apos;CareU&apos; on GitHub, but initial push failed:</span><br><span class="line">		unable to access &apos;https://github.com/cheetahlou/CareU.git/&apos;: error setting certificate verify locations:</span><br></pre></td></tr></table></figure>
+<p>找了很久没有发现原因，后来发现是CA证书的问题，电脑重装过一次Git没有重新安装过，CA证书没有导入，在Git安装目录中安装证书（有好几个，我装了其中的一两个，举例如下路径），然后再在Android Studiopush一次，会跳出windows证书提示你输入github的账户密码，success后就可以正常使用了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;G:\Android\Git\mingw64\ssl\certs\ca-bundle.crt&quot;</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li><p>2017.5.4一点记录<br><strong>GroupId、ArtifactId</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Maven项目的GroupId相当于公司和部门名，ArtifactId相当于项目名</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<ul>
+<li>2017.6.17记录<br><strong>Socket连接建立流程</strong></li>
+</ul>
+<ol>
+<li>服务端实例化ServerSocket</li>
+<li>服务端执行accept()监听指定端口</li>
+<li>客户端实例化Socket尝试连接服务器（IP,port）</li>
+<li>TCP三次握手成功，服务端的accept()返回Socket实例，同时客户端的Socket实例创建成功。</li>
+</ol>
+<hr>
+<ul>
+<li>2017.6.20记录<br><strong>不同变量默认值</strong><br>· 对基本数据类型来说，对于类变量（static）和全局变量，如果不显式地对其赋值而直接使用，则系统会为其赋予默认的零值，而对于局部变量来说，在使用前必须显式地为其赋值，否则编译时不通过。<br>· 对于同时被static和final修饰的常量，必须在声明的时候就为其显式地赋值，否则编译时不通过；而只被final修饰的常量则既可以在声明时显式地为其赋值，也可以在类初始化时显式地为其赋值，总之，在使用前必须为其显式地赋值，系统不会为其赋予默认零值。<br>· 对于引用数据类型reference来说，如数组引用、对象引用等，如果没有对其进行显式地赋值而直接使用，系统都会为其赋予默认的零值，即null。<br>· 如果在数组初始化时没有对数组中的各元素赋值，那么其中的元素将根据对应的数据类型而被赋予默认的零值。</li>
+</ul>
+<hr>
+<ul>
+<li>2017.6.30记录<br><strong>Java取模运算</strong><br>Java中取模运算%的结果的正负符号和被除数一致。<br>如：</li>
+</ul>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">17 % 10 = 7；</span><br><span class="line">-17 % 10 = -7；</span><br><span class="line">-17 % (-10) = -7；</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2017.8.4记录<br><strong>count(1),count(*)和count(column)</strong><br><code>如果你的数据表没有主键，那么count(1)比count(<em>)快<br>如果有主键的话，那主键（联合主键）作为count的条件也比count(</em>)要快<br>如果你的表只有一个字段的话那count(<em>)就是最快的啦<br>count(</em>) count(1) 两者比较。主要还是要count(1)所相对应的数据字段。<br>如果count(1)是聚索引,id,那肯定是count(1)快。但是差的很小的。<br>因为count(<em>),自动会优化指定到那一个字段。所以没必要去count(1)，用count(</em>),sql会帮你完成优化的<br>因此：count(1)和count(<em>)基本没有差别！<br>count(</em>)和count(column)比较时，和选取的column有关，越靠后越慢，column有索引时，如果索引可以为null则count(column)较快，如果索引要求不为null则两者一样快。<pre><code>综合来看，大多数场景可以大胆地使用count(*)。
+&lt;code&gt;
+</code></pre></code></li>
+</ul>
+<hr>
+<ul>
+<li><p>2017.8.7记录<br>Mybatis中如果使用<strong>ResultType</strong>而不是<strong>ResultMap</strong>的话,以实体类为接收对象举例，默认实体类中的属性名要和数据库中的字段名相同才能得到数据，也可以和别名相同。如属性名是userName，则select t.user_name as userName,也能接收成功。</p>
+<p>SpringMVC中如果要接收多个参数可以用(HttpServletRequest request)获取，然后用request.getParameter(“参数名”)获取参数值。</p>
+<p><strong>@RestController注解</strong></p>
+</li>
+</ul>
+<blockquote>
+<p>A convenience annotation that is itself annotated with @Controller and @ResponseBody. Types that carry this annotation are treated as controllers where @RequestMapping methods assume @ResponseBody semantics by default.<br>注解本身使用@Controller和@ResponseBody注解。使用了这个注解的类会被看作一个controller-使用@RequestMapping的方法有一个默认的@ResponseBody注解。<br>@ResponseBody – As of version 4.0 this annotation can also be added on the type level in which case is inherited and does not need to be added on the method level.<br>@ResponseBody也可以加到类一级，通过继承方法一级不需要添加。 </p>
+</blockquote>
+<hr>
+<ul>
+<li>2017.8.10记录<br><strong>sql中用union all或in代替or</strong></li>
+</ul>
+<p>应尽量避免在 where 子句中使用 or 来连接条件，否则将导致引擎放弃使用索引而进行<strong>全表扫描</strong>。而改用union之后，性能就大大提高了。<br>使用”union all”的性能比”union”更高一些。因为当SQL 语句需要UNION两个查询结果集合时，这两个结果集合会以UNION-ALL的方式被合并， 然后在输出最终结果前进行排序。 如果用UNION ALL替代UNION， 这样排序就不是必要了，效率就会因此得到提高。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select * from Member where MemberName = &apos;张三&apos; </span><br><span class="line">union all</span><br><span class="line">select * from Member where MemberName = &apos;李四&apos;</span><br><span class="line">或</span><br><span class="line">select * from Member where MemberName in (&apos;张三&apos;,&apos;李四&apos;)</span><br></pre></td></tr></table></figure>
+<p>来代替or<br><del>select * from Member where MemberName = ‘张三’ or MemberName = ‘李四’</del><br>相关链接：<a href="http://panyi5202.iteye.com/blog/612414" target="_blank" rel="noopener">避免全表扫描，提高sql查询效率</a></p>
+<ul>
+<li><strong>MySQl的全表扫描情况</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> 在以下几种条件下，MySQL就会做全表扫描： </span><br><span class="line">1)  数据表是在太小了，做一次全表扫描比做索引键的查找来得快多了。当表的记录总数小于10且记录长度比较短时通常这么做。 </span><br><span class="line">2)  没有合适用于 ON 或 WHERE 分句的索引字段。 </span><br><span class="line">3)  让索引字段和常量值比较，MySQL已经计算（基于索引树）到常量覆盖了数据表的很大部分，因此做全表扫描应该会来得更快。 </span><br><span class="line">4)  通过其他字段使用了一个基数很小（很多记录匹配索引键值）的索引键。这种情况下，MySQL认为使用索引键需要大量查找，还不如全表扫描来得更快。</span><br><span class="line"></span><br><span class="line"> 对于小表来说，全表扫描通常更合适。但是对大表来说，尝试使用以下技术来避免让优化程序错误地选择全表扫描： </span><br><span class="line"> 1)  执行 ANALYZE TABLE tbl_name 更新要扫描的表的索引键分布。 </span><br><span class="line"> 2)  使用 FORCE INDEX 告诉MySQL，做全表扫描的话会比利用给定的索引更浪费资源。 </span><br><span class="line"> SELECT * FROM t1, t2 FORCE INDEX (index_for_column) </span><br><span class="line"> WHERE t1.col_name=t2.col_name; </span><br><span class="line"> 3)  启动 mysqld 时使用参数 --max-seeks-for-key=1000 或者执行 SET max_seeks_for_key=1000 来告诉优化程序，所有的索引都不会导致超过1000次的索引搜索</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2017.8.11记录<br><strong>ajax跨域处理</strong></li>
+</ul>
+<p>1.在response的头文件添加</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">httpServletResponse.setHeader(<span class="string">"Access-Control-Allow-Origin"</span>,<span class="string">"*"</span>);</span><br></pre></td></tr></table></figure>
+<p>2.SpringMVC解决跨域问题的注解</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@CrossOrigin(&quot;http://test.com&quot;)</span><br><span class="line">@CrossOrigin(origins=&quot;http://test.com&quot;,maxAge=3600)</span><br></pre></td></tr></table></figure>
+<p> <strong>Ajax请求SpringMVC返回到浏览器中文乱码</strong><br> 原因：Spring在处理<code>@ResponseBody</code>这个annotation的时候，org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter使用了org.springframework.http.converter.StringHttpMessageConverter进行处理，而StringHttpMessageConverter默认了字符编码为<code>ISO-8859-1</code>（如下）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Charset DEFAULT_CHARSET = Charset.forName(<span class="string">"ISO-8859-1"</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>解决办法一<br>使用SpringMVC提供的在@RequestMapping中加入produces注解</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@RequestMapping(value = &quot;/xxx&quot;, method = RequestMethod.GET,produces = &quot;text/plain;charset=UTF-8&quot;)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>解决办法二(自行验证)<br>链接：<br> <a href="http://www.cnblogs.com/dyllove98/p/3180158.html" target="_blank" rel="noopener">解决Spring MVC @ResponseBody返回中文字符串乱码问题</a><br> <a href="https://stackoverflow.com/questions/3616359/who-sets-response-content-type-in-spring-mvc-responsebody" target="_blank" rel="noopener">Who sets response content-type in Spring MVC (@ResponseBody)</a></li>
+</ul>
+<hr>
+<hr>
+<ul>
+<li>2017.9.23记录 <strong>linux服务器能ping通ip不能ping通域名</strong><br>做的电商项目调用物流网站的API时服务器一直请求不到，而本地电脑可以，还以为时json解析的问题，排查了好久发现是服务器解析域名的问题<br> 问题：<code>ping: unknown host www.kuaidi100.com</code><br> 先查看<br> <code># cat /etc/resolv.conf</code><br> 修改DNS服务<br> <code># vi /etc/resolv.conf</code><br> 添加nameserver(公共DNS服务器)，如</li>
+</ul>
+<blockquote>
+<p>nameserver 8.8.8.8<br>nameserver 223.5.5.5</p>
+</blockquote>
+<hr>
+<ul>
+<li>2017.9.26记录 <strong>Java中Date加一天,和Calendar转化</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Calendar curCal= Calendar.getInstance();</span><br><span class="line">   curCal.setTime(<span class="keyword">new</span> Date());</span><br><span class="line">   curCal.add(Calendar.DATE,-<span class="number">1</span>);</span><br><span class="line">   Date newDate=curCal.getTime();</span><br></pre></td></tr></table></figure>
+<hr>
+<p>转自<a href="https://laod.cn/design/page/javascript-texiao.html" target="_blank" rel="noopener">老D博客</a>：<br>一、添加鼠标点击特效：<br>添加鼠标点击特效，(“富强”, “民主”, “文明”, “和谐”, “自由”, “平等”, “公正” ,”法治”, “爱国”, “敬业”, “诚信”, “友善”)等。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">/* 鼠标点击特效 */</span><br><span class="line">var a_idx = 0;</span><br><span class="line">jQuery(document).ready(function($) &#123;</span><br><span class="line">    $(&quot;body&quot;).click(function(e) &#123;</span><br><span class="line">var a = new Array(&quot;富强&quot;, &quot;民主&quot;, &quot;文明&quot;, &quot;和谐&quot;, &quot;自由&quot;, &quot;平等&quot;, &quot;公正&quot; ,&quot;法治&quot;, &quot;爱国&quot;, &quot;敬业&quot;, &quot;诚信&quot;, &quot;友善&quot;);</span><br><span class="line">var $i = $(&quot;&lt;span/&gt;&quot;).text(a[a_idx]);</span><br><span class="line">        a_idx = (a_idx + 1) % a.length;</span><br><span class="line">var x = e.pageX,</span><br><span class="line">        y = e.pageY;</span><br><span class="line">        $i.css(&#123;</span><br><span class="line">&quot;z-index&quot;: 999999999999999999999999999999999999999999999999999999999999999999999,</span><br><span class="line">&quot;top&quot;: y - 20,</span><br><span class="line">&quot;left&quot;: x,</span><br><span class="line">&quot;position&quot;: &quot;absolute&quot;,</span><br><span class="line">&quot;font-weight&quot;: &quot;bold&quot;,</span><br><span class="line">&quot;color&quot;: &quot;#ff6651&quot;</span><br><span class="line">        &#125;);</span><br><span class="line">        $(&quot;body&quot;).append($i);</span><br><span class="line">        $i.animate(&#123;</span><br><span class="line">&quot;top&quot;: y - 180,</span><br><span class="line">&quot;opacity&quot;: 0</span><br><span class="line">        &#125;,</span><br><span class="line">        1500,</span><br><span class="line">function() &#123;</span><br><span class="line">            $i.remove();</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如图：<br><img src="http://img.blog.csdn.net/20171003111954981?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlZXRhaGxvdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="点击特效"><br>二、添加评论框输入特效：<br>添加以下代码到主题尾部调用即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;activate-power-mode.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">POWERMODE.colorful = true; // 控制开启/开启礼花特效  </span><br><span class="line">POWERMODE.shake = false; // 控制开启/关闭屏幕震动特效  </span><br><span class="line">document.body.addEventListener(&apos;input&apos;, POWERMODE);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>在输入框打字时跟随光标弹出烟花很是炫酷（还可以开启屏幕震动哦！）<br>true 为开启<br>false 为关闭<br>效果如图：<br><img src="http://img.blog.csdn.net/20171003112131947?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlZXRhaGxvdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="评论特效"></p>
+<hr>
+<hr>
+<ul>
+<li>2017.12.25 Redis 记录<br>Redis keys通配符<br> keys的模式支持下面通配符：<br>*通配符。该通配符表示所有的意思。如：keys <em> 匹配数据库中所有 key 。<br>?通配符。表示一个任意字符。如：keys h?llo 命令匹配 hello ， hallo 和 hxllo 等。
+</em>通配符。表示任何字符。如：keys h*llo 表示任何一h开头，llo结尾的key，如匹配 hllo 和 heeeeello 等。<br>[]通配符。这和正则表示中的[]类似，每次可以配其中任何一个字符。如：keys h[ae]llo 匹配 hello 和 hallo ，但不匹配 hillo，因为i不在[ae]中 。</li>
+</ul>
+<p>参考Blog：<a href="http://blog.csdn.net/LanSeTianKong12/article/details/50148937" target="_blank" rel="noopener">Redis操作总结</a></p>
+<hr>
+<ul>
+<li>2018.1.5 集合操作<code>java.lang.UnsupportedOperationException</code><br>对于Collections.EMPTY_LIST或Arrays.asList(3, 5)等构建的固定大小的集合不能对其使用add,remove,addAll等方法改变大小，因其没有重写addAll方法，也不需要重写这些不合理（因其大小固定）的方法。同理可以推断以后遇到该异常的时候可以查看其是否支持，尤其是重写该方法了。</li>
+</ul>
+<hr>
+<ul>
+<li>2018.1.24 <strong>分布式和集群</strong><br>分布式：一个业务分拆多个子业务，部署在不同的服务器上，集群：同一个业务，部署在多个服务器上<br> 集群用在解决高可用、负载均衡等，如redis集群，分布式将核心业务抽取出来单独作为独立服务，一个系统由多个子业务组成，如Dubbo和Git</li>
+</ul>
+<hr>
+<ul>
+<li>2018.2.2  <strong>快递100免费物流查询自用方法(返回物流信息列表json)</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * 获取订单物流详情</span><br><span class="line"> *</span><br><span class="line"> * @return</span><br><span class="line"> */</span><br><span class="line">@RequestMapping(value = &quot;/consultLogstics&quot;, method = RequestMethod.GET)</span><br><span class="line">public JsonResp consultLogstics(Long orderId) &#123;</span><br><span class="line">    log.debug(&quot;获取订单物流详情&quot;);</span><br><span class="line">    if (null == orderId)</span><br><span class="line">        return JsonResp.toFail(&quot;订单id不能为空&quot;);</span><br><span class="line">    Orders orders = ordersService.selectById(orderId);</span><br><span class="line">    JSONObject jsonObject = new JSONObject();</span><br><span class="line">    if (orders.getIsLogistics() == 0)</span><br><span class="line">        return JsonResp.ok(jsonObject);</span><br><span class="line">    String type = orders.getLogiCom();</span><br><span class="line">    String postid = orders.getLogisticsNumber();</span><br><span class="line">   /* String type=&quot;shentong&quot;;</span><br><span class="line">    String postid=&quot;3333872084245&quot;;*/</span><br><span class="line">    String consultUrl = &quot;http://www.kuaidi100.com/query?type=&quot; + type + &quot;&amp;postid=&quot; + postid;</span><br><span class="line">    String result = HttpClientUtil.sendGetSSLRequest(consultUrl, &quot;UTF-8&quot;);</span><br><span class="line">    Object obj = JSON.parse(result); </span><br><span class="line">    return JsonResp.ok(obj);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2018.2.27  <strong>网关Gateway相关摘录</strong><br>网关实质上是一个网络通向其他网络的IP地址。用于两个高层协议不同的网络互连，网关的IP地址是具有路由功能的设备的IP地址，具有路由功能的设备有路由器、启用了路由协议的服务器（实质上相当于一台路由器）、代理服务器（也相当于一台路由器）</li>
+</ul>
+<hr>
+<ul>
+<li>2018.3.15 <strong>幂等性</strong><br><em>幂等性</em>：对同一个系统，使用同样的条件，一次请求和重复的多次请求对系统资源的影响是一致的；在数学中表示为f(x)=f(f(x))；常用于分布式系统设计中，在电商、互联网金融领域尤为重要。以此避免重复地调用接口造成数据被多次修改。<br> refer via 简书：<a href="https://www.jianshu.com/p/475589f5cd7b" target="_blank" rel="noopener">幂等性浅谈</a></li>
+</ul>
+<hr>
+<ul>
+<li>2018.6.6 <strong>SpringMVC中的重定向参数RedirectAttributes的addFlashAttribute()  </strong><br>SpringMVC中的重定向参数RedirectAttributes的addFlashAttribute方法，是将参数的键值存到session中，而在分布式环境中时，如果没有做统一session管理，就会出现重定向以后接不到参数的情况。 </li>
+</ul>
+<hr>
+<ul>
+<li>2018.6.12 <strong>BigDecimal精度丢失</strong><br>有小数点的值（浮点数）用BigDecimal构造函数初始化时，不论加减乘除，如果不添加双引号，会发生丢失精度的情况；<br>比如<code>BigDecimal bd= new BigDecimal(2.48);</code><br>会变成<code>2.4799999999999999999999998223</code><br>所以，用字符串进行初始化<code>BigDecimal bd= new BigDecimal(&quot;2.48&quot;);</code> ，不会出现这个问题，还有记得除不尽时加 <em>scale</em> 和 <em>roundMode</em> 。</li>
+</ul>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">response推json:</span><br><span class="line">   /**</span><br><span class="line">     * 将某个对象转换成json格式并发送到客户端</span><br><span class="line">     * @param response</span><br><span class="line">     * @param obj</span><br><span class="line">     * @throws Exception</span><br><span class="line">     */</span><br><span class="line">    public static void sendJsonMessage(HttpServletResponse response, Object obj) throws Exception &#123;</span><br><span class="line">        response.setContentType(&quot;application/json; charset=utf-8&quot;);</span><br><span class="line">        PrintWriter writer = response.getWriter();</span><br><span class="line">        writer.print(JSONObject.toJSONString(obj, SerializerFeature.WriteMapNullValue,</span><br><span class="line">                SerializerFeature.WriteDateUseDateFormat));</span><br><span class="line">        writer.close();</span><br><span class="line">        response.flushBuffer();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2018.7.2 读取配置文件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">public static String get(String key) &#123;</span><br><span class="line">    if (prop != null)</span><br><span class="line">        return prop.getProperty(key);</span><br><span class="line">    try &#123;</span><br><span class="line">        InputStream file = GlobEnvUtil.class.getClassLoader().getResourceAsStream(&quot;globEnv.properties&quot;);</span><br><span class="line">        prop = new Properties();</span><br><span class="line">        prop.load(file);</span><br><span class="line">    &#125; catch (Exception e) &#123;</span><br><span class="line">        System.out.println(e.getMessage());</span><br><span class="line">    &#125;</span><br><span class="line">    return prop.getProperty(key);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">static Properties prop = null;</span><br><span class="line">static &#123;</span><br><span class="line">    try &#123;</span><br><span class="line">        InputStream file = GlobEnvUtil.class.getClassLoader().getResourceAsStream(&quot;globEnv.properties&quot;);</span><br><span class="line">        Properties prop = new Properties();</span><br><span class="line">        prop.load(file);</span><br><span class="line">    &#125; catch (Exception e) &#123;</span><br><span class="line"></span><br><span class="line">        System.out.println(e.getMessage());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>固定读取相应环境的”globalEnv.properties”文件，<br><em>举个栗子</em></p>
+<blockquote>
+<p>globalEnv.properties配置：<br><code>server.login.graphCode = https://ip:port/module/path</code><br>valocity的toolbox.xml配置:</p>
+<figure class="highlight plain"><figcaption><span>version</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt; &lt;toolbox&gt;</span><br><span class="line">&gt; &lt;xhtml&gt;true&lt;/xhtml&gt;</span><br><span class="line">&gt; &lt;tool&gt;</span><br><span class="line">&gt; 	&lt;key&gt;env&lt;/key&gt;</span><br><span class="line">&gt; 	&lt;scope&gt;application&lt;/scope&gt;</span><br><span class="line">&gt; 	&lt;class&gt;com.xx.utils.velocity.GlobEnvUtil&lt;/class&gt;</span><br><span class="line">&gt; &lt;/tool&gt;</span><br><span class="line">&gt; </span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>velocity读取：<br><code>var path = $env.getPath(&#39;server.login.graghCode&#39;);</code></p>
+</blockquote>
+<hr>
+<ul>
+<li>2018.7.4 <strong>拆箱装箱和==、equals</strong><br>包装类型的自动拆箱和基本类型的自动装箱方便了两者的互换和书写阅读。<br>用==可以用于基本类型和包装类型之间的比较，只比较拆装后两者的值是否相等如</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer zz = <span class="number">213</span>;</span><br><span class="line">System.out.println(zz==(<span class="keyword">short</span>)<span class="number">213</span>);<span class="comment">//结果为true</span></span><br></pre></td></tr></table></figure>
+<p>Character、Byte、Short、Integer、Long等包装类型的equals方法，比较相等时先判断比较对象是否是该类型，类型不同直接返回false，类型相同再先强转为包装类，调用intValue()、shortValue()、longValue()等取到其基本类型的值，比较两者基本类型的值是否相等。</p>
+<p>这里可以引申因为基本数据类型的存在而讨论Java是否是完全面向对象的语言？</p>
+<p><em>举栗：Integer类的equals方法</em></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Compares this object to the specified object.  The result is</span></span><br><span class="line"><span class="comment"> * &#123;<span class="doctag">@code</span> true&#125; if and only if the argument is not</span></span><br><span class="line"><span class="comment"> * &#123;<span class="doctag">@code</span> null&#125; and is an &#123;<span class="doctag">@code</span> Integer&#125; object that</span></span><br><span class="line"><span class="comment"> * contains the same &#123;<span class="doctag">@code</span> int&#125; value as this object.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span>   obj   the object to compare with.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span>  &#123;<span class="doctag">@code</span> true&#125; if the objects are the same;</span></span><br><span class="line"><span class="comment"> *          &#123;<span class="doctag">@code</span> false&#125; otherwise.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object obj)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (obj <span class="keyword">instanceof</span> Integer) &#123;</span><br><span class="line">        <span class="keyword">return</span> value == ((Integer)obj).intValue();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>举栗：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Integer ez = 13;</span><br><span class="line">Integer ez1 = new Integer(127);</span><br><span class="line">Integer ez2 = new Integer(127);</span><br><span class="line">System.out.println(ez1==ez2);//false</span><br><span class="line">System.out.println(2.00f==(short)2);//true</span><br><span class="line">System.out.println(ez.equals((short)13));//false</span><br><span class="line">System.out.println(&quot;233&quot;.equals(233));//false</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2018.7.16 <strong>MySQL同一事务</strong><br>MySQL同一事务中，后面的读数据会读到前面更新操作后的数据。<br>  比如原来count=1，更新操作commit后count应为0，那么同一个事务的后续查询会读到count=0，即使它还没有commit。</li>
+</ul>
+<hr>
+<ul>
+<li>2018.7.17 <strong>Linux日志查询</strong></li>
+</ul>
+<ol>
+<li>按关键字查找日志行号：<code>cat -n test.log | grep 关键字</code></li>
+<li>找到行号后打印前后某几行日志：用tail和head 打印，<code>tail -n +行号 文件名 | head -n 20</code> 或者 用sed <code>sed -n &#39;23882,24182p&#39; test.log</code></li>
+<li>sed打印某段时间内的日志：<code>sed -n &#39;/2018-08-01 14:52:00/,/2018-08-01 14:53:00/p&#39; test.log</code></li>
+<li>less打印某关键词所在位置日志，可以按N和n分别查找前后一个关键词的日志，并且高亮该关键词，<code>less -N +?keyword  test.log</code> 或者<code>less -N +/keyword  test.log</code>，”?” 和”/“的区别是 按n和N不同方向匹配文本。用more不会高亮该关键词。</li>
+</ol>
+<blockquote>
+<p>less ?keyword　　向上查找<br>n    向上匹配下一处匹配文本<br>N    向下匹配下一处匹配文本 </p>
+<p>less /keyword　　向下查找<br>n    向下匹配下一处匹配文本<br>N    向上匹配下一处匹配文本</p>
+</blockquote>
+<hr>
+<ul>
+<li>2018.7.19 <strong>有赞权限系统实现关键点摘录</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SAM(Security Access Manager)权限系统模型的实现</span><br><span class="line">在传统的 RBAC 模型中，通常通过一张关系表来保存角色与权限集的对应关系，实现权限与角色相关联。可以预见的是，随着零售业务的不断发展会积累下不计其数的功能点，导致关联表的数据极难维护和使用。SAM 权限系统利用进制转换的策略解决了这个问题 ，同时提高了存储效率以及权限判定效率。一个基本类型为 Long 的十进制数字，它也可以看做是由 64 位 0 或 1 组成的二进制。在 SAM 系统模型设计中，每一个功能点定义为一个权限点，该权限点由 idx 和 pos 两个属性确保是全局唯一的权限点。idx 表示第几个 Long 型空间，pos 表示 Long 型对应的二进制数中所处的位置，64 位长度即可代表 64 个不同能功能点。当 64 位满时无法再容放更多的功能点，这时 idx 属性会自增，重新申请一个 Long 型空间。如此一个 64 位的 Long 数字，通过 0 或 1 的组合，即可表示最多对 64 个不同的功能点所拥有权限的状态描述。</span><br><span class="line">例如：权限集&#123;1&#125;表示拥有 idx=0, pos=0 对应功能点的权限，权限集&#123;-1,1&#125;表示拥有idx=0,pos∈[0,1,2,..,63]与 idx=1,pos=0 对应功能点的权限。</span><br><span class="line">SAM 权限系统将资源与所代表的功能点的关联关系通过进制的方式管理起来，采用计算机进制的思想，抽象出功能集换算公式来完成资源与二进制之间的映射，以及角色与二进制的映射。</span><br><span class="line">权</span><br><span class="line"></span><br><span class="line">作者：有赞技术</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2018.7.25 <strong>MySQL比较两个时间字段大小，取较大者</strong><br>两个时间字段中有可能有的为NULL，先取时间not null的，都有时间则取较大者。<br> 思路：用case when配合if语句将取值统一用时间戳比较大小，NULL作为时间戳的0。</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> </span><br><span class="line">(<span class="keyword">CASE</span> <span class="keyword">WHEN</span> <span class="keyword">IF</span> (time_field_A <span class="keyword">IS</span> <span class="literal">NULL</span>,<span class="number">0</span>,<span class="keyword">UNIX_TIMESTAMP</span>(time_field_A)) &gt; <span class="keyword">IF</span> (time_field_B <span class="keyword">IS</span> <span class="literal">NULL</span>,<span class="number">0</span>,<span class="keyword">UNIX_TIMESTAMP</span>(time_field_B)) <span class="keyword">THEN</span> time_field_A <span class="keyword">ELSE</span> time_field_B <span class="keyword">END</span>) greater_time</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2018.7.26 <strong>MySQL通过存储过程批量造数据</strong></li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">--  批量新增</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">DELIMITER //</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">PROCEDURE</span></span><br><span class="line"><span class="keyword">IF</span> <span class="keyword">EXISTS</span> createTest ; <span class="keyword">CREATE</span> <span class="keyword">PROCEDURE</span> createTest ()</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">	<span class="keyword">DECLARE</span></span><br><span class="line">		<span class="keyword">num</span> <span class="built_in">INT</span> ;</span><br><span class="line">	<span class="keyword">SET</span> <span class="keyword">num</span> = <span class="number">1</span> ;</span><br><span class="line">	WHILE num &lt; 1002 DO</span><br><span class="line"></span><br><span class="line">	<span class="keyword">SET</span> @<span class="built_in">DATE</span> = <span class="string">'2018-07-26'</span> ;</span><br><span class="line">	<span class="keyword">SET</span> @<span class="keyword">NAME</span> = <span class="keyword">concat</span>(<span class="string">'名字'</span>, <span class="keyword">num</span>) ; </span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> tableName (field1, field2, field3)</span><br><span class="line">	<span class="keyword">VALUES</span></span><br><span class="line">		(@<span class="built_in">DATE</span>, @<span class="keyword">NAME</span>, <span class="string">'99'</span>,) ;</span><br><span class="line">	<span class="keyword">SET</span> <span class="keyword">num</span> = <span class="keyword">num</span> + <span class="number">1</span> ;</span><br><span class="line">	<span class="keyword">END</span></span><br><span class="line">	<span class="keyword">WHILE</span> ;</span><br><span class="line">	<span class="keyword">END</span> ; </span><br><span class="line"><span class="keyword">CALL</span> createRemindTest () ;</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2018.9.5 <strong>Java List<t>和Set<t>检查重复和去重</t></t></strong></li>
+</ul>
+<p>LIst和Set的contains(Object e)方法都用e的equals()方法检查集合中是否存在e对象。和hashCode方法，重写即可</p>
+<p>Set的HashSet实现类的的add()方法和addAll()方法实际调用的HashMap的put再调putVal方法，将元素值作为HashMap的put方法的key作检查，可以看到是从hash值和equals方法判断是否已有重复元素，所以要判重或去重时按需重写对象的<strong>equals()和hashCode()</strong> 方法。。</p>
+<p><strong><code>HashSet中的add()方法</code>    </strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public boolean add(E e) &#123;</span><br><span class="line">        return map.put(e, PRESENT)==null;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p><strong><code>HashMap.java中的put方法</code></strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> V <span class="title">put</span><span class="params">(K key, V value)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> putVal(hash(key), key, value, <span class="keyword">false</span>, <span class="keyword">true</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">final</span> V <span class="title">putVal</span><span class="params">(<span class="keyword">int</span> hash, K key, V value, <span class="keyword">boolean</span> onlyIfAbsent,</span></span></span><br><span class="line"><span class="function"><span class="params">               <span class="keyword">boolean</span> evict)</span> </span>&#123;</span><br><span class="line">    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; p; <span class="keyword">int</span> n, i;</span><br><span class="line">    <span class="keyword">if</span> ((tab = table) == <span class="keyword">null</span> || (n = tab.length) == <span class="number">0</span>)</span><br><span class="line">        n = (tab = resize()).length;</span><br><span class="line">    <span class="keyword">if</span> ((p = tab[i = (n - <span class="number">1</span>) &amp; hash]) == <span class="keyword">null</span>)</span><br><span class="line">        tab[i] = newNode(hash, key, value, <span class="keyword">null</span>);</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        Node&lt;K,V&gt; e; K k;</span><br><span class="line">        <span class="keyword">if</span> (p.hash == hash &amp;&amp;</span><br><span class="line">            ((k = p.key) == key || (key != <span class="keyword">null</span> &amp;&amp; key.equals(k))))</span><br><span class="line">            e = p;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (p <span class="keyword">instanceof</span> TreeNode)</span><br><span class="line">            e = ((TreeNode&lt;K,V&gt;)p).putTreeVal(<span class="keyword">this</span>, tab, hash, key, value);</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> binCount = <span class="number">0</span>; ; ++binCount) &#123;</span><br><span class="line">                <span class="keyword">if</span> ((e = p.next) == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    p.next = newNode(hash, key, value, <span class="keyword">null</span>);</span><br><span class="line">                    <span class="keyword">if</span> (binCount &gt;= TREEIFY_THRESHOLD - <span class="number">1</span>) <span class="comment">// -1 for 1st</span></span><br><span class="line">                        treeifyBin(tab, hash);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (e.hash == hash &amp;&amp;</span><br><span class="line">                    ((k = e.key) == key || (key != <span class="keyword">null</span> &amp;&amp; key.equals(k))))</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                p = e;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (e != <span class="keyword">null</span>) &#123; <span class="comment">// existing mapping for key</span></span><br><span class="line">            V oldValue = e.value;</span><br><span class="line">            <span class="keyword">if</span> (!onlyIfAbsent || oldValue == <span class="keyword">null</span>)</span><br><span class="line">                e.value = value;</span><br><span class="line">            afterNodeAccess(e);</span><br><span class="line">            <span class="keyword">return</span> oldValue;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    ++modCount;</span><br><span class="line">    <span class="keyword">if</span> (++size &gt; threshold)</span><br><span class="line">        resize();</span><br><span class="line">    afterNodeInsertion(evict);</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2018.9.6 <strong>集合的Fail-fast机制记录</strong></li>
+</ul>
+<blockquote>
+<p>有两个线程（线程A，线程B），其中线程A负责遍历list、线程B修改list。线程A在遍历list过程的某个时候（此时expectedModCount = modCount=N），线程启动，同时线程B增加一个元素，这是modCount的值发生改变（modCount + 1 = N + 1）。线程A继续遍历执行next方法时，通告checkForComodification方法发现expectedModCount  = N  ，而modCount = N + 1，两者不等，这时就抛出ConcurrentModificationException 异常，从而产生fail-fast机制。</p>
+</blockquote>
+<p><strong>volatile</strong>关键字：</p>
+<blockquote>
+<p>Java提供了volatile关键字来保证可见性。<br><br><br>当一个共享变量被volatile修饰时，它会保证修改的值会立即被更新到主存，当有其他线程需要读取时，它会去内存中读取新值。<br><br><br>而普通的共享变量不能保证可见性，因为普通共享变量被修改之后，什么时候被写入主存是不确定的，当其他线程去读取时，此时内存中可能还是原来的旧值，因此无法保证可见性。</p>
+</blockquote>
+<hr>
+<ul>
+<li>2018.9.10 <strong>volatile关键字相关记录</strong></li>
+</ul>
+<p><strong><em>参考:</em></strong> <a href="http://www.techug.com/post/java-volatile-keyword.html" target="_blank" rel="noopener">并发编程中的volatile关键字</a><br><strong><em>相关资料:</em></strong> <a href="https://blog.csdn.net/javazejian/article/details/72772461" target="_blank" rel="noopener">全面理解Java内存模型(JMM)及volatile关键字</a></p>
+<p><strong>volatile特性：</strong></p>
+<blockquote>
+<p>1.保证了不同线程对该变量操作的内存可见性;<br>2.禁止指令重排序</p>
+</blockquote>
+<p><strong>volatile底层的实现机制</strong>：</p>
+<blockquote>
+<p>“ 如果把加入volatile关键字的代码和未加入volatile关键字的代码都生成汇编代码，会发现加入volatile关键字的代码会多出一个lock前缀指令。 lock前缀指令实际相当于一个内存屏障，内存屏障提供了以下功能： 1.重排序时不能把后面的指令重排序到内存屏障之前的位置 2.使得本CPU的Cache写入内存 <strong> </strong>3.写入动作也会引起别的CPU或者别的内核无效化其Cache，相当于让新写入的值对别的线程可见 “</p>
+<blockquote>
+</blockquote>
+</blockquote>
+<p>但是<strong>volatile</strong>关键字不能保证操作的 原子性 如下程序想得到结果为 <code>10000</code><br>,实际结果极大概率为<code>10000</code> 不到一点，因变量<code>inc++</code> 操作实际分为</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">volatile</span> <span class="keyword">int</span> inc = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">increase</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        inc++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">final</span> Test test = <span class="keyword">new</span> Test();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">1000</span>; j++)</span><br><span class="line">                    test.increase();</span><br><span class="line">            &#125;).start();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (Thread.activeCount() &gt; <span class="number">1</span>)  <span class="comment">//保证前面的线程都执行完</span></span><br><span class="line">            Thread.yield();</span><br><span class="line">        System.out.println(test.inc);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2018.9.14 <strong>获取当周起讫时间</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Calendar calendar = Calendar.getInstance();</span><br><span class="line">    calendar.set(Calendar.HOUR_OF_DAY, <span class="number">0</span>);</span><br><span class="line">    calendar.set(Calendar.MINUTE, <span class="number">0</span>);</span><br><span class="line">    calendar.set(Calendar.SECOND, <span class="number">0</span>);</span><br><span class="line">    calendar.set(Calendar.MILLISECOND, <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">int</span> dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);</span><br><span class="line">    <span class="comment">//周日——周六 有不同的代表value 1-7</span></span><br><span class="line">    <span class="keyword">if</span> (dayOfWeek == <span class="number">1</span>) &#123;</span><br><span class="line">        dayOfWeek += <span class="number">7</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> addOrSub = <span class="number">2</span>-dayOfWeek;</span><br><span class="line">    <span class="comment">//获取当周周一00:00和周日23:59</span></span><br><span class="line">    Date weekStart = DateUtils.addOrSubDay(calendar.getTime(),addOrSub);</span><br><span class="line">    Date weekEnd = DateUtils.addOrSubDay(weekStart, <span class="number">6</span>);</span><br><span class="line">    weekEnd = DateUtils.getFinalTimeOfDay(weekEnd);</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2018.10.26 <strong>linux获取进程pid，杀进程命令</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">P_ID=`ps -ef | grep -w &quot;$SERVICE_NAME&quot; | grep -v &quot;grep&quot; | awk &apos;&#123;print $2&#125;&apos;`</span><br><span class="line"></span><br><span class="line">		if [ &quot;$P_ID&quot; == &quot;&quot; ]; then</span><br><span class="line">            echo &quot;=== $SERVICE_NAME process not exists or stop success&quot;</span><br><span class="line">        else</span><br><span class="line">            echo &quot;=== $SERVICE_NAME process pid is:$P_ID&quot;</span><br><span class="line">            echo &quot;=== begin kill $SERVICE_NAME process, pid is:$P_ID&quot;</span><br><span class="line">            kill -9 $P_ID</span><br><span class="line">        fi</span><br></pre></td></tr></table></figure>
+<p>重启脚本 服务.sh：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line"></span><br><span class="line">## java env</span><br><span class="line">export JAVA_HOME=/usr/java/jdk1.8.0_131</span><br><span class="line">export JRE_HOME=$JAVA_HOME/jre</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SERVICE_DIR=/usr/local/目录</span><br><span class="line">SERVICE_NAME=服务名</span><br><span class="line">JAR_NAME=$SERVICE_NAME\.jar</span><br><span class="line">PID=$SERVICE_NAME\.pid</span><br><span class="line"></span><br><span class="line">cd $SERVICE_DIR</span><br><span class="line"></span><br><span class="line">case &quot;$1&quot; in</span><br><span class="line"></span><br><span class="line">    start)</span><br><span class="line">        echo &quot;$JRE_HOME/bin/java -Xms128m -Xmx512m -Dfile.encoding=UTF-8 -jar $SERVICE_DIR/$JAR_NAME&quot;</span><br><span class="line">        echo $! &gt; $SERVICE_DIR/$PID</span><br><span class="line">        echo &quot;=== start $SERVICE_NAME&quot;</span><br><span class="line">#!/bin/sh</span><br><span class="line"></span><br><span class="line">## java env</span><br><span class="line">export JAVA_HOME=/usr/java/jdk1.8.0_131</span><br><span class="line">export JRE_HOME=$JAVA_HOME/jre</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SERVICE_DIR=/usr/local/目录</span><br><span class="line">SERVICE_NAME=服务名</span><br><span class="line">JAR_NAME=$SERVICE_NAME\.jar</span><br><span class="line">PID=$SERVICE_NAME\.pid</span><br><span class="line"></span><br><span class="line">cd $SERVICE_DIR</span><br><span class="line"></span><br><span class="line">case &quot;$1&quot; in</span><br><span class="line"></span><br><span class="line">    start)</span><br><span class="line">        nohup $JRE_HOME/bin/java -server -Xms256m -Xmx2048m -XX:+UseG1GC -XX:ParallelGCThreads=4 -XX:SurvivorRatio=8 -XX:+DisableExplicitGC -XX:HeapDumpPath=/usr/java/activity_heap.dump -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 -jar $SERVICE_DIR/$JAR_NAME &gt;$SERVICE_DIR/logs/服务名.out 2&gt;&amp;1 &amp;</span><br><span class="line">        echo &quot;$JRE_HOME/bin/java -Xms128m -Xmx512m -Dfile.encoding=UTF-8 -jar $SERVICE_DIR/$JAR_NAME&quot;</span><br><span class="line">        echo $! &gt; $SERVICE_DIR/$PID</span><br><span class="line">        echo &quot;=== start $SERVICE_NAME&quot;</span><br><span class="line">        ;;</span><br><span class="line"></span><br><span class="line">    stop)</span><br><span class="line">        kill `cat $SERVICE_DIR/$PID`</span><br><span class="line">        rm -rf $SERVICE_DIR/$PID</span><br><span class="line">        echo &quot;=== stop $SERVICE_NAME&quot;</span><br><span class="line"></span><br><span class="line">        sleep 5</span><br><span class="line">        P_ID=`ps -ef | grep -w &quot;$SERVICE_NAME&quot; | grep -v &quot;grep&quot; | awk &apos;&#123;print $2&#125;&apos;`</span><br><span class="line">        if [ &quot;$P_ID&quot; == &quot;&quot; ]; then</span><br><span class="line">            echo &quot;=== $SERVICE_NAME process not exists or stop success&quot;</span><br><span class="line">        else</span><br><span class="line">            echo &quot;=== $SERVICE_NAME process pid is:$P_ID&quot;</span><br><span class="line">            echo &quot;=== begin kill $SERVICE_NAME process, pid is:$P_ID&quot;</span><br><span class="line">            kill -9 $P_ID</span><br><span class="line">        fi</span><br><span class="line">        ;;</span><br><span class="line"></span><br><span class="line">    restart)</span><br><span class="line">        $0 stop</span><br><span class="line">        sleep 2</span><br><span class="line">        $0 start</span><br><span class="line">        echo &quot;=== restart $SERVICE_NAME&quot;</span><br><span class="line">        ;;</span><br><span class="line"></span><br><span class="line">    *)</span><br><span class="line">        ## restart</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2018.11.20 <strong>Linux sz rz命令</strong></li>
+</ul>
+<blockquote>
+<p><font color="red"><strong>sz</strong></font> 命令（Send ZMODEM）通过ZMODEM协议，可将多个文件从远程服务器下载到本地。注意不能下载文件夹，如果下载文件夹，请先打包再下载</p>
+</blockquote>
+<p>比如下载多个文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sz  file1 file2 file3</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><font color="red"><strong>rz</strong></font> 命令（Receive ZMODEM），使用ZMODEM协议，将本地文件批量上传到远程Linux/Unix服务器，注意不能上传文件夹。</p>
+</blockquote>
+<p>比如在XShell或其他虚拟终端软件中敲rz和回车可以打开系统资源管理器选择本地文件上传。</p>
+<hr>
+<ul>
+<li>2018.12.12 <strong>IDEA refactor remark</strong><br>如下图，IDEA用refactor重构方法名的时候默认会把字符串、注释等中的部分也包括进去，这样当字符串中的某一部分和方法名相同时就会被一起refactor掉。太智能惹的锅？<br><img src="https://img-blog.csdnimg.cn/20181212140845648.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoZWV0YWhsb3Zlcg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+</ul>
+<hr>
+<hr>
+<ul>
+<li>2018.12.13 <strong>Linux开放端口</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">1.  查看已打开的端口  # netstat -anp</span><br><span class="line">2. 查看想开的端口是否已开 # firewall-cmd --query-port=666/tcp</span><br><span class="line"> 若此提示 FirewallD is not running </span><br><span class="line"> 表示为不可知的防火墙 需要查看状态并开启防火墙</span><br><span class="line"></span><br><span class="line">3. 查看防火墙状态  # systemctl status firewalld</span><br><span class="line">running 状态即防火墙已经开启</span><br><span class="line">dead 状态即防火墙未开启</span><br><span class="line">4. 开启防火墙，# systemctl start firewalld  没有任何提示即开启成功</span><br><span class="line">5. 开启防火墙 # service firewalld start  </span><br><span class="line">  关闭防火墙 # systemctl stop firewalld</span><br><span class="line">  centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.service 然后 # systemctl start firewalld.service</span><br><span class="line"></span><br><span class="line">6. 查看想开的端口是否已开 # firewall-cmd --query-port=666/tcp    提示no表示未开</span><br><span class="line">7. 开永久端口号 firewall-cmd --add-port=666/tcp --permanent   提示    success 表示成功</span><br><span class="line">8. 重新载入配置  # firewall-cmd --reload    比如添加规则之后，需要执行此命令</span><br><span class="line">9. 再次查看想开的端口是否已开  # firewall-cmd --query-port=666/tcp  提示yes表示成功</span><br><span class="line">10. 若移除端口 # firewall-cmd --permanent --remove-port=666/tcp</span><br><span class="line"></span><br><span class="line">11. 修改iptables  有些版本需要安装iptables-services # yum install iptables-services 然后修改进目录 /etc/sysconfig/iptables   修改内容</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li><p>2019.1.10 <strong>Js中的对象类型精确判断</strong></p>
+<p>在js 中 , 有一种判断数据基本类型的方法 typeof , 只能判断5中基本类型:即 “number”，”string”，”undefined”，”boolean”，”object” 五种。<br>可见: typeof 会根据对象类型返回对应的类型字符串, 但是有几个缺点:</p>
+<p>对于数组、函数、对象来说，其关系错综复杂，使用 typeof 都会统一返回 “object” 字符串,null也会返回’object’,对NaN返回是’number’<br>Object.prototype.toString.call(obj) == “[object String]” ?</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">console.log(Object.prototype.toString.call(&quot;jerry&quot;));//[object String]</span><br><span class="line">console.log(Object.prototype.toString.call(12));//[object Number]</span><br><span class="line">console.log(Object.prototype.toString.call(true));//[object Boolean]</span><br><span class="line">console.log(Object.prototype.toString.call(undefined));//[object Undefined]</span><br><span class="line">console.log(Object.prototype.toString.call(null));//[object Null]</span><br><span class="line">console.log(Object.prototype.toString.call(&#123;name: &quot;jerry&quot;&#125;));//[object Object]</span><br><span class="line">console.log(Object.prototype.toString.call(function()&#123;&#125;));//[object Function]</span><br><span class="line">console.log(Object.prototype.toString.call([]));//[object Array]</span><br><span class="line">console.log(Object.prototype.toString.call(new Date));//[object Date]</span><br><span class="line">console.log(Object.prototype.toString.call(/\d/));//[object RegExp]</span><br><span class="line">function Person()&#123;&#125;;</span><br><span class="line">console.log(Object.prototype.toString.call(new Person));//[object Object]</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2019.01.15  <strong>泛型方法</strong><br>定义泛型方法，其格式是：修饰符 &lt;类型参数列表&gt; 返回类型 方法名(形参列表) { 方法体 }。例如：<br> <code>public static &lt;T, S&gt; int func(List&lt;T&gt; list, Map&lt;Integer, S&gt; map) { ... }</code><br> 其中T和S是泛型类型参数。</li>
+</ul>
+<hr>
+<ul>
+<li>2019.01.31 <strong>设计原则Remark 《Head First设计模式》</strong><ol>
+<li>找出应用中可能需要变化之处, 把它们独立出来. (设计系统时可以预先考虑独立出来)</li>
+<li>针对接口编程, 而不是针对实现编程(如父类引用指向子类实例Animal a = new Dog())</li>
+<li>多用组合，少用继承</li>
+</ol>
+</li>
+</ul>
+<hr>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/IDEA plugins mark/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="./images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/IDEA plugins mark/" class="post-title-link" itemprop="url">IDEA plugins mark</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:20" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>﻿</p>
+<h3 id="IDEA-plugins-mark"><a href="#IDEA-plugins-mark" class="headerlink" title="IDEA plugins mark"></a>IDEA plugins mark</h3><ol>
+<li><p><strong>Material Theme UI</strong></p>
+</li>
+<li><p><strong>activate-power-mode</strong></p>
+</li>
+<li><p><strong>Alibaba Java Coding Guidelines</strong></p>
+</li>
+<li><p><strong>Gson Format</strong></p>
+</li>
+<li><p><strong>MybatisX</strong></p>
+</li>
+<li><p><strong>Background Image Plus</strong></p>
+</li>
+<li><p><strong>Stack Overflow</strong></p>
+</li>
+<li><p><strong>Markdown相关</strong></p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/Jiebei-monthly-matching the repayment of principal and interest/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="./images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/Jiebei-monthly-matching the repayment of principal and interest/" class="post-title-link" itemprop="url">Jiebei-monthly-matching the repayment of principal and interest</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:10" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>﻿</p>
+<p>﻿<em>注：花了半天研究了一下蚂蚁借呗的利息计算，起因是因为一次以为比较简单的计算发现比借呗上实际利息要少好几块钱，这就有点疑惑了。</em></p>
+<p><strong>说明：</strong><br>特别说明的只有两点</p>
+<ol>
+<li>利息分两部分：第一部分，距最近一个还款日期（即分期起息日，每个人不同，如27日）前的利息按日利率算，如今天24日，每月的还款日为27日，则24日到27日的三天累计日利息为第一部分利息；第二部分为分期起息日到最后一个还款日的分期总利息，按等额本息计算</li>
+<li>第二部分利息等额本息计算的月利率为：日利率<em>（实际分期总天数）/3。而不是按30天算的月利率，比如第二部分5月27日到8月27日，实际天数为92天，实际计算的月利率为 0.00004\</em>(92/3)，即每月天数按实际总天数除以期数。<br>附等额本息相关链接：<a href="http://wiki.mbalib.com/wiki/%E7%AD%89%E9%A2%9D%E6%9C%AC%E6%81%AF%E8%BF%98%E6%AC%BE%E6%B3%95" target="_blank" rel="noopener">等额本息还款法</a></li>
+</ol>
+<p><strong>举例：</strong></p>
+<blockquote>
+<p>本金为:1000 元,首个等额本息起息日为 27日，日利率为:0.0004 (首个还款日前的利息按日利率计算)<br>按30天计算月利率为：0.0120，实际月(期)利率=(几期实际天数/30)*日利率，为:0.012266666668<br>借款期数为：3期<br>等额本息起息日前的累计日利息(这部分按日利率算)为：1.20，首个等额本息起息日开始的几期总利息为：24.63302元<br>计算所得总利息为：25.83302 元</p>
+</blockquote>
+<p><img src="https://img-blog.csdn.net/20180524101150520?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoZWV0YWhsb3Zlcg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="实际总利息"></p>
+<p><strong>代码</strong>：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//本金</span></span><br><span class="line">BigDecimal principal=<span class="keyword">new</span> BigDecimal(<span class="string">"1000"</span>);</span><br><span class="line"><span class="comment">//日利率</span></span><br><span class="line">BigDecimal dayRate=<span class="keyword">new</span> BigDecimal(<span class="number">4</span>).divide(<span class="keyword">new</span> BigDecimal(<span class="string">"10000"</span>));</span><br><span class="line"><span class="comment">//还款日（分期起息日）</span></span><br><span class="line">Integer firstRepaymentDate=<span class="number">27</span>;</span><br><span class="line"><span class="comment">//分期起息日前天数（按日利率算）</span></span><br><span class="line">Integer days=<span class="number">3</span>;</span><br><span class="line"><span class="comment">//第一部分 累计日利息</span></span><br><span class="line">BigDecimal accumuDayInterest=<span class="keyword">new</span> BigDecimal(days).multiply(dayRate).multiply(principal).setScale(<span class="number">2</span>);</span><br><span class="line"><span class="comment">//实际月利率</span></span><br><span class="line"><span class="keyword">double</span> rate=dayRate.multiply(<span class="keyword">new</span> BigDecimal(<span class="string">"92"</span>).divide(<span class="keyword">new</span> BigDecimal(<span class="string">"3"</span>),<span class="number">8</span>,BigDecimal.ROUND_HALF_UP)).doubleValue();</span><br><span class="line"><span class="keyword">double</span> month=<span class="number">3</span>d;</span><br><span class="line"><span class="keyword">double</span> monthRatePow=Math.pow(<span class="number">1</span>+rate,month);</span><br><span class="line">BigDecimal dividerTop=principal.multiply(<span class="keyword">new</span> BigDecimal(rate)).multiply(<span class="keyword">new</span> BigDecimal(monthRatePow));</span><br><span class="line">BigDecimal dividerBottom=<span class="keyword">new</span> BigDecimal(monthRatePow).subtract(<span class="keyword">new</span> BigDecimal(<span class="number">1</span>));</span><br><span class="line">BigDecimal monthResult=dividerTop.divide(dividerBottom,<span class="number">5</span>,BigDecimal.ROUND_HALF_UP);</span><br><span class="line"><span class="comment">//第二部分 累计月(期)利息</span></span><br><span class="line">BigDecimal monthlyInterest=monthResult.multiply(<span class="keyword">new</span> BigDecimal(month)).subtract(principal);</span><br><span class="line">BigDecimal result=accumuDayInterest.add(monthlyInterest);</span><br><span class="line">System.out.println(<span class="string">"本金为:"</span>+principal+<span class="string">" 元,"</span>+<span class="string">"首个等额本息起息日为 "</span>+firstRepaymentDate+<span class="string">"日"</span>+<span class="string">"，"</span>+<span class="string">"日利率为:"</span>+dayRate+<span class="string">" (首个还款日前的利息按日利率计算)"</span>);</span><br><span class="line">System.out.println(<span class="string">"按30天计算月利率为："</span>+<span class="keyword">new</span> BigDecimal(<span class="number">30</span>).multiply(dayRate)+<span class="string">"，"</span>+<span class="string">"实际月(期)利率=(几期实际天数/30)*日利率，为:"</span>+rate);</span><br><span class="line">System.out.println(<span class="string">"借款期数为："</span>+month+<span class="string">"期"</span>);</span><br><span class="line">System.out.println(<span class="string">"等额本息起息日前的累计日利息(这部分按日利率算)为："</span>+accumuDayInterest+<span class="string">"，"</span>+<span class="string">"首个等额本息起息日开始的几期总利息为："</span>+monthlyInterest+<span class="string">"元"</span>);</span><br><span class="line">System.out.println(<span class="string">"计算所得总利息为："</span>+result+<span class="string">" 元"</span>);</span><br></pre></td></tr></table></figure></p>
+<hr>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/basic-java/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="./images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/basic-java/" class="post-title-link" itemprop="url">basic-java</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:43" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li>方法区</li>
+</ul>
+<p>方法区在JVM中也是一个非常重要的区域，它与堆一样，是被 线程共享 的区域。 在方法区中，存储了每个类的信息（包括类的名称、方法信息、字段信息）、静态变量、常量以及编译器编译后的代码等。</p>
+<blockquote>
+<p>大多数 JVM 将内存区域划分为 Method Area（Non-Heap）（方法区） ,Heap（堆） , Program Counter Register（程序计数器） ,   VM Stack（虚拟机栈，也有翻译成JAVA 方法栈的）,Native Method Stack  （ 本地方法栈 ），其中Method Area 和  Heap 是线程共享的  ，VM Stack，Native Method Stack  和Program Counter Register  是非线程共享的。为什么分为 线程共享和非线程共享的呢?请继续往下看。<br>首先我们熟悉一下一个一般性的 Java 程序的工作过程。一个 Java 源程序文件，会被编译为字节码文件（以 class 为扩展名），每个java程序都需要运行在自己的JVM上，然后告知 JVM 程序的运行入口，再被 JVM 通过字节码解释器加载运行。那么程序开始运行后，都是如何涉及到各内存区域的呢？<br>概括地说来，JVM初始运行的时候都会分配好 Method Area（方法区） 和Heap（堆） ，而JVM 每遇到一个线程，就为其分配一个 Program Counter Register（程序计数器） ,   VM Stack（虚拟机栈）和Native Method Stack  （本地方法栈）， 当线程终止时，三者（虚拟机栈，本地方法栈和程序计数器）所占用的内存空间也会被释放掉。这也是为什么我把内存区域分为线程共享和非线程共享的原因，非线程共享的那三个区域的生命周期与所属线程相同，而线程共享的区域与JAVA程序运行的生命周期相同，所以这也是系统垃圾回收的场所只发生在线程共享的区域（实际上对大部分虚拟机来说知发生在Heap上）的原因。</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/chrome-version-nginx-ciphers/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="./images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/chrome-version-nginx-ciphers/" class="post-title-link" itemprop="url">chrome-version-nginx-ciphers</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:35" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>﻿</p>
+<p>最近遇到开发的某域名升级为https后手机qq浏览器、魅族自带浏览器等低版本chrome内核浏览器访问不了，在SSL诊断工具：<a href="https://www.ssllabs.com/ssltest/analyze.html" target="_blank" rel="noopener">https://www.ssllabs.com/ssltest/analyze.html</a>    中诊断网站发现对比了一下该网站和另一网站的ssllabs的报告，区别地发现在Handshake Simulation中有标红的Chrome 49 / XP SP3 Server negotiated HTTP/2 with blacklisted suite。查找资料后定位到服务器nginx配置中的ssl_ciphers可能会导致部分浏览器访问不了，认为服务器网址使用了不安全的加密选项，于是开始尝试调整加密选项。<br>    参考<a href="http://starlight36.com/post/nginx-support-http2" target="_blank" rel="noopener">HTTP/2升级小记</a>和<a href="https://www.textarea.com/zhicheng/fenxiang-yige-https-a-di-nginx-peizhi-320/" target="_blank" rel="noopener">分享一个 HTTPS A+ 的 nginx 配置</a>以及其他文章。配置了</p>
+<pre><code>&gt;ssl_ciphers &quot;ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA&quot;;
+</code></pre><p>然后重启<code>nginx -s reload</code>重启nginx后可以访问了。 </p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/coder_emmm/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="./images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/coder_emmm/" class="post-title-link" itemprop="url">coder_emmm</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:32" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>5.30杂谈<br> 今天先记录几个关键词吧(Android学习方面)，也很迟了zzz: 多线程、反编译（dex2jar和jdgui）、okhttp、retrofit（对okhttp进行封装）、学习网站：CSDN、Github、appxcode、博客园（cnblogs）、极客学院、CSDN学院、Android官网、Segmentfault、cnbeta（资讯类）。</li>
+</ul>
+<hr>
+<ul>
+<li><p>5.31随想</p>
+<p>  今天还是主要在学习之前下好安装好的IntelliJ IDEA的使用，上手也不算难，也试了一个web项目和一个用了SSH框架的web项目，很爽 (≧▽≦)/和Eclipse、Myeclipse相比较只能用四个字形容感受：相见恨晚！╮(╯▽╰)╭ 1.8的JDK环境加Tomcat8的本地服务器，不知道是IDE优化了还是各种加成，重新部署项目很快,点一下Run汤姆猫6,7秒就Redeploy好了，这可真是比用Myeclipse+JDK1.6+Tomcat7快的多了。还有一个必须提的就是代码提示很强大，快键键也很多（因为和Android Studio是同平台产品的所以快捷键完全一样）。说说遇到的问题吧，最令我印象深刻的是，这Spring的applicationContext.xml里面配的数据库连接改了之后还是原来那个数据库，很怪，用IDEA自带的Database管理工具改变了连接的数据库参数好像也是没有什么变化，后台的Hibernate的DAO还是会到原来那个数据库那里去访问数据，甚至我把applicationContext.xml数据库的连接信息的        </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;property name=&quot;url&quot;value=&quot;jdbc:mysql://localhost:3306/xyb&quot;&gt;&lt;/property&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>去掉最后的数据库名字（xyb）变成 “jdbc:mysql://localhost:3306/“ 这样居然也能对数据访问和操作，而且还是最初的那个数据库（xyb），这真是日了鬼了，确实是没怎么想明白——6月2日补充：是可以在hbm.xml中更改连接的数据库名字的，疏忽了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//Account.hbm.xml</span><br><span class="line">&lt;hibernate-mapping&gt;</span><br><span class="line">	&lt;class name=&quot;com.po.Account&quot; table=&quot;account&quot; catalog=&quot;xyb&quot;&gt;</span><br><span class="line">	……</span><br><span class="line">&lt;/hibernate-mapping&gt;</span><br></pre></td></tr></table></figure>
+<p>，对了，IDEA里用SQL语句也有代码提示，，挺方便的吧。还有Android Studio里菜单栏下面有一排工具栏，怎么IDEA里一个都没了，嗯，原来是要手动显示菜单栏中的View-&gt;Toolbar，打上勾就出来了。<br><img src="http://img.blog.csdn.net/20160601014020690" alt="默认不显示工具栏Toolbar"><br><img src="http://img.blog.csdn.net/20160601014103362" alt="打开了Toolbar"><br>    然后今天还更熟悉了foreach遍历集合，发现（对于我算是发现了）当集合中没有元素时（不为NULL）用foreach去遍历并且在遍历中使用遍历的对象并不会报出异常，这就很明显了，当遇到不为NULL的空集合时foreach一次也不会循环，这真是奈斯。</p>
+<hr>
+<ul>
+<li>6.1记录</li>
+</ul>
+<pre><code>    IDEA关闭重复代码检测：Settings-&gt;搜索Duplicated code，把勾取消。
+
+SSH框架下的用JUnit和Spring-test进行单元测试（直接在单元测试类中操作和验证数据库中的数据）。参看文章《SSH框架下用JUnit+spring-test单元测试》。
+今天还熟悉了Map用entrySet遍历的方法，并且将Map对象作为List集合的元素。entry就相当于Map中的一个实体。通过entry.getKey( )和entry.getValue( )方法可以很方便地得到这个实体的键和值。上代码了。
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">List&lt;Map&lt;String,String&gt;&gt; list1=new ArrayList&lt;Map&lt;String,String&gt;&gt;();</span><br><span class="line"> Map&lt;String,String&gt; map1=new HashMap&lt;String, String&gt;();</span><br><span class="line"> map1.put(&quot;heihei&quot;, &quot;heihei&quot;);</span><br><span class="line"> map1.put(&quot;haha&quot;, &quot;haha&quot;);</span><br><span class="line"> Map&lt;String,String&gt; map2=new HashMap&lt;String, String&gt;();</span><br><span class="line"> map2.put(&quot;lel&quot;, &quot;lele&quot;);</span><br><span class="line"> map2.put(&quot;nunu&quot;, &quot;nunu&quot;);</span><br><span class="line"></span><br><span class="line"> list1.add(map1);</span><br><span class="line"> list1.add(map2);</span><br><span class="line"> String ke;</span><br><span class="line"> String va;</span><br><span class="line"> for(Map.Entry entry2:map2.entrySet())&#123;</span><br><span class="line">     ke=entry2.getKey().toString();</span><br><span class="line">     va=entry2.getValue().toString();</span><br><span class="line">     System.out.println(&quot;key:&quot;+ke+&quot;, &quot;+&quot;value:&quot;+va);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>输出：<br>key:lel, value:lele<br>key:nunu, value:nunu</p>
+<p>遍历以Map为集合元素的List：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">for(Map&lt;String, String&gt; map3:list1)&#123;</span><br><span class="line">    Iterator iterator2=map3.entrySet().iterator();</span><br><span class="line">    while(iterator2.hasNext())&#123;</span><br><span class="line">        Map.Entry entry=(Map.Entry)iterator2.next();</span><br><span class="line">        ke=entry.getKey().toString();</span><br><span class="line">        va=entry.getValue().toString();</span><br><span class="line">        System.out.println(&quot;key:&quot;+ke+&quot;, &quot;+&quot;value:&quot;+va);</span><br><span class="line">        System.out.println(&quot;&quot;);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>输出：<br>key:haha, value:haha</p>
+<p>key:heihei, value:heihei</p>
+<p>key:lel, value:lele</p>
+<p>key:nunu, value:nunu</p>
+<hr>
+<ul>
+<li>6.4记录<br>  Java判断字符串内容是否为数字方法之一：利用正则表达式</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String str=&quot;64738&quot;;</span><br><span class="line">boolean result=str.matches(&quot;[0-9]+&quot;);//result为true或false</span><br><span class="line">//matches方法判断是否匹配所给的正则表达式</span><br></pre></td></tr></table></figure>
+<p>判断是否为浮点数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public static boolean isDouble(String str) &#123;    </span><br><span class="line">  Pattern pattern = Pattern.compile(&quot;^[-\\+]?[.\\d]*$&quot;);    </span><br><span class="line">  return pattern.matcher(str).matches();    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>final关键字修饰<strong>类</strong>时该类<strong>不能被继承</strong>，<br>final关键字修饰<strong>方法</strong>时该方法<strong>不能被其子类方法覆盖</strong>(覆盖表示子类方法中参数类型、或参数个数、或参数顺序不同)<br>final关键字修饰<strong>变量</strong>时该变量的<strong>值不能改变</strong>，该变量不能再去指向别的对象，一旦初始化后无法改变。但其指向的对象的值可以改变，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">static String b=&quot;222&quot;;</span><br><span class="line">final static String a=b;</span><br><span class="line">System.out.println(a);//输出&quot;222&quot;</span><br><span class="line">b=&quot;3333&quot;;  </span><br><span class="line">System.out.println(b); //输出&quot;3333&quot;</span><br><span class="line">System.out.println(a);//还是输出&quot;222&quot;，因为前面已经初始化赋值了b的值&quot;222&quot;，值不再更改</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>6.9随想<br>  Java中一个方法中的匿名内部类调用该方法中的局部变量时，该变量必须在方法中声明为final，如</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">final TextView tvtopkymn=(TextView)popupView.findViewById(R.id.tvtopktmn);</span><br><span class="line">tvtopkymn.setOnClickListener(new View.OnClickListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onClick(View v) &#123;</span><br><span class="line">        tvtopkymn.setText(&quot;我是调用final变量&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>这是为了克服局部变量和内部类之间生命周期的不一致性，内部类的生命周期比方法（等同于局部变量的生命周期）要长。设想一下：方法f被调用,从而在它的调用栈中生成了变量i,此时产生了一个局部内部类对象 inner_object,它访问了该局部变量i .当方法f()运行结束后,局部变量i就已死亡了,不存在了.但:局部内部类对象 inner_object还可能一直存在(只能没有人再引用该对象时,它才会死亡),它不会随着方法f()运行结束死亡.这时:出现了一个”荒唐”结果:局部内部类对象 inner_object要访问一个已不存在的局部变量i!    </p>
+<hr>
+<ul>
+<li>6.16记录<br>  java.lang.String中的<strong>split方法</strong>，实现方法为<br><strong><code>public String[] split(String regex)</code></strong>根据给定正则表达式的匹配拆分此字符串，将所有符合条件的都拆分完全，相当于下面一种的limit参数为0。<br>  或者<br><strong><code>public String[] split(String regex,int limit)</code></strong>根据匹配给定的正则表达式来拆分此字符串，limit参数限制目标数组中的元素个数，即该模式最多应用（limit-1）次就不再继续往下拆分；如果limit为0，则拆完为止，和不带这个limit参数结果一样。<br>  举个栗子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">public class Test&#123;</span><br><span class="line">   public static void main(String args[])&#123;</span><br><span class="line">      String Str = new String(&quot;Welcome-to-cheetahlou-cheetah.com&quot;);</span><br><span class="line"></span><br><span class="line">      for (String retval: Str.split(&quot;-&quot;, 2))&#123;</span><br><span class="line">         System.out.println(retval);</span><br><span class="line">      &#125;</span><br><span class="line">      System.out.println(&quot;&quot;);</span><br><span class="line"></span><br><span class="line">      for (String retval: Str.split(&quot;-&quot;, 3))&#123;</span><br><span class="line">         System.out.println(retval);</span><br><span class="line">      &#125;</span><br><span class="line">      System.out.println(&quot;&quot;);</span><br><span class="line"></span><br><span class="line">//limit参数为0</span><br><span class="line">      for (String retval: Str.split(&quot;-&quot;, 0))&#123;</span><br><span class="line">         System.out.println(retval);</span><br><span class="line">      &#125;</span><br><span class="line">      System.out.println(&quot;&quot;);</span><br><span class="line">//无limit参数，其实就是limit参数为0</span><br><span class="line">      for (String retval: Str.split(&quot;-&quot;))&#123;</span><br><span class="line">         System.out.println(retval);</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出结果将是：</p>
+<p>Welcome<br>to-cheetahlou-cheetah.com</p>
+<p>Welcome<br>to<br>cheetahlou-cheetah.com</p>
+<p>Welcome<br>to<br>cheetahlou<br>cheetah.com</p>
+<p>Welcome<br>to<br>cheetahlou<br>cheetah.com</p>
+<p>另外，<br>1、如果用“.”作为分隔的话，必须是如下写法：<code>String.split(&quot;\\.&quot;)</code>,这样才能正确的分隔开，不能用<code>String.split(&quot;.&quot;)</code>;<br>2、如果用“|”作为分隔的话，必须是如下写法：<code>String.split(&quot;\\|&quot;)</code>,这样才能正确的分隔开，不能用<code>String.split(&quot;|&quot;)</code>;<br>“.”和“|”都是转义字符，必须得加”\“;<br>3、如果在一个字符串中有多个分隔符，可以用“|”作为连字符，比如：“a=1 and b =2 or c=3”,把三个都分隔出来，可以用<code>String.split(&quot;and|or&quot;)</code>; 再比如：<code>String str=&quot;Java string-split#test&quot;</code>,可以用<code>Str.split(&quot; |-|#&quot;)</code>把每个字符串分开。</p>
+<hr>
+<ul>
+<li>6.19记录<br>CSS中margin和padding的区别用图表示为<br><img src="http://img.blog.csdn.net/20160619194914629" alt="这里写图片描述"></li>
+</ul>
+<hr>
+<p> -6.24感想<br> 没什么具体的代码方面的想说，只是想到今天考完了可能是大学最后一门考试，也是有些感慨，感慨里夹杂着一丝丝害怕，一丝丝莫名的害怕，也许是我的内心不够强大，还是会有对未知未来的不确定，有时候还真是会想未来啊你来的慢一点，But，the only thing we can do is KEEP GOING! </p>
+<hr>
+<ul>
+<li>7.6记录<br>用shiro框架验证登录：根据url过滤用户，设计用户组和权限，密码加密，记住密码登录</li>
+</ul>
+<hr>
+<ul>
+<li>8.6记录<br>对于 Android 深入的点会问一些自定义组件、性能优化，屏幕适配，IPC、Binder的理解，插件化，常用开源库以及原理等等。</li>
+</ul>
+<hr>
+<ul>
+<li>10.6记录<br>回调方法，另见摘录的博文《Java中的回调（摘录）》。</li>
+</ul>
+<hr>
+<ul>
+<li>11.7记录<br>jQuery是一个类数组对象，而DOM对象就是一个单独的DOM元素。</li>
+</ul>
+<hr>
+<ul>
+<li>2017.1.2记录<br>  好的命名相当于给代码加了一段有用的注释</li>
+</ul>
+<hr>
+<ul>
+<li>2017.2.13记录<br>  <strong>jQuery的常用功能总结</strong><ul>
+<li>在 DOM 树中进行查询</li>
+<li>修改 DOM 树及 DOM 相关操作</li>
+<li>事件处理</li>
+<li>Ajax</li>
+<li>Deferred 和 Promise</li>
+<li>对象和数组处理</li>
+<li>还有一个一直在用却很难在列清单时想到的——跨浏览器</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>2017.3.5记录<br>  <strong>Java中String的拆箱装箱</strong><br>  先看个例子：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">String str1 =&quot;abc&quot;;</span><br><span class="line">String str2 =&quot;abc&quot;;</span><br><span class="line">System.out.println(str2==str1);  //输出为 true </span><br><span class="line">System.out.println(str2.equals(str1));  //输出为 true </span><br><span class="line">           </span><br><span class="line">String str3 =new String(&quot;abc&quot;);</span><br><span class="line">String str4 =new String(&quot;abc&quot;); </span><br><span class="line">System.out.println(str3==str4);  //输出为 false </span><br><span class="line">System.out.println(str3.equals(str4));  //输出为 true</span><br></pre></td></tr></table></figure>
+<p>再看个例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String d =&quot;2&quot;; </span><br><span class="line">String e =&quot;23&quot;;</span><br><span class="line">e = e.substring(0, 1);</span><br><span class="line">System.out.println(e.equals(d)); //输出为 true </span><br><span class="line">System.out.println(e==d); //输出为 false</span><br></pre></td></tr></table></figure></p>
+<p>第二个例子中，e的初始值与d并不同，因此e与d是各自创建了个对象，（e==d）为false 。<br>同理可知，第一个例子中的str3与str4也是各自new了个对象，而str1与str2却是引用了同一个对象。<br><strong>补充</strong>：obj1==obj2 判断是obj1,obj2这两个引用变量是否相等，即它们所指向的对象是否为同一个对象。言外之意就是要求两个变量所指内存地址相等的时候，才能返回true，每个对象都有自己的一块内存，因此必须指向同一个对象才返回ture。</p>
+<hr>
+<ul>
+<li>2017.3.10记录<br><strong>Java跳出多重循环</strong><br>在Java中，如何跳出当前的多重嵌套循环？<br>答：在最外层循环前加一个标记如A，然后用break A;可以跳出多重循环。（Java中支持带标签的break和continue语句，作用有点类似于C和C++中的goto语句，但是就像要避免使用goto一样，应该避免使用带标签的break和continue，因为它不会让你的程序变得更优雅，很多时候甚至有相反的作用，所以这种语法其实不知道更好）</li>
+</ul>
+<hr>
+<ul>
+<li><p>2017.3.19记录<br><strong>类加载器工作机制</strong></p>
+<p> 1.装载：将Java二进制代码导入jvm中，生成Class文件。</p>
+<p> 2.连接：a）校验：检查载入Class文件数据的正确性 b）准备：给类的静态变量分配存储空间 c）解析：将符号引用转成直接引用</p>
+<p> 3：初始化：对类的静态变量，静态方法和静态代码块执行初始化工作。</p>
+<p> 双亲委派模型：类加载器收到类加载请求，首先将请求委派给父类加载器完成</p>
+<p> 用户自定义加载器-&gt;应用程序加载器-&gt;扩展类加载器-&gt;启动类加载器。</p>
+</li>
+</ul>
+<hr>
+<p>2017.4.20记录<br><strong>Android Studio 项目push到GitHub报错</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Can&apos;t finish GitHub sharing process</span><br><span class="line">		Successfully created project &apos;CareU&apos; on GitHub, but initial push failed:</span><br><span class="line">		unable to access &apos;https://github.com/cheetahlou/CareU.git/&apos;: error setting certificate verify locations:</span><br></pre></td></tr></table></figure></p>
+<p>找了很久没有发现原因，后来发现是CA证书的问题，电脑重装过一次Git没有重新安装过，CA证书没有导入，在Git安装目录中安装证书（有好几个，我装了其中的一两个，举例如下路径），然后再在Android Studiopush一次，会跳出windows证书提示你输入github的账户密码，success后就可以正常使用了。</p>
+<pre><code>&quot;G:\Android\Git\mingw64\ssl\certs\ca-bundle.crt&quot;
+</code></pre><hr>
+<ul>
+<li><p>2017.5.4一点记录<br> <strong>GroupId、ArtifactId</strong></p>
+<pre><code>Maven项目的GroupId相当于公司和部门名，ArtifactId相当于项目名
+</code></pre></li>
+</ul>
+<hr>
+<ul>
+<li>2017.6.17记录<br><strong>Socket连接建立流程</strong></li>
+</ul>
+<ol>
+<li>服务端实例化ServerSocket</li>
+<li>服务端执行accept()监听指定端口</li>
+<li>客户端实例化Socket尝试连接服务器（IP,port）</li>
+<li>TCP三次握手成功，服务端的accept()返回Socket实例，同时客户端的Socket实例创建成功。</li>
+</ol>
+<hr>
+<ul>
+<li>2017.6.20记录<br><strong>不同变量默认值</strong><br>· 对基本数据类型来说，对于类变量（static）和全局变量，如果不显式地对其赋值而直接使用，则系统会为其赋予默认的零值，而对于局部变量来说，在使用前必须显式地为其赋值，否则编译时不通过。<br>· 对于同时被static和final修饰的常量，必须在声明的时候就为其显式地赋值，否则编译时不通过；而只被final修饰的常量则既可以在声明时显式地为其赋值，也可以在类初始化时显式地为其赋值，总之，在使用前必须为其显式地赋值，系统不会为其赋予默认零值。<br>· 对于引用数据类型reference来说，如数组引用、对象引用等，如果没有对其进行显式地赋值而直接使用，系统都会为其赋予默认的零值，即null。<br>· 如果在数组初始化时没有对数组中的各元素赋值，那么其中的元素将根据对应的数据类型而被赋予默认的零值。</li>
+</ul>
+<hr>
+<ul>
+<li><p>2017.6.30记录<br><strong>Java取模运算</strong><br> Java中取模运算%的结果的正负符号和被除数一致。<br> 如：</p>
+<pre><code>17 % 10 = 7；
+-17 % 10 = -7；
+-17 % (-10) = -7；
+</code></pre></li>
+</ul>
+<hr>
+<ul>
+<li>2017.8.4记录<br><strong>count(1),count(*)和count(column)</strong><br><code>如果你的数据表没有主键，那么count(1)比count(<em>)快<br>如果有主键的话，那主键（联合主键）作为count的条件也比count(</em>)要快<br>如果你的表只有一个字段的话那count(<em>)就是最快的啦<br>count(</em>) count(1) 两者比较。主要还是要count(1)所相对应的数据字段。<br>如果count(1)是聚索引,id,那肯定是count(1)快。但是差的很小的。<br>因为count(<em>),自动会优化指定到那一个字段。所以没必要去count(1)，用count(</em>),sql会帮你完成优化的<br>因此：count(1)和count(<em>)基本没有差别！<br>count(</em>)和count(column)比较时，和选取的column有关，越靠后越慢，column有索引时，如果索引可以为null则count(column)较快，如果索引要求不为null则两者一样快。<pre><code>综合来看，大多数场景可以大胆地使用count(*)。
+&lt;code&gt;
+</code></pre></code></li>
+</ul>
+<hr>
+<ul>
+<li><p>2017.8.7记录<br>  Mybatis中如果使用<strong>ResultType</strong>而不是<strong>ResultMap</strong>的话,以实体类为接收对象举例，默认实体类中的属性名要和数据库中的字段名相同才能得到数据，也可以和别名相同。如属性名是userName，则select t.user_name as userName,也能接收成功。</p>
+<p>  SpringMVC中如果要接收多个参数可以用(HttpServletRequest request)获取，然后用request.getParameter(“参数名”)获取参数值。</p>
+<p>  <strong>@RestController注解</strong></p>
+<blockquote>
+<p>A convenience annotation that is itself annotated with @Controller and @ResponseBody. Types that carry this annotation are treated as controllers where @RequestMapping methods assume @ResponseBody semantics by default.<br>注解本身使用@Controller和@ResponseBody注解。使用了这个注解的类会被看作一个controller-使用@RequestMapping的方法有一个默认的@ResponseBody注解。<br>@ResponseBody – As of version 4.0 this annotation can also be added on the type level in which case is inherited and does not need to be added on the method level.<br>@ResponseBody也可以加到类一级，通过继承方法一级不需要添加。 </p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<ul>
+<li>2017.8.10记录<br><strong>sql中用union all或in代替or</strong></li>
+</ul>
+<p>应尽量避免在 where 子句中使用 or 来连接条件，否则将导致引擎放弃使用索引而进行<strong>全表扫描</strong>。而改用union之后，性能就大大提高了。<br>使用”union all”的性能比”union”更高一些。因为当SQL 语句需要UNION两个查询结果集合时，这两个结果集合会以UNION-ALL的方式被合并， 然后在输出最终结果前进行排序。 如果用UNION ALL替代UNION， 这样排序就不是必要了，效率就会因此得到提高。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select * from Member where MemberName = &apos;张三&apos; </span><br><span class="line">union all</span><br><span class="line">select * from Member where MemberName = &apos;李四&apos;</span><br><span class="line">或</span><br><span class="line">select * from Member where MemberName in (&apos;张三&apos;,&apos;李四&apos;)</span><br></pre></td></tr></table></figure>
+<p>来代替or<br><del>select * from Member where MemberName = ‘张三’ or MemberName = ‘李四’</del><br>相关链接：<a href="http://panyi5202.iteye.com/blog/612414" target="_blank" rel="noopener">避免全表扫描，提高sql查询效率</a></p>
+<ul>
+<li><strong>MySQl的全表扫描情况</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> 在以下几种条件下，MySQL就会做全表扫描： </span><br><span class="line">1)  数据表是在太小了，做一次全表扫描比做索引键的查找来得快多了。当表的记录总数小于10且记录长度比较短时通常这么做。 </span><br><span class="line">2)  没有合适用于 ON 或 WHERE 分句的索引字段。 </span><br><span class="line">3)  让索引字段和常量值比较，MySQL已经计算（基于索引树）到常量覆盖了数据表的很大部分，因此做全表扫描应该会来得更快。 </span><br><span class="line">4)  通过其他字段使用了一个基数很小（很多记录匹配索引键值）的索引键。这种情况下，MySQL认为使用索引键需要大量查找，还不如全表扫描来得更快。</span><br><span class="line"></span><br><span class="line"> 对于小表来说，全表扫描通常更合适。但是对大表来说，尝试使用以下技术来避免让优化程序错误地选择全表扫描： </span><br><span class="line"> 1)  执行 ANALYZE TABLE tbl_name 更新要扫描的表的索引键分布。 </span><br><span class="line"> 2)  使用 FORCE INDEX 告诉MySQL，做全表扫描的话会比利用给定的索引更浪费资源。 </span><br><span class="line"> SELECT * FROM t1, t2 FORCE INDEX (index_for_column) </span><br><span class="line"> WHERE t1.col_name=t2.col_name; </span><br><span class="line"> 3)  启动 mysqld 时使用参数 --max-seeks-for-key=1000 或者执行 SET max_seeks_for_key=1000 来告诉优化程序，所有的索引都不会导致超过1000次的索引搜索</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<ul>
+<li>2017.8.11记录<br><strong>ajax跨域处理</strong></li>
+</ul>
+<p>1.在response的头文件添加<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">httpServletResponse.setHeader(<span class="string">"Access-Control-Allow-Origin"</span>,<span class="string">"*"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>2.SpringMVC解决跨域问题的注解<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@CrossOrigin(&quot;http://test.com&quot;)</span><br><span class="line">@CrossOrigin(origins=&quot;http://test.com&quot;,maxAge=3600)</span><br></pre></td></tr></table></figure></p>
+<p> <strong>Ajax请求SpringMVC返回到浏览器中文乱码</strong><br> 原因：Spring在处理<code>@ResponseBody</code>这个annotation的时候，org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter使用了org.springframework.http.converter.StringHttpMessageConverter进行处理，而StringHttpMessageConverter默认了字符编码为<code>ISO-8859-1</code>（如下）：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Charset DEFAULT_CHARSET = Charset.forName(<span class="string">"ISO-8859-1"</span>);</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p>解决办法一<br>使用SpringMVC提供的在@RequestMapping中加入produces注解</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@RequestMapping(value = &quot;/xxx&quot;, method = RequestMethod.GET,produces = &quot;text/plain;charset=UTF-8&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解决办法二(自行验证)<br>链接：<br><a href="http://www.cnblogs.com/dyllove98/p/3180158.html" target="_blank" rel="noopener">解决Spring MVC @ResponseBody返回中文字符串乱码问题</a><br><a href="https://stackoverflow.com/questions/3616359/who-sets-response-content-type-in-spring-mvc-responsebody" target="_blank" rel="noopener">Who sets response content-type in Spring MVC (@ResponseBody)</a></p>
+</li>
+</ul>
+<hr>
+<hr>
+<ul>
+<li>2017.9.23记录 <strong>linux服务器能ping通ip不能ping通域名</strong><br>做的电商项目调用物流网站的API时服务器一直请求不到，而本地电脑可以，还以为时json解析的问题，排查了好久发现是服务器解析域名的问题<br>问题：<code>ping: unknown host www.kuaidi100.com</code><br>先查看<br><code># cat /etc/resolv.conf</code><br>修改DNS服务<br><code># vi /etc/resolv.conf</code><br>添加nameserver(公共DNS服务器)，如</li>
+</ul>
+<blockquote>
+<p>nameserver 8.8.8.8<br>nameserver 223.5.5.5</p>
+</blockquote>
+<hr>
+<ul>
+<li>2017.9.26记录 <strong>Java中Date加一天,和Calendar转化</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Calendar curCal= Calendar.getInstance();</span><br><span class="line">   curCal.setTime(<span class="keyword">new</span> Date());</span><br><span class="line">   curCal.add(Calendar.DATE,-<span class="number">1</span>);</span><br><span class="line">   Date newDate=curCal.getTime();</span><br></pre></td></tr></table></figure>
+<hr>
+<p>转自<a href="https://laod.cn/design/page/javascript-texiao.html" target="_blank" rel="noopener">老D博客</a>：<br>一、添加鼠标点击特效：<br>添加鼠标点击特效，(“富强”, “民主”, “文明”, “和谐”, “自由”, “平等”, “公正” ,”法治”, “爱国”, “敬业”, “诚信”, “友善”)等。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">/* 鼠标点击特效 */</span><br><span class="line">var a_idx = 0;</span><br><span class="line">jQuery(document).ready(function($) &#123;</span><br><span class="line">    $(&quot;body&quot;).click(function(e) &#123;</span><br><span class="line">var a = new Array(&quot;富强&quot;, &quot;民主&quot;, &quot;文明&quot;, &quot;和谐&quot;, &quot;自由&quot;, &quot;平等&quot;, &quot;公正&quot; ,&quot;法治&quot;, &quot;爱国&quot;, &quot;敬业&quot;, &quot;诚信&quot;, &quot;友善&quot;);</span><br><span class="line">var $i = $(&quot;&lt;span/&gt;&quot;).text(a[a_idx]);</span><br><span class="line">        a_idx = (a_idx + 1) % a.length;</span><br><span class="line">var x = e.pageX,</span><br><span class="line">        y = e.pageY;</span><br><span class="line">        $i.css(&#123;</span><br><span class="line">&quot;z-index&quot;: 999999999999999999999999999999999999999999999999999999999999999999999,</span><br><span class="line">&quot;top&quot;: y - 20,</span><br><span class="line">&quot;left&quot;: x,</span><br><span class="line">&quot;position&quot;: &quot;absolute&quot;,</span><br><span class="line">&quot;font-weight&quot;: &quot;bold&quot;,</span><br><span class="line">&quot;color&quot;: &quot;#ff6651&quot;</span><br><span class="line">        &#125;);</span><br><span class="line">        $(&quot;body&quot;).append($i);</span><br><span class="line">        $i.animate(&#123;</span><br><span class="line">&quot;top&quot;: y - 180,</span><br><span class="line">&quot;opacity&quot;: 0</span><br><span class="line">        &#125;,</span><br><span class="line">        1500,</span><br><span class="line">function() &#123;</span><br><span class="line">            $i.remove();</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<p>效果如图：<br><img src="http://img.blog.csdn.net/20171003111954981?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlZXRhaGxvdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="点击特效"><br>二、添加评论框输入特效：<br>添加以下代码到主题尾部调用即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;activate-power-mode.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">POWERMODE.colorful = true; // 控制开启/开启礼花特效  </span><br><span class="line">POWERMODE.shake = false; // 控制开启/关闭屏幕震动特效  </span><br><span class="line">document.body.addEventListener(&apos;input&apos;, POWERMODE);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<p>在输入框打字时跟随光标弹出烟花很是炫酷（还可以开启屏幕震动哦！）<br>true 为开启<br>false 为关闭<br>效果如图：<br><img src="http://img.blog.csdn.net/20171003112131947?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlZXRhaGxvdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="评论特效"></p>
+<hr>
+<hr>
+<ul>
+<li>2017.12.25 Redis 记录<br>Redis keys通配符<br>keys的模式支持下面通配符：<br>*通配符。该通配符表示所有的意思。如：keys <em> 匹配数据库中所有 key 。<br>?通配符。表示一个任意字符。如：keys h?llo 命令匹配 hello ， hallo 和 hxllo 等。
+</em>通配符。表示任何字符。如：keys h*llo 表示任何一h开头，llo结尾的key，如匹配 hllo 和 heeeeello 等。<br>[]通配符。这和正则表示中的[]类似，每次可以配其中任何一个字符。如：keys h[ae]llo 匹配 hello 和 hallo ，但不匹配 hillo，因为i不在[ae]中 。</li>
+</ul>
+<p>参考Blog：<a href="http://blog.csdn.net/LanSeTianKong12/article/details/50148937" target="_blank" rel="noopener">Redis操作总结</a></p>
+<hr>
+<ul>
+<li>2018.1.5 集合操作<code>java.lang.UnsupportedOperationException</code><br>对于Collections.EMPTY_LIST或Arrays.asList(3, 5)等构建的固定大小的集合不能对其使用add,remove,addAll等方法改变大小，因其没有重写addAll方法，也不需要重写这些不合理（因其大小固定）的方法。同理可以推断以后遇到该异常的时候可以查看其是否支持，尤其是重写该方法了。</li>
+</ul>
+<hr>
+<ul>
+<li>2018.1.24 <strong>分布式和集群</strong><br>分布式：一个业务分拆多个子业务，部署在不同的服务器上，集群：同一个业务，部署在多个服务器上<br>集群用在解决高可用、负载均衡等，如redis集群，分布式将核心业务抽取出来单独作为独立服务，一个系统由多个子业务组成，如Dubbo和Git</li>
+</ul>
+<hr>
+<ul>
+<li>2018.2.2  <strong>快递100免费物流查询自用方法(返回物流信息列表json)</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * 获取订单物流详情</span><br><span class="line"> *</span><br><span class="line"> * @return</span><br><span class="line"> */</span><br><span class="line">@RequestMapping(value = &quot;/consultLogstics&quot;, method = RequestMethod.GET)</span><br><span class="line">public JsonResp consultLogstics(Long orderId) &#123;</span><br><span class="line">    log.debug(&quot;获取订单物流详情&quot;);</span><br><span class="line">    if (null == orderId)</span><br><span class="line">        return JsonResp.toFail(&quot;订单id不能为空&quot;);</span><br><span class="line">    Orders orders = ordersService.selectById(orderId);</span><br><span class="line">    JSONObject jsonObject = new JSONObject();</span><br><span class="line">    if (orders.getIsLogistics() == 0)</span><br><span class="line">        return JsonResp.ok(jsonObject);</span><br><span class="line">    String type = orders.getLogiCom();</span><br><span class="line">    String postid = orders.getLogisticsNumber();</span><br><span class="line">   /* String type=&quot;shentong&quot;;</span><br><span class="line">    String postid=&quot;3333872084245&quot;;*/</span><br><span class="line">    String consultUrl = &quot;http://www.kuaidi100.com/query?type=&quot; + type + &quot;&amp;postid=&quot; + postid;</span><br><span class="line">    String result = HttpClientUtil.sendGetSSLRequest(consultUrl, &quot;UTF-8&quot;);</span><br><span class="line">    Object obj = JSON.parse(result); </span><br><span class="line">    return JsonResp.ok(obj);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<ul>
+<li>2018.2.27  <strong>网关Gateway相关摘录</strong><br>网关实质上是一个网络通向其他网络的IP地址。用于两个高层协议不同的网络互连，网关的IP地址是具有路由功能的设备的IP地址，具有路由功能的设备有路由器、启用了路由协议的服务器（实质上相当于一台路由器）、代理服务器（也相当于一台路由器）</li>
+</ul>
+<hr>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/Frequently-Used-Snippets/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="./images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/Frequently-Used-Snippets/" class="post-title-link" itemprop="url">Frequently-Used-Snippets</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:25" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li><strong>Windows Redis start/stop</strong><ol>
+<li>安装目录CMD<code>redis-server redis.windows.conf</code></li>
+<li>作为服务启动：<blockquote>
+<figure class="highlight plain"><figcaption><span>--service-start```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;```redis-server --service-stop</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ol>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/java-interview/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="./images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/java-interview/" class="post-title-link" itemprop="url">java-interview</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:16" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>﻿</p>
+<hr>
+<ol>
+<li>Java中线程的sleep()和wait()有什么区别</li>
+</ol>
+<ul>
+<li>1、这两个方法来自不同的类。分别是：sleep来自Thread类，而wait来自Object类。<br>sleep是Thread的静态类方法，谁调用的谁去睡觉，即使在a线程里调用了b的sleep方法，实际上还是a去睡觉，要让b线程睡觉要在b的代码中调用sleep。</li>
+</ul>
+<hr>
+<ul>
+<li>2、最主要是<strong>sleep方法没有释放锁</strong>，而wait方法释放了锁，使得其他线程可以使用同步控制块或者方法。<br> <strong>sleep不出让系统资源</strong>；wait是进入线程等待池等待，出让系统资源，其他线程可以占用CPU。一般wait不会加时间限制，因为如果wait线程的运行资源不够，再出来也没用，要<strong>等待其他线程调用notify</strong>/notifyAll唤醒等待池中的所有线程，才会进入就绪队列等待OS分配系统资源。sleep(milliseconds)可以用时间指定使它自动唤醒过来，如果时间不到只能调用interrupt()强行打断。<br>Thread.Sleep(0)的作用是“触发操作系统立刻重新进行一次CPU竞争”。</li>
+<li>3、使用范围：wait，notify和notifyAll只能在同步控制方法或者同步控制块里面使用，而sleep可以在任何地方使用<br>synchronized(x){<br>   x.notify()<br>  //或者wait()<br>}<ul>
+<li>4、sleep必须捕获异常，而wait，notify和notifyAll不需要捕获异常</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li><p>将一个字符串逆序，不要使用反转函数</p>
+<pre><code>String message = &quot;he saw a racecar&quot;;
+StringBuilder rev = new StringBuilder();
+for (int i = message.length() - 1; i &gt;= 0; i--) 
+    rev.append(message.charAt(i));
+System.out.println(rev.toString());
+</code></pre></li>
+</ol>
+<hr>
+<ol start="3">
+<li><p><strong>forward和redirect的区别</strong><br>forward方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">request.getRequestDispatcher(&quot;/somePage.jsp&quot;).forward(request, response);</span><br></pre></td></tr></table></figure>
+<p>redirect方式：</p>
+</li>
+</ol>
+<figure class="highlight plain"><figcaption><span>```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">　　forward是服务器内部重定向，程序收到请求后重新定向到另一个程序，客户机并不知道；redirect则是服务器收到请求后发送一个状态头给客户，客户将再请求一次，这里多了两次网络通信的来往。当然forward也有缺点，就是forward的页面的路径如果是相对路径就会有些问题了。forward会将request state ,bean等等信息带往下一个jsp。redirect是送到client端后再一次request,所以资料不被保留.使用forward你就可以用getAttribute()来取的前一个jsp所放入的bean等等资料。</span><br><span class="line"></span><br><span class="line">　　在网上看到一些帖子，总结了一些区别，可以从以下几个方面来看：</span><br><span class="line"></span><br><span class="line">   1、从地址栏显示来说</span><br><span class="line"></span><br><span class="line">　　forward是服务器请求资源,服务器直接访问目标地址的URL,把那个URL的响应内容读取过来,然后把这些内容再发给浏览器.浏览器根本不知道服务器发送的内容从哪里来的,所以它的地址栏还是原来的地址.</span><br><span class="line"></span><br><span class="line">　　redirect是服务端根据逻辑,发送一个状态码,告诉浏览器重新去请求那个地址.所以地址栏显示的是新的URL.所以redirect等于客户端向服务器端发出两次request，同时也接受两次response。</span><br><span class="line"></span><br><span class="line">   2、从数据共享来说</span><br><span class="line"></span><br><span class="line">　　forward:转发页面和转发到的页面可以共享request里面的数据.</span><br><span class="line">　　redirect:不能共享数据.</span><br><span class="line"></span><br><span class="line">　　redirect不仅可以重定向到当前应用程序的其他资源,还可以重定向到同一个站点上的其他应用程序中的资源,甚至是使用绝对URL重定向到其他站点的资源.forward,方法只能在同一个Web应用程序内的资源之间转发请求.forward 是服务器内部的一种操作.redirect 是服务器通知客户端,让客户端重新发起请求.所以,你可以说 redirect是一种间接的请求, 但是你不能说&quot;一个请求是属于forward还是redirect &quot;</span><br><span class="line">   3、从运用地方来说</span><br><span class="line"></span><br><span class="line">　　forward:一般用于用户登陆的时候,根据角色转发到相应的模块.</span><br><span class="line"></span><br><span class="line">　　redirect:一般用于用户注销登陆时返回主页面和跳转到其它的网站等.</span><br><span class="line"></span><br><span class="line">   4、从效率来说</span><br><span class="line">　　forward:高.</span><br><span class="line">　　redirect:低.</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line"> 4. **Java自动类型转换**</span><br><span class="line">	自动类型转换遵循下面的规则：</span><br><span class="line"></span><br><span class="line">		1.若参与运算的数据类型不同，则先转换成同一类型，然后进行运算。</span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">		3.所有的浮点运算都是以双精度进行的，即使仅含float单精度量运算的表达式，也要先转换成double型，再作运算。</span><br><span class="line">		</span><br><span class="line">		4.char型和short型参与运算时，必须先转换成int型。</span><br><span class="line">		</span><br><span class="line">		5.在赋值运算中，赋值号两边的数据类型不同时，需要把右边表达式的类型将转换为左边变量的类型。如果右边表达式的数据类型长度比左边长时，将丢失一部分数据，这样会降低精度。</span><br><span class="line">		下图表示了类型自动转换的规则： </span><br><span class="line">![自动类型转换](http://uploadfiles.nowcoder.com/images/20150917/415611_1442458661106_F4A62FDD254F710F39378C754ED65E61) </span><br><span class="line">***</span><br><span class="line"> 2. **声明二维数组的几种写法**</span><br></pre></td></tr></table></figure>
+<pre><code>int a[][];//二维数组其实就是数组成员是一维数组的一维数组
+int []b[];//这5个都可以看成艺术组为元素的数组
+int[] c[];
+int [][]d;
+int[] []e;
+</code></pre><p><code>`</code></p>
+<hr>
+<ul>
+<li><p><strong>什么是 AOP?</strong></p>
+<p> 面向方面的编程 <code>(Aspect-oriented programming)</code>,<br>它可以运行期动态代理实现在不修改源代码的情况下给程序动态统一添加功能的一种技术. 比如检测某个模块的运行时间. 加入额外的功能 (introduce)<br>下面是专业的所法 :<br>利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率<br>主要的功能是：<strong>日志记录，性能统计，安全控制，事务处理，异常处理</strong>等等。</p>
+</li>
+</ul>
+<hr>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/mysql5.7-installation-CentOS7/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="./images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/mysql5.7-installation-CentOS7/" class="post-title-link" itemprop="url">mysql5.7-installation-CentOS7</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:03" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="核心思想——东拼西凑"><a href="#核心思想——东拼西凑" class="headerlink" title="核心思想——东拼西凑"></a>核心思想——东拼西凑</h3><ul>
+<li>卸载<blockquote>
+<ul>
+<li>查看已安装server<br>rpm -qa | grep -i mysql  </li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>mysql-community-common-5.7.20-1.el7.x86_64<br>mysql57-community-release-el7-8.noarch<br>mysql-community-libs-5.7.20-1.el7.x86_64<br>mysql-community-server-5.7.20-1.el7.x86_64<br>mysql-community-client-5.7.20-1.el7.x86_64</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>yum卸载<blockquote>
+<blockquote>
+<p>yum remove mysql-community-common-5.7.20-1.el7.x86_64 mysql-community-server-5.7.20-1.el7.x86_64 …（空格隔开） </p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<p>安装参考：</p>
+<blockquote>
+<p><a href="http://www.jianshu.com/p/e54ff5283f18" target="_blank" rel="noopener">（笔记）CentOS 7 安装与卸载MySQL 5.7跳坑</a><br><a href="http://blog.csdn.net/cmzsteven/article/details/78515756" target="_blank" rel="noopener">CentOS 7.4使用Yum源安装MySQL 5.7.20</a></p>
+</blockquote>
+<p>步骤：</p>
+<blockquote>
+<ol>
+<li>首先进入本机的源文件目录<br>cd /usr/local/src</li>
+<li>使用wget下载官方yum源的rpm包：</li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>安装rpm包：<br><code>rpm -ivh mysql57-community-release-el7-11.noarch.rpm</code></li>
+<li>再次使用yum来安装mysql-server:<br>yum install -y mysql-server</li>
+<li>安装完成后，启动mysqld服务：<br><code>systemctl start mysqld</code><br>查看是否成功启动：<br><code>ps aux|grep mysqld</code></li>
+<li>设置mysqld服务开机自启动：<br><code>systemctl enable mysqld</code></li>
+<li>使用初始密码登录<br>由于MySQL从5.7开始不允许首次安装后，使用空密码进行登录，系统会随机生成一个密码以供管理员首次登录使用，这个密码记录在/var/log/mysqld.log文件中，使用下面的命令可以查看此密码：<br><code>cat /var/log/mysqld.log|grep &#39;A temporary password&#39;</code><blockquote>
+<blockquote>
+<p>2017-11-12T13:35:37.013617Z 1 [Note] A temporary password is generated for root@localhost: bkv,dy,)o7Ss</p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<p>最后一行冒号后面的部分bkv,dy,)o7Ss就是初始密码。<br>使用此密码登录MySQL:<br><code>mysql -u root -p</code></p>
+<ol start="8">
+<li><p>更改默认密码：<br>切换数据库：<br><code>use mysql;</code><br>修改root密码：<br><code>alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;your_password&#39;;</code><br>密码要求包含大小写字母、数字及标点符号，长度应该在6位以上。<br>重新使用新的密码登录，如果可以正常登录说明你的MySQL已经成功安装在CentOS 7.4上了</p>
+<ul>
+<li>授权远程登录</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>mysql -uroot -pxxxxx<br>//切换至mysql的数据库<br>use mysql;<br>select user,host from user;<br>+———–+———–+<br>| user | host |<br>+———–+———–+<br>| mysql.sys | localhost |<br>| root | localhost |<br>| user1 | localhost |<br>+———–+———–+<br>3 rows in set (0.00 sec)<br>//我们能看到root 用户 后面跟的是localhost 如果需要指定具体的ip，那么就修改为具体的ip，如果需要开通所有就修改为%<br>update user set host = ‘%’ where user = ‘root’;<br>//修改完成退出mysql<br>+———–+———–+<br>| user | host |<br>+———–+———–+<br>| root | % |<br>| mysql.sys | localhost |<br>| user1 | localhost |<br>+———–+———–+<br>3 rows in set (0.00 sec)</p>
+</blockquote>
+<ul>
+<li><ul>
+<li>设置root用户远程登录：</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$mysql -u root -p</span><br><span class="line">mysql&gt;use mysql;</span><br><span class="line">mysql&gt;update user set host=&apos;%&apos; where user=&apos;root&apos;;//设置可以远程访问</span><br><span class="line">mysql&gt;grant all privileges on *.* to &apos;root&apos;@&apos;%&apos; with grant option;</span><br><span class="line">mysql&gt;flush privileges;    //设置远程访问权限</span><br></pre></td></tr></table></figure>
+<ul>
+<li><ul>
+<li><ul>
+<li>或 添加一个远程登录用户：<blockquote>
+<p>mysql&gt; GRANT ALL PRIVILEGES ON <em>.</em> TO ‘admin‘@’%’ IDENTIFIED BY ‘secret’ WITH GRANT OPTION;</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><ul>
+<li>修改或添加/etc/my.cnf目录下的my.cnf文件里面<br>bind-address = 0.0.0.0</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>防火墙开放3306端口</p>
+<blockquote>
+<p>1.阿里云服务器安全组策略中入方向打开3306端口</p>
+<p>2.其他（未验证）：</p>
+<blockquote>
+<p>1、打开防火墙配置文件<br>vi  /etc/sysconfig/iptables<br>2、增加下面一行<br>-A INPUT -m state –state NEW -m tcp -p tcp –dport 3306 -j ACCEPT<br>3、重启防火墙<br>service  iptables restart<br>注意：增加的开放3306端口的语句一定要在icmp-host-prohibited之前</p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>配置默认编码为 utf8</p>
+</li>
+</ul>
+<p>MySQL 默认为 latin1, 一般修改为 UTF-8</p>
+<blockquote>
+<p>$ vi /etc/my.cnf<br>[mysqld]</p>
+</blockquote>
+<p> #在myslqd下添加如下键值对<br>character_set_server=utf8<br>init_connect=’SET NAMES utf8’<br>修改前：</p>
+<blockquote>
+<blockquote>
+<p>mysql&gt; SHOW VARIABLES LIKE ‘character%’;<br>+————————–+—————————-+<br>| Variable_name            | Value                      |<br>+————————–+—————————-+<br>| character_set_client     | utf8                       |<br>| character_set_connection | utf8                       |<br>| character_set_database   | latin1                     |<br>| character_set_filesystem | binary                     |<br>| character_set_results    | utf8                       |<br>| character_set_server     | latin1                     |<br>| character_set_system     | utf8                       |<br>| character_sets_dir       | /usr/share/mysql/charsets/ |<br>+————————–+—————————-+<br>8 rows in set (0.00 sec)</p>
+</blockquote>
+</blockquote>
+<p>修改后：</p>
+<blockquote>
+<blockquote>
+<p>mysql&gt; SHOW VARIABLES LIKE ‘character%’;<br>+————————–+—————————-+<br>| Variable_name            | Value                      |<br>+————————–+—————————-+<br>| character_set_client     | utf8                       |<br>| character_set_connection | utf8                       |<br>| character_set_database   | utf8                       |<br>| character_set_filesystem | binary                     |<br>| character_set_results    | utf8                       |<br>| character_set_server     | utf8                       |<br>| character_set_system     | utf8                       |<br>| character_sets_dir       | /usr/share/mysql/charsets/ |<br>+————————–+—————————-+<br>8 rows in set (0.00 sec)</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>重启mysql服务使配置生效：<br><code>systemctl restart mysqld</code></p>
+</blockquote>
+<ul>
+<li>默认配置文件：<blockquote>
+<p><strong>默认配置文件路径：  </strong><br>配置文件：/etc/my.cnf<br>日志文件：/var/log/mysqld.log<br>服务启动脚本：/usr/lib/systemd/system/mysqld.service<br>socket文件：/var/run/mysqld/mysqld.pid</p>
+</blockquote>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="./page/2/">2</a><a class="extend next" rel="next" href="./page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Cheelou</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="./archives/">
+                
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Cheelou</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v6.7.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="./lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="./lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="./lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="./js/src/utils.js?v=6.7.0"></script>
+
+  <script src="./js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="./js/src/schemes/muse.js?v=6.7.0"></script>
+
+
+
+
+  
+
+  
+
+
+  <script src="./js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="./css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/cheetah_icon.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="./images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: './',
+    scheme: 'Mist',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="###开源框架推荐 ####网络  okhttp android-async-http  ####事件总线  otto EventBus  ####依赖注入  Dagger RoboGuice ButterKnife  ####图片  Fresco Glide picasso  ####数据库  greenDao ormlite LitePal  ####响应式编程  RxJava RxAndro">
+<meta property="og:type" content="article">
+<meta property="og:title" content="开源框架推荐">
+<meta property="og:url" content="http://yoursite.com/2019/02/01/Android-opensource-framework-20160806/index.html">
+<meta property="og:site_name" content="Chee Daily">
+<meta property="og:description" content="###开源框架推荐 ####网络  okhttp android-async-http  ####事件总线  otto EventBus  ####依赖注入  Dagger RoboGuice ButterKnife  ####图片  Fresco Glide picasso  ####数据库  greenDao ormlite LitePal  ####响应式编程  RxJava RxAndro">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-02-01T15:53:47.028Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="开源框架推荐">
+<meta name="twitter:description" content="###开源框架推荐 ####网络  okhttp android-async-http  ####事件总线  otto EventBus  ####依赖注入  Dagger RoboGuice ButterKnife  ####图片  Fresco Glide picasso  ####数据库  greenDao ormlite LitePal  ####响应式编程  RxJava RxAndro">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/02/01/Android-opensource-framework-20160806/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>开源框架推荐 | Chee Daily</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="./" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Chee Daily</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">你好world</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-schedule">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/Android-opensource-framework-20160806/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="./images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">开源框架推荐
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:47" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>###开源框架推荐</p>
+<p>####网络</p>
+<ul>
+<li><a href="squarehttp · GitHub">okhttp</a></li>
+<li><a href="loopj/android-async-http · GitHub">android-async-http</a></li>
+</ul>
+<p>####事件总线</p>
+<ul>
+<li><a href="square/otto · GitHub">otto</a></li>
+<li><a href="greenrobot/EventBus · GitHub">EventBus</a></li>
+</ul>
+<p>####依赖注入</p>
+<ul>
+<li><a href="square/dagger · GitHub">Dagger</a></li>
+<li><a href="roboguice/roboguice · GitHub">RoboGuice</a></li>
+<li><a href="JakeWhartontterknife · GitHub">ButterKnife</a></li>
+</ul>
+<p>####图片</p>
+<ul>
+<li><a href="facebook/fresco · GitHub">Fresco</a></li>
+<li><a href="bumptech/glide · GitHub">Glide</a></li>
+<li><a href="square/picasso · GitHub">picasso</a></li>
+</ul>
+<p>####数据库</p>
+<ul>
+<li><a href="greenrobot/greenDAO · GitHub">greenDao</a></li>
+<li><a href="j256/ormlite-android · GitHub">ormlite</a></li>
+<li><a href="LitePalFramework/LitePal · GitHub">LitePal</a></li>
+</ul>
+<p>####响应式编程</p>
+<ul>
+<li><a href="ReactiveX/RxJava · GitHub">RxJava</a></li>
+<li><a href="ReactiveX/RxAndroid: RxJava bindings for An...">RxAndroid</a></li>
+</ul>
+<p>####日志输出</p>
+<ul>
+<li><a href="orhanobut/logger: Simple, pretty and powerf...">logger</a></li>
+<li><a href="liaohuqiu/android-CLog">android-CLog</a></li>
+<li><a href="ZhaoKaiQiang/KLog · GitHub">KLog</a></li>
+<li><a href="pengwei1024/LogUtils · GitHub">LogUtils</a></li>
+</ul>
+<p>####崩溃统计平台</p>
+<ul>
+<li><a href="腾讯Bugly - Android Crash(崩溃">腾讯bugly</a>_iOS Crash(崩溃)<em>ANR</em>卡顿)</li>
+<li><a href="Crittercism - Developer Home">Crittercism</a> </li>
+<li><a href="The most powerful, yet lightest weight crash reporting solution for iOS and Android developers.">Crashlytics</a></li>
+</ul>
+<p>###架构设计<br>这个肯定得了解下MVC，MVP，MVVM还有设计模式这些，这里有几个开源项目推荐下</p>
+<p>#####philm<br>Movie collection and information app for Android.<br>Github地址：chrisbanes/philm: Movie collection and info…</p>
+<p>#####SimpleNews<br>基于Material Design和MVP的新闻客户端<br>Github地址：GitHub - liuling07/SimpleNews: 基于Material Design和MVP的新闻客户端</p>
+<p>#####GankDaily<br>A application show technical information every working days, use MVP pattern.<br>Github地址：maoruibin/GankDaily</p>
+<p>#####SimplifyReader<br>Github地址：GitHub - SkillCollege/SimplifyReader: 一款基于Google Material Design设计开发的Android客户端，包括新闻简读，图片浏览，视频爽看 ，音乐轻听以及二维码扫描五个子模块。项目采取的是MVP架构开发，由于还是摸索阶段，可能不是很规范。但基本上应该是这么个套路，至少我个人认为是这样的~恩，就是这样的！</p>
+<p>#####NBAPlus<br>Github地址：SilenceDut/NBAPlus · GitHub</p>
+<p>#####PhotoNoter<br>Github地址：yydcdut/PhotoNoter</p>
+<p>#####Meizhi<br>Github地址：drakeet/Meizhi: gank.io unofficial client, RxJava &amp; Retrofit</p>
+<p>###其他</p>
+<p>#####leakcanary<br>检查内存泄露<br>Github地址：GitHub - square/leakcanary: A memory leak detection library for Android and Java.</p>
+<p>#####DebugDrawer<br>Android Debug Drawer for faster development<br>Github地址：palaima/DebugDrawer · GitHub</p>
+<p>#####ViewServer<br>Local server for Android’s HierarchyViewer<br>Github地址：romainguy/ViewServer · GitHub</p>
+<p>#####AndroidWiFiADB<br>IntelliJ/AndroidStudio plugin which provides a button to connect your Android device over WiFi to install, run and debug your applications without a USB connected.<br>Github地址：<a href="https://github.com/pedrovgs/AndroidWiFiADB" target="_blank" rel="noopener">https://github.com/pedrovgs/AndroidWiFiADB</a></p>
+<p>####PS：开源框架虽然好用，但最好要了解框架存在的一些bug和坑，遇到问题可以给作者提issue，一般这些有名的框架，作者都会很积极的回答。推荐下自己的<a href="GitHub - ruijun/Android-Dev-Favorites: The repository is Android development favorites, It used to collect the knowledge of Android Development.">Android-Dev-Favorites</a>，里面收集了Android开发的干货，希望能帮到题主。编辑于 2016-01-15作者保留权利</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="./2019/02/01/coder-inspiration/" rel="next" title="程序员随想">
+                <i class="fa fa-chevron-left"></i> 程序员随想
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Cheelou</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="./archives/">
+                
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Cheelou</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v6.7.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="./lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="./lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="./lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="./js/src/utils.js?v=6.7.0"></script>
+
+  <script src="./js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="./js/src/schemes/muse.js?v=6.7.0"></script>
+
+
+
+
+  
+  <script src="./js/src/scrollspy.js?v=6.7.0"></script>
+<script src="./js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="./js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

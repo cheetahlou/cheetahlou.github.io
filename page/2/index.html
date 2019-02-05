@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="./css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/cheetah_icon.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="./images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: './',
+    scheme: 'Mist',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Chee Daily">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="Chee Daily">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chee Daily">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/2/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Chee Daily</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="./" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Chee Daily</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">你好world</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br/>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br/>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br/>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-schedule">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="./schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br/>日程表</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/CentOS7-nginx-multi-tomcat/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="./images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/CentOS7-nginx-multi-tomcat/" class="post-title-link" itemprop="url">CentOS7-nginx-multi-tomcat</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:39" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>﻿&gt;<em>注：本文 nginx版本：1.12.2      Tomcat版本: 9.0.2</em></p>
+<p>###*yum安装</p>
+<blockquote>
+<p><code>[root@izbp1di2a9vvogy93gw0onz local]# rpm -ivh https://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm</code><br><code>[root@izbp1di2a9vvogy93gw0onz local]# yum install nginx</code></p>
+</blockquote>
+<p>###*启动</p>
+<blockquote>
+<p><code>[root@izbp1di2a9vvogy93gw0onz local]# systemctl start nginx.service</code><br><strong>启动报错：</strong></p>
+<blockquote>
+<font color="red">Job for nginx.service failed because the control process exited with error code. See “systemctl status nginx.service” and “journalctl -xe” for details.</font>
+
+</blockquote>
+<p>● nginx.service - nginx - high performance web server<br>   Loaded: loaded (/usr/lib/systemd/system/nginx.service; disabled; vendor preset: disabled)<br>   <strong>查看状态</strong><br><code>[root@izbp1di2a9vvogy93gw0onz local]# systemctl status nginx.service</code></p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p> Active: <font color="red">failed </font>(Result: exit-code) since Tue 2017-12-19 10:58:55 CST; 10s ago<br>     Docs: <a href="http://nginx.org/en/docs/" target="_blank" rel="noopener">http://nginx.org/en/docs/</a><br>  Process: 26726 ExecStart=/usr/sbin/nginx -c /etc/nginx/nginx.conf (code=exited, status=1/FAILURE)<br>  Process: 26722 ExecStartPre=/usr/sbin/nginx -t -c /etc/nginx/nginx.conf (code=exited, status=0/SUCCESS)</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>Dec 19 10:58:52 izbp1di2a9vvogy93gw0onz nginx[26726]: nginx: [emerg] <strong>bind() to 0.0.0.0:80 failed</strong> (98: Address already in use)<br>……<br>Dec 19 10:58:55 izbp1di2a9vvogy93gw0onz systemd[1]: nginx.service: control process exited, code=exited status=1<br>Dec 19 10:58:55 izbp1di2a9vvogy93gw0onz systemd[1]: <font color="red">Failed to start nginx - high performance web server.</font><br>Dec 19 10:58:55 izbp1di2a9vvogy93gw0onz systemd[1]: Unit nginx.service entered failed state.<br>Dec 19 10:58:55 izbp1di2a9vvogy93gw0onz systemd[1]: nginx.service failed.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>可以看到是bind to 0.0.0.0:80 fail——绑定80端口失败，<br><strong>查看nginx错误日志（可能要先改log文件权限）</strong><br><code>[root@izbp1di2a9vvogy93gw0onz local]# /var/log/nginx/error.log</code></p>
+<blockquote>
+<p>/var/log/nginx/error.log: line 1: syntax error near unexpected token <code>(&#39;
+/var/log/nginx/error.log: line 1:</code>2017/12/19 10:54:17 [emerg] 26705#26705: &gt;&gt;<font color="red">bind() to 0.0.0.0:80 failed (98: Address already in use)’</font></p>
+</blockquote>
+<p>80端口早已被使用，将占用80端口的Tomcat关闭后启动成功<br>[root@izbp1di2a9vvogy93gw0onz local]# systemctl start nginx.service</p>
+</blockquote>
+<blockquote>
+<p>可用<code>[root@izbp1di2a9vvogy93gw0onz local]# rpm -ql nginx | grep nginx</code>查看安装软件(nginx)的位置信息<br><img src="http://img.blog.csdn.net/20171219114713769?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlZXRhaGxvdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="nginx安装位置查看"></p>
+</blockquote>
+<table><br><thead><br><tr><br><th>路径</th><br><th>说明</th><br></tr><br></thead><br><tbody><br><tr><br><td>/etc</td><br><td>一些设置文件放置的目录如/etc/crontab</td><br></tr><br><tr><br><td>/usr/bin</td><br><td>一些可执行文件</td><br></tr><br><tr><br><td>/usr/lib</td><br><td>一些程序使用的动态函数库</td><br></tr><br><tr><br><td>/usr/share/doc</td><br><td>一些基本的软件使用手册与帮助文档</td><br></tr><br><tr><br><td>/usr/share/man</td><br><td>一些man page文件</td><br></tr><br></tbody><br></table>
+
+<ol>
+<li>/etc/nginx: 默认安装位置；</li>
+<li>/etc/nginx/conf.d/default.conf： 默认配置信息</li>
+<li>/etc/nginx/nginx.conf：Nginx 主配置文件</li>
+<li>/usr/share/nginx/html/：Nginx 的默认站点根目录</li>
+<li>/etc/nginx/conf.d/default.conf：默认站点配置</li>
+<li>/var/log/nginx/error.log：错误日志</li>
+</ol>
+<p>相关补充：</p>
+<blockquote>
+<p>启动 Nginx<br><code>systemctl start nginx.service</code><br> 停止 Nginx<br><code>systemctl stop nginx.service</code><br> 重启 Nginx<br><code>systemctl restart nginx.service</code><br> 查看 Nginx 状态<br><code>systemctl status nginx.service</code></p>
+</blockquote>
+<p>###*修改Nginx默认配置，转发(映射)请求到不同应用<br>在Nginx默认配置文件，我的是/etc/nginx/conf.d/default.conf，将不同域名的不同端口配置添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line"></span><br><span class="line">    listen       80;</span><br><span class="line">    server_name  wx.xxx.name;</span><br><span class="line">     location / &#123;</span><br><span class="line">       proxy_pass   http://wx.xxx.name:8080;#对应下面的tomcat中server.xml的端口</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line"></span><br><span class="line">    listen       80;</span><br><span class="line">    server_name  byxt.xxx.name;</span><br><span class="line">     location / &#123;</span><br><span class="line">       proxy_set_header Host  $host; #设置请求头，并将请求头信息传到服务器，访问服务器文件时不用带上端口号了</span><br><span class="line">       proxy_set_header X-Forwarded-For  $remote_addr;</span><br><span class="line">       proxy_pass   http://byxt.xxx.name:8081;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>如果是统一域名下请求路径不同，则只需要配置一个server，修改location和proxy_pass的配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">	…</span><br><span class="line">	…</span><br><span class="line">    #加下面的配置  </span><br><span class="line">    location /路径名1/&#123;  </span><br><span class="line">        proxy_pass http://xxx.xxx.xxx:8080/路径名1;  #主要是这里，这是tomcat1的端口和项目 </span><br><span class="line">        </span><br><span class="line">    location /路径名2/&#123;  </span><br><span class="line">        proxy_pass http://xxx.xxx.xxx:8081/路径名2;  #主要是这里，这是tomcat2的端口和项目  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>重启nginx服务。</p>
+<p>###*Tomcat相关配置<br>先准备两个tomcat，不赘述，之后称tomcat1,tomcat2。</p>
+<ol>
+<li>先修改<code>vi /etc/profile</code> (<em>末尾or wherever</em>)添加<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">#第一个Tomcat</span><br><span class="line">CATALINA_BASE=/usr/local/wechat/apache-tomcat-9.0.0.M18</span><br><span class="line">CATALINA_HOME=/usr/local/wechat/apache-tomcat-9.0.0.M18</span><br><span class="line">export CATALINA_BASE CATALINA_HOME</span><br><span class="line">#第二个Tomcat</span><br><span class="line">CATALINA_2_BASE=/usr/local/tomcat</span><br><span class="line">CATALINA_2_HOME=/usr/local/tomcat</span><br><span class="line">export CATALINA_2_BASE CATALINA_2_HOME</span><br><span class="line">#第一个Tomcat路径</span><br><span class="line">TOMCAT_HOME=/usr/local/wechat/apache-tomcat-9.0.0.M18</span><br><span class="line">export TOMCAT_HOME</span><br><span class="line">#第二个Tomcat路径</span><br><span class="line">TOMCAT_2_HOME=/usr/local/tomcat</span><br><span class="line">export TOMCAT_2_HOME</span><br><span class="line"></span><br><span class="line">之后重新执行刚修改的profile使之生效</span><br><span class="line">[root@izbp1di2a]# source /etc/profile</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>这是tomcat启动时catalina.sh中读取实例的路径。</p>
+<blockquote>
+<p>细分的说CATALINA_HOME 指Tomcat安装路径，CATALINA_BASE 指实例所在位置,CATALINA_HOME 路径下只需要包含 bin 和 lib 目录，而 CATALINA_BASE 只存放 conf、webapps、logs 等这些文件。</p>
+</blockquote>
+<p>随后修改tomcat2的catalina.sh，在<br><code># OS specific support.  $var _must_ be set to either true or false.</code><br>下面增加如下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export CATALINA_BASE=$CATALINA_2_BASE</span><br><span class="line">export CATALINA_HOME=$CATALINA_2_HOME</span><br></pre></td></tr></table></figure></p>
+<p>不修改的话执行tomcat2的start.sh、shutdown.sh等脚本还是会执行默认的tomcat1的脚本。</p>
+<ol start="2">
+<li>修改两个tomcat下的server.xml将http和stop的端口号改为不同，其中的两个http协议端口与nginx默认配置中的xxx.xxx.xxx:8080、xxx.xxx.xxx:8081等对应</li>
+<li>如果不成功，检查firewall或者iptables有没有开放对应端口，我就是iptables中没有配置要转发到的8081端口：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">[root@izbp1di2a9vvogy93gw0onz apache-tomcat-9.0.0.M18]# tail -f /etc/sysconfig/iptables</span><br><span class="line">-A INPUT -p icmp -j ACCEPT</span><br><span class="line">-A INPUT -i lo -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -j ACCEPT</span><br><span class="line">-A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT </span><br><span class="line">-A INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT</span><br><span class="line">-A INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j ACCEPT  </span><br><span class="line">-A INPUT -j REJECT --reject-with icmp-host-prohibited</span><br><span class="line">-A FORWARD -j REJECT --reject-with icmp-host-prohibited</span><br><span class="line">COMMIT</span><br><span class="line"># Completed on Sun Nov 26 00:26:06 2017</span><br><span class="line">^[[A^C</span><br><span class="line">[root@izbp1di2a9vvogy93gw0onz apache-tomcat-9.0.0.M18]# vim /etc/sysconfig/iptables</span><br><span class="line">[root@izbp1di2a9vvogy93gw0onz apache-tomcat-9.0.0.M18]# systemctl restart iptables.service</span><br><span class="line">[root@izbp1di2a9vvogy93gw0onz apache-tomcat-9.0.0.M18]# iptables -L -n</span><br><span class="line">Chain INPUT (policy ACCEPT)</span><br><span class="line">target     prot opt source               destination         </span><br><span class="line">ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED</span><br><span class="line">ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           </span><br><span class="line">ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           </span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:22</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:80</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:8080</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:8081</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:3306</span><br><span class="line">REJECT     all  --  0.0.0.0/0            0.0.0.0/0            reject-with icmp-host-prohibited</span><br><span class="line"></span><br><span class="line">Chain FORWARD (policy ACCEPT)</span><br><span class="line">target     prot opt source               destination         </span><br><span class="line">REJECT     all  --  0.0.0.0/0            0.0.0.0/0            reject-with icmp-host-prohibited</span><br><span class="line"></span><br><span class="line">Chain OUTPUT (policy ACCEPT)</span><br><span class="line">target     prot opt source               destination</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/JavaScript_wayon/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="./images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/JavaScript_wayon/" class="post-title-link" itemprop="url">JavaScript_wayon</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:13" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>﻿</p>
+<hr>
+<ul>
+<li>2017.10.26     <strong>属性名和属性值获取</strong></li>
+</ul>
+<p>&emsp;&emsp;获取js对象的所有属性的<font color="#FF5D5A">属性名数组</font>,如获取obj的属性名数组：</p>
+<p><code>var propArr = Object.getOwnPropertyNames(obj).sort();</code></p>
+<p>&emsp;&emsp;另一种获取属性名：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(attribute <span class="keyword">in</span> obj)&#123; </span><br><span class="line">    alert(attribute); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;获取属性名对应属性值：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(attribute <span class="keyword">in</span> obj)&#123; </span><br><span class="line">    alert(obj[attribute]); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<hr>
+<ul>
+<li><p>2017.11.21  <strong>Snippets</strong></p>
+<ul>
+<li>小数保留*位小数，整数保持整数<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//如果原来是整数等就取原来的整数，原始值为小数保留两位小数</span><br><span class="line">if (value.toString().split(&quot;.&quot;).length &gt; 1) &#123;</span><br><span class="line">    value= value.toFixed(2)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>时间戳格式化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//将时间戳格式化为yyyy-MM-dd hh:mm:ss形式</span><br><span class="line">function formatDate(timestamp) &#123;</span><br><span class="line">    var date = new Date(timestamp);</span><br><span class="line">    Y = date.getFullYear() + &apos;-&apos;;</span><br><span class="line">    M = (date.getMonth() + 1 &lt; 10 ? &apos;0&apos; + (date.getMonth() + 1) : date.getMonth() + 1) + &apos;-&apos;;</span><br><span class="line">    D = date.getDate() + &apos; &apos;;</span><br><span class="line">    h = date.getHours() + &apos;:&apos;;</span><br><span class="line">    // m = (date.getMinutes()&lt;10?&apos;0&apos;+date.getMinutes():date.getMinutes()) + &apos;:&apos;;</span><br><span class="line">    m = (date.getMinutes() &lt; 10 ? &apos;0&apos; + date.getMinutes() : date.getMinutes());</span><br><span class="line">    s = (date.getSeconds() &lt; 10 ? &apos;0&apos; + date.getSeconds() : date.getSeconds());</span><br><span class="line">    // var result = Y + M + D + h + m + s;</span><br><span class="line">    var result = Y + M + D + h + m;</span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>generate sku table</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> result = [];<span class="comment">//组合成产品规格集</span></span><br><span class="line"><span class="comment">/* specResultList </span></span><br><span class="line"><span class="comment">0:&#123;id: 36, attrName: "容量", alias: null, classifyId: 11, propValues: Array(6), …&#125;</span></span><br><span class="line"><span class="comment">1:&#123;id: 43, attrName: "颜色", alias: null, classifyId: 11, propValues: Array(7), …&#125;</span></span><br><span class="line"><span class="comment">2:&#123;id: 69, attrName: "尺寸", alias: null, classifyId: 11, propValues: Array(12), …&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">propValues</span></span><br><span class="line"><span class="comment">0:&#123;id: 117, propValue: "锥形1500", propName: null, propNameId: 36, gmtDatetime: null, …&#125;</span></span><br><span class="line"><span class="comment">1:&#123;id: 118, propValue: "锥形1800", propName: null, propNameId: 36, gmtDatetime: null, …&#125;</span></span><br><span class="line"><span class="comment">2:&#123;id: 119, propValue: "锥形1000", propName: null, propNameId: 36, gmtDatetime: null, …&#125;</span></span><br><span class="line"><span class="comment">3:&#123;id: 231, propValue: "250ML", propName: null, propNameId: 36, gmtDatetime: "2017-09-19 18:59:08", …&#125;</span></span><br><span class="line"><span class="comment">4:&#123;id: 232, propValue: "350ML", propName: null, propNameId: 36, gmtDatetime: "2017-09-19 18:59:08", …&#125;</span></span><br><span class="line"><span class="comment">5:&#123;id: 233, propValue: "450ML", propName: null, propNameId: 36, gmtDatetime: "2017-09-19 18:59:08", …&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">//某分类下规格结果集合</span></span><br><span class="line"><span class="keyword">var</span> specResultList = [];</span><br><span class="line"></span><br><span class="line"><span class="comment">//根据规格集合生成sku笛卡尔积</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">generate</span>(<span class="params">index, current</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (index &lt; specResultList.length - <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">var</span> specItem = specResultList[index];</span><br><span class="line">        <span class="keyword">var</span> keya = specItem.attrName;</span><br><span class="line">        <span class="keyword">var</span> items = specItem.propValues;</span><br><span class="line">        <span class="keyword">if</span> (items.length == <span class="number">0</span>) &#123;</span><br><span class="line">            generate(index + <span class="number">1</span>, current);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; items.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!items[i]) <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">var</span> newMap = &#123;&#125;;</span><br><span class="line">            newMap = $.extend(newMap, current);</span><br><span class="line">            newMap[keya] = items[i];</span><br><span class="line">            generate(index + <span class="number">1</span>, newMap);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (index == specResultList.length - <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">var</span> specItem = specResultList[index];</span><br><span class="line">        <span class="keyword">var</span> keya = specItem.attrName;</span><br><span class="line">        <span class="keyword">var</span> items = specItem.propValues;</span><br><span class="line">        <span class="keyword">if</span> (items.length == <span class="number">0</span>) &#123;</span><br><span class="line">            result.push(current);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; items.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!items[i]) <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">var</span> newMap = &#123;&#125;;</span><br><span class="line">            newMap = $.extend(newMap, current);</span><br><span class="line">            newMap[keya] = items[i];</span><br><span class="line">            result.push(newMap);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//生成sku表格,参数result为转化后的sku数组</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">generateSkuTable</span>(<span class="params">result</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (result == <span class="literal">null</span> || result == <span class="literal">undefined</span> || result.length == <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    $(<span class="string">".sku-table"</span>).html(<span class="string">""</span>);</span><br><span class="line">    <span class="comment">//获取其下属性数组，举例格式为["大小", "容量", "颜色"]</span></span><br><span class="line">    <span class="keyword">var</span> propArr = <span class="built_in">Object</span>.getOwnPropertyNames(result[<span class="number">0</span>]).sort();</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"propArr:"</span>, propArr);</span><br><span class="line">    <span class="keyword">var</span> skuTheadStr = <span class="string">"&lt;thead&gt;\n"</span> +</span><br><span class="line">        <span class="string">"                                                &lt;tr&gt;\n"</span> +</span><br><span class="line">        <span class="string">"                                                    &lt;td class=\"thead-sku-id\" style=\"display: none\"&gt;&lt;/td&gt;\n"</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> prop_p <span class="keyword">of</span> propArr) &#123;</span><br><span class="line">        skuTheadStr += <span class="string">"&lt;td class=\"thead-prop-name\"&gt;"</span> + prop_p + <span class="string">"&lt;/td&gt;\n"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    skuTheadStr += <span class="string">"&lt;td class=\"thead-sku-prop-str\" style=\"display: none\"&gt;&lt;/td&gt;\n"</span> +</span><br><span class="line">        <span class="string">"&lt;td class=\"thead-sku-prop-values\" style=\"display: none\"&gt;&lt;/td&gt;\n"</span> +</span><br><span class="line">        <span class="string">"                                                    &lt;td&gt;商品图片&lt;/td&gt;\n"</span> +</span><br><span class="line">        <span class="string">"                                                    &lt;td&gt;价格&lt;/td&gt;\n"</span> +</span><br><span class="line">        <span class="string">"                                                    &lt;td&gt;库存&lt;/td&gt;\n"</span> +</span><br><span class="line">        <span class="string">"                                                    &lt;td width=\"80\"&gt;删除操作&lt;/td&gt;\n"</span> +</span><br><span class="line">        <span class="string">"                                                &lt;/tr&gt;\n"</span> +</span><br><span class="line">        <span class="string">"                                                &lt;/thead&gt;"</span>;</span><br><span class="line">    $(<span class="string">".sku-table"</span>).append(skuTheadStr);</span><br><span class="line">    <span class="keyword">var</span> skuTbodyStr = <span class="string">"        &lt;tbody&gt;\n"</span>;</span><br><span class="line">    <span class="keyword">var</span> tempSku = [];</span><br><span class="line">    <span class="keyword">var</span> zz = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"result array for generate table:"</span>, result);</span><br><span class="line">    <span class="keyword">for</span> (tempSku <span class="keyword">of</span> result) &#123;</span><br><span class="line">        zz++;</span><br><span class="line">        skuTbodyStr += <span class="string">"&lt;tr class=\"js-sku-content\"&gt;\n"</span>;</span><br><span class="line">        skuTbodyStr += <span class="string">"&lt;td class=\"td-sku-id\" style=\"display: none\"&gt;&lt;/td&gt;\n"</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(tempSku);</span><br><span class="line">        <span class="keyword">var</span> str = <span class="string">""</span>;</span><br><span class="line">        <span class="comment">//要存储的属性字符串</span></span><br><span class="line">        <span class="keyword">var</span> prop_str = <span class="string">""</span>;</span><br><span class="line">        <span class="comment">//要存储的属性值名组合（订单显示用）</span></span><br><span class="line">        <span class="keyword">var</span> prop_values = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> prop_p <span class="keyword">of</span> propArr) &#123;</span><br><span class="line">            <span class="keyword">var</span> prop_pid = tempSku[prop_p].propNameId;</span><br><span class="line">            <span class="keyword">var</span> prop_vid = tempSku[prop_p].id;</span><br><span class="line">            <span class="keyword">var</span> prop_v = tempSku[prop_p].propValue;</span><br><span class="line">            str += prop_p + <span class="string">":"</span> + prop_v + <span class="string">"::"</span> + prop_pid + <span class="string">"-"</span> + prop_vid + <span class="string">","</span>;</span><br><span class="line">            prop_str += prop_pid + <span class="string">"-"</span> + prop_vid + <span class="string">","</span>;</span><br><span class="line">            prop_values += <span class="string">"、"</span> + prop_v;</span><br><span class="line">            skuTbodyStr += <span class="string">"&lt;td class=\"td-prop-value\"&gt;"</span> + prop_v + <span class="string">"&lt;/td&gt;\n"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        prop_values = prop_values.substr(<span class="number">1</span>);</span><br><span class="line">        <span class="built_in">console</span>.log(str);</span><br><span class="line">        <span class="built_in">console</span>.log(prop_str);</span><br><span class="line">        <span class="built_in">console</span>.log(prop_values);</span><br><span class="line">        <span class="keyword">var</span> skuUrl = <span class="string">""</span>;</span><br><span class="line">        skuTbodyStr += <span class="string">"&lt;td class=\"td-sku-prop-str\" style=\"display: none\"&gt;"</span> + prop_str + <span class="string">"&lt;/td&gt;\n"</span> +</span><br><span class="line">            <span class="string">"&lt;td class=\"td-sku-prop-values\" style=\"display: none\"&gt;"</span> + prop_values + <span class="string">"&lt;/td&gt;\n"</span> +</span><br><span class="line">            <span class="string">" &lt;td class=\"sku-url\" data-url=\""</span> + skuUrl + <span class="string">"\"&gt;"</span> +</span><br><span class="line">            <span class="string">"&lt;div id='dz"</span> + zz + <span class="string">"' data-url=\"\" class=\"sku-url-div dropzone\" name=\"file\"&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                    &lt;div id='pr"</span> + zz + <span class="string">"' class=\"dropzone-previews drop-preview\"&gt;&lt;/div&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                    &lt;a class=\"upload_sku_pic btn btn-inline btn-sm dz-message drop-a\"&gt;上传图片&lt;/a&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                &lt;/div&gt;"</span> +</span><br><span class="line">            <span class="string">"&lt;/td&gt;"</span> +</span><br><span class="line">            <span class="string">"                                                    &lt;td&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                                        &lt;div class=\"validator-form\"&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                                            &lt;input custom-number=\"\" decimal=\"2\"\n"</span> +</span><br><span class="line">            <span class="string">"                                                                   class=\"form-control input-sm sku-price-input ng-pristine ng-untouched ng-isolate-scope ng-invalid ng-invalid-custom-number\"\n"</span> +</span><br><span class="line">            <span class="string">"                                                                   type=\"text\" name=\"sku_price\" value=\"\"\n"</span> +</span><br><span class="line">            <span class="string">"                                                                   style=\"\"&gt;&lt;/div&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                                    &lt;/td&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                                    &lt;td&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                                        &lt;div class=\"validator-form\"&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                                            &lt;input custom-number=\"\"\n"</span> +</span><br><span class="line">            <span class="string">"                                                                   class=\"form-control input-sm sku-stock-input ng-pristine ng-untouched ng-isolate-scope ng-invalid ng-invalid-custom-number\"\n"</span> +</span><br><span class="line">            <span class="string">"                                                                   type=\"text\" name=\"sku_inventory\" value=\"\"\n"</span> +</span><br><span class="line">            <span class="string">"                                                                   style=\"\"&gt;&lt;/div&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                                    &lt;/td&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                                    &lt;td class=\"remove-a-sku\"&gt;&lt;a placement=\"bottom\"\n"</span> +</span><br><span class="line">            <span class="string">"                                                                                maximize=\"true\"&gt;&lt;i\n"</span> +</span><br><span class="line">            <span class="string">"                                                            class=\"fa fa-remove\"&gt;&lt;/i&gt;&lt;/a&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                                    &lt;/td&gt;\n"</span> +</span><br><span class="line">            <span class="string">"                                                &lt;/tr&gt;\n"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    skuTbodyStr += <span class="string">"&lt;/tbody&gt;"</span>;</span><br><span class="line">    $(<span class="string">".sku-table"</span>).append(skuTbodyStr);</span><br><span class="line"></span><br><span class="line">    $(<span class="string">".sku-table input"</span>).validate();</span><br><span class="line">    <span class="comment">//为表格中每个图片上传处初始化dropzone设置</span></span><br><span class="line">    initTableDropzone();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>sku表格创建<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//表格创建</span><br><span class="line">$(document).on(&quot;change&quot;, &apos;.sku_value&apos;, function () &#123;</span><br><span class="line">    var skuTypeArr = [];//存放SKU类型的数组</span><br><span class="line">    var totalRow = 1;//总行数</span><br><span class="line">    //获取所选规格数组</span><br><span class="line">    skuTypeArr = getCkeckedSkuTypeArr(skuTypeArr, totalRow);</span><br><span class="line"></span><br><span class="line">    /* skuTypeArr结果形如</span><br><span class="line">     0:&#123;attrName: &quot;试试&quot;, propNameId: &quot;26&quot;, propValues: Array(1), skuValueLen: 1&#125;</span><br><span class="line">     1:&#123;attrName: &quot;你好&quot;, propNameId: &quot;24&quot;, propValues: Array(1), skuValueLen: 1&#125;*/</span><br><span class="line">    if (skuTypeArr.length == 0) &#123;</span><br><span class="line">        $(&quot;.sku-table&quot;).html(&quot;&quot;);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        //已选规格集合</span><br><span class="line">        specResultList = skuTypeArr;</span><br><span class="line">        result = [];</span><br><span class="line">        //做规格笛卡尔积，转化规格为多个sku</span><br><span class="line">        generate(0, &#123;&#125;);</span><br><span class="line">        //生成sku表格</span><br><span class="line">        generateSkuTable(result);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<ul>
+<li>2017.11.27 <strong>获取页面宽度，设置字体大小</strong><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//获取页面宽度，设置字体大小</span></span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params">doc, win</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> docEl = doc.documentElement,</span><br><span class="line">        resizeEvt = <span class="string">'orientationchange'</span> <span class="keyword">in</span> <span class="built_in">window</span> ? <span class="string">'orientationchange'</span> : <span class="string">'resize'</span>,</span><br><span class="line">        recalc = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> clientWidth = docEl.clientWidth;</span><br><span class="line">            <span class="keyword">if</span> (!clientWidth) <span class="keyword">return</span>;</span><br><span class="line">            <span class="keyword">if</span> (clientWidth &lt; <span class="number">750</span>) &#123;</span><br><span class="line">                docEl.style.fontSize = <span class="number">100</span> * (clientWidth / <span class="number">750</span>) + <span class="string">'px'</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                docEl.style.fontSize = <span class="string">'100px'</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!doc.addEventListener) <span class="keyword">return</span>;</span><br><span class="line">    win.addEventListener(resizeEvt, recalc, <span class="literal">false</span>);</span><br><span class="line">    doc.addEventListener(<span class="string">'DOMContentLoaded'</span>, recalc, <span class="literal">false</span>);</span><br><span class="line">&#125;)(<span class="built_in">document</span>, <span class="built_in">window</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//setTimeout轮询</span><br><span class="line">function showTime() &#123;</span><br><span class="line">    var today = new Date();</span><br><span class="line">    alert(&quot;The time is: &quot; + today.toString());</span><br><span class="line">    //每2秒执行一次,showTime()</span><br><span class="line">    if(xxx)&#123;</span><br><span class="line">        setTimeout(&quot;showTime()&quot;, 2000);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2019.01.23 <strong>Snippet</strong><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//限制input位数和数字</span></span><br><span class="line">oninput=<span class="string">"if(value.length&gt;6)value=value.slice(0,6);value=value.replace(/[^\d]/g,'')"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//小数</span></span><br><span class="line">oninput=<span class="string">"if(value.length&gt;6)value=value.slice(0,6);value=value.replace(/[^\d\.]/g,'')"</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">timestampToTime</span>(<span class="params">timestamp</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(timestamp );</span><br><span class="line">    Y = date.getFullYear() + <span class="string">'-'</span>;</span><br><span class="line">    M = (date.getMonth()+<span class="number">1</span> &lt; <span class="number">10</span> ? <span class="string">'0'</span>+(date.getMonth()+<span class="number">1</span>) : date.getMonth()+<span class="number">1</span>) + <span class="string">'-'</span>;</span><br><span class="line">    D = (date.getDate()&lt;<span class="number">10</span> ? <span class="string">'0'</span>+date.getDate() : date.getDate()) + <span class="string">' '</span>;</span><br><span class="line">    h = (date.getHours()&lt;<span class="number">10</span> ? <span class="string">'0'</span>+date.getHours() : date.getHours()) + <span class="string">':'</span>;</span><br><span class="line">    m = (date.getMinutes() &lt;<span class="number">10</span> ? <span class="string">'0'</span>+date.getMinutes() : date.getMinutes())+ <span class="string">':'</span>;</span><br><span class="line">    s = date.getSeconds()&lt;<span class="number">10</span> ? <span class="string">'0'</span>+date.getSeconds() : date.getSeconds();</span><br><span class="line">    <span class="keyword">return</span> Y+M+D+h+m+s;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">objPropertyRecursively2String(obj) &#123;</span><br><span class="line">               <span class="comment">//循环将obj中的数字类型值转为字符串类型</span></span><br><span class="line">               <span class="keyword">for</span> (<span class="keyword">var</span> prop <span class="keyword">in</span> obj) &#123;</span><br><span class="line">                   <span class="keyword">if</span> (judgeArrObj(obj[prop])) &#123;</span><br><span class="line">                       vm.objPropertyRecursively2String(obj[prop]);</span><br><span class="line">                   &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">Object</span>.prototype.toString.call(obj[prop]) === <span class="string">'[object Number]'</span>) &#123;</span><br><span class="line">                       obj[prop] = <span class="keyword">this</span>.convert2String(obj[prop])</span><br><span class="line">                   &#125;</span><br><span class="line">               &#125;</span><br><span class="line">               <span class="keyword">return</span> obj;</span><br><span class="line"></span><br><span class="line">               <span class="function"><span class="keyword">function</span> <span class="title">judgeArrObj</span>(<span class="params">it</span>) </span>&#123;</span><br><span class="line">                   <span class="keyword">return</span> !!(<span class="built_in">Object</span>.prototype.toString.call(it) === <span class="string">'[object Object]'</span> || <span class="built_in">Object</span>.prototype.toString.call(it) === <span class="string">'[object Array]'</span>)</span><br><span class="line"></span><br><span class="line">               &#125;</span><br><span class="line">           &#125;,</span><br><span class="line">           convert2String(value) &#123;</span><br><span class="line">               <span class="keyword">if</span>(value)&#123;</span><br><span class="line">                   <span class="built_in">console</span>.log(<span class="string">"value:"</span>,value)</span><br><span class="line">                   <span class="built_in">console</span>.log(<span class="string">"valueStr:"</span>,value.toString())</span><br><span class="line">                   <span class="keyword">return</span> value.toString();</span><br><span class="line">               &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                   <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">   <span class="keyword">if</span> (openInWebview()) &#123;</span><br><span class="line">                <span class="comment">// 在app内打开</span></span><br><span class="line">                <span class="built_in">window</span>.postMessage(<span class="string">"&#123;\"type\" : \"toLogin\"&#125;"</span>,<span class="string">"*"</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="comment">// 其他地方</span></span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line"><span class="comment">// 判断是否在Webview打开</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">openInWebview</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> ua = navigator.userAgent.toLowerCase()</span><br><span class="line">    <span class="keyword">if</span> (ua.match(<span class="regexp">/MicroMessenger/i</span>) == <span class="string">'micromessenger'</span>) &#123; <span class="comment">// 微信浏览器判断</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ua.match(<span class="regexp">/QQ/i</span>) == <span class="string">'qq'</span>) &#123; <span class="comment">// QQ浏览器判断</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ua.match(<span class="regexp">/WeiBo/i</span>) == <span class="string">"weibo"</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (ua.match(<span class="regexp">/Android/i</span>) != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> ua.match(<span class="regexp">/browser/i</span>) == <span class="literal">null</span></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ua.match(<span class="regexp">/iPhone/i</span>) != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> ua.match(<span class="regexp">/safari/i</span>) == <span class="literal">null</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> (ua.match(<span class="regexp">/macintosh/i</span>) == <span class="literal">null</span> &amp;&amp; ua.match(<span class="regexp">/windows/i</span>) == <span class="literal">null</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li><strong>Service Worker</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> Service workers也可以用来做这些事情：</span><br><span class="line"></span><br><span class="line">后台数据同步</span><br><span class="line">响应来自其它源的资源请求</span><br><span class="line">集中接收计算成本高的数据更新，比如地理位置和陀螺仪信息，这样多个页面就可以利用同一组数据</span><br><span class="line">在客户端进行CoffeeScript，LESS，CJS/AMD等模块编译和依赖管理（用于开发目的）</span><br><span class="line">后台服务钩子</span><br><span class="line">自定义模板用于特定URL模式</span><br><span class="line">性能增强，比如预取用户可能需要的资源，比如相册中的后面数张图片</span><br><span class="line">未来service workers能够用来做更多使web平台接近原生应用的事。 值得关注的是，其他标准也能并且将会使用service worker，例如:</span><br><span class="line"></span><br><span class="line">后台同步：启动一个service worker即使没有用户访问特定站点，也可以更新缓存</span><br><span class="line">响应推送：启动一个service worker向用户发送一条信息通知新的内容可用</span><br><span class="line">对时间或日期作出响应</span><br><span class="line">进入地理围栏</span><br></pre></td></tr></table></figure>
+<hr>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/Mybatis-one-many-retrieve/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="./images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/Mybatis-one-many-retrieve/" class="post-title-link" itemprop="url">Mybatis-one-many-retrieve</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:37:00 / 修改时间：23:53:06" itemprop="dateCreated datePublished" datetime="2019-02-01T23:37:00+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>﻿</p>
+<p>﻿##1.需求##</p>
+<p>有一个需求是这样的，我要查一个订单列表，列表中的一个订单中可能有多个商品，是一对多的关系，然后需要在列表中同时查出来。结果大概是下面这样的：<br><img src="http://img.blog.csdn.net/20171107203945479?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlZXRhaGxvdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="订单列表图"></p>
+<p>##2.实现##<br>没时间了，直接上xml代码，基本思路是将分页和条件查询放在取一端的id集的操作中，将符合条件的订单id先全部拿出来，再去查这些订单的订单基本信息和多个商品信息，条件查询可以查询订单（一方）和订单商品和卖家姓名（多端）关键字检索。碰到的问题有总数不对、每页实际返回条数不对（Mybatis会将相同的键的拼到同一个result中）、多端有数据填充List时不完整、做分页的时候最后一条只取了多端的一部分，另一部分丢失了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line">//select 语句</span><br><span class="line">   &lt;select id=&quot;selectOrderListWithCondition&quot; resultMap=&quot;mOrders&quot;&gt;</span><br><span class="line">       select</span><br><span class="line">       &lt;include refid=&quot;mOrdersPkSql&quot;/&gt;</span><br><span class="line">       ,</span><br><span class="line">       muser.id AS Muser_id,</span><br><span class="line">       muser.user_name AS Muser_userName,</span><br><span class="line">       order_goods.id AS OrderGoods_id,</span><br><span class="line">       order_goods.sku_count AS OrderGoods_skuCount,</span><br><span class="line">       order_goods.goods_id AS OrderGoods_goodsId,</span><br><span class="line">       order_goods.sku_id AS OrderGoods_skuId,</span><br><span class="line">       goods.id AS Goods_id,</span><br><span class="line">       goods.goods_name AS Goods_goodsName,</span><br><span class="line">       goods.goods_url AS Goods_goodsUrl,</span><br><span class="line">       sku.id AS Sku_id,</span><br><span class="line">       sku.values_str AS Sku_valuesStr,</span><br><span class="line">       sku.price AS Sku_price,</span><br><span class="line">       sku.inventory AS Sku_inventory,</span><br><span class="line">       sku.if_uniform_spec AS Sku_ifUniformSpec</span><br><span class="line">       from</span><br><span class="line">       orders,</span><br><span class="line">       muser,</span><br><span class="line">       order_goods ,</span><br><span class="line">       goods,</span><br><span class="line">       sku</span><br><span class="line">       WHERE</span><br><span class="line">       orders.id=order_goods.order_id</span><br><span class="line">       AND order_goods.goods_id=goods.id</span><br><span class="line">       AND order_goods.sku_id=sku.id</span><br><span class="line">       AND orders.muser_id=muser.id</span><br><span class="line">       AND orders.id in ( SELECT</span><br><span class="line">       t.orderId</span><br><span class="line">       FROM</span><br><span class="line">       (</span><br><span class="line">       select orders.id orderId</span><br><span class="line">       from</span><br><span class="line">       orders,</span><br><span class="line">       muser,</span><br><span class="line">       order_goods ,</span><br><span class="line">       goods</span><br><span class="line">       WHERE</span><br><span class="line">       orders.id=order_goods.order_id</span><br><span class="line">       AND order_goods.goods_id=goods.id</span><br><span class="line">       AND orders.muser_id=muser.id</span><br><span class="line">       &lt;if test=&quot;searchText!=null and searchText!=&apos;&apos;&quot;&gt;</span><br><span class="line">           AND orders.order_number like concat(&apos;%&apos;,#&#123;searchText&#125;,&apos;%&apos;)</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;sourceType!=null and sourceType!=&apos;&apos;&quot;&gt;</span><br><span class="line">           AND orders.source_type=#&#123;sourceType&#125;</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;orderType!=null and orderType!=&apos;&apos;&quot;&gt;</span><br><span class="line">           AND orders.order_type=#&#123;orderType&#125;</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;muserId!=null and muserId!=&apos;&apos;&quot;&gt;</span><br><span class="line">           AND orders.muser_id=#&#123;muserId&#125;</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;orderStatus!=null and orderStatus!=&apos;&apos; and orderStatus==99 &quot;&gt;</span><br><span class="line">           AND orders.order_status in (4,5)</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;orderStatus!=null and orderStatus!=&apos;&apos; and orderStatus!=99 &quot;&gt;</span><br><span class="line">           AND orders.order_status = #&#123;orderStatus&#125;</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;goodsName!=null and goodsName!=&apos;&apos;&quot;&gt;</span><br><span class="line">           AND goods.goods_name like concat(&apos;%&apos;,#&#123;goodsName&#125;,&apos;%&apos;)</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;userName!=null and userName!=&apos;&apos;&quot;&gt;</span><br><span class="line">           AND muser.user_name like concat(&apos;%&apos;,#&#123;userName&#125;,&apos;%&apos;)</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       GROUP BY orders.id</span><br><span class="line">       ORDER BY orders.gmt_datetime desc</span><br><span class="line">       limit #&#123;startIndex&#125;,#&#123;size&#125;</span><br><span class="line">       ) t)</span><br><span class="line">       ORDER BY orders.gmt_datetime desc</span><br><span class="line">   &lt;/select&gt;</span><br><span class="line">   </span><br><span class="line">//统计分页总条数</span><br><span class="line">   &lt;select id=&quot;selectOrderListSize&quot; resultType=&quot;java.lang.Integer&quot;&gt;</span><br><span class="line">       SELECT count(*) FROM</span><br><span class="line">       (SELECT</span><br><span class="line">       orders.id</span><br><span class="line">       FROM</span><br><span class="line">       orders,</span><br><span class="line">       muser,</span><br><span class="line">       order_goods ,</span><br><span class="line">       goods</span><br><span class="line">       WHERE</span><br><span class="line">       orders.id=order_goods.order_id</span><br><span class="line">       AND order_goods.goods_id=goods.id</span><br><span class="line">       AND orders.muser_id=muser.id</span><br><span class="line">       &lt;if test=&quot;searchText!=null and searchText!=&apos;&apos;&quot;&gt;</span><br><span class="line">           AND orders.order_number like concat(&apos;%&apos;,#&#123;searchText&#125;,&apos;%&apos;)</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;sourceType!=null and sourceType!=&apos;&apos;&quot;&gt;</span><br><span class="line">           AND orders.source_type=#&#123;sourceType&#125;</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;orderType!=null and orderType!=&apos;&apos;&quot;&gt;</span><br><span class="line">           AND orders.order_type=#&#123;orderType&#125;</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;muserId!=null and muserId!=&apos;&apos;&quot;&gt;</span><br><span class="line">           AND orders.muser_id=#&#123;muserId&#125;</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;orderStatus!=null and orderStatus!=&apos;&apos; and orderStatus==99 &quot;&gt;</span><br><span class="line">           AND orders.order_status in (4,5)</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;orderStatus!=null and orderStatus!=&apos;&apos; and orderStatus!=99 &quot;&gt;</span><br><span class="line">           AND orders.order_status = #&#123;orderStatus&#125;</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;goodsName!=null and goodsName!=&apos;&apos;&quot;&gt;</span><br><span class="line">           AND goods.goods_name like concat(&apos;%&apos;,#&#123;goodsName&#125;,&apos;%&apos;)</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       &lt;if test=&quot;userName!=null and userName!=&apos;&apos;&quot;&gt;</span><br><span class="line">           AND muser.user_name like concat(&apos;%&apos;,#&#123;userName&#125;,&apos;%&apos;)</span><br><span class="line">       &lt;/if&gt;</span><br><span class="line">       GROUP BY orders.id) t</span><br><span class="line">   &lt;/select&gt;</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>下面是resultMap,用<code>collection</code>标签接收list，<code>association</code> 接收实体：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">&lt;resultMap type=&quot;com.rongke.model.Orders&quot; id=&quot;mOrders&quot;&gt;</span><br><span class="line">    &lt;id property=&quot;id&quot; column=&quot;Orders_id&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;muserId&quot; column=&quot;Orders_muserId&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;addressId&quot; column=&quot;Orders_addressId&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;orderNumber&quot; column=&quot;Orders_orderNumber&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;outTradeNo&quot; column=&quot;Orders_outTradeNo&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;sourceType&quot; column=&quot;Orders_sourceType&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;totalPrice&quot; column=&quot;Orders_totalPrice&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;returnDuobi&quot; column=&quot;Orders_returnDuobi&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;returnYabi&quot; column=&quot;Orders_returnYabi&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;cashPayPrice&quot; column=&quot;Orders_cashPayPrice&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;allowPayType&quot; column=&quot;Orders_allowPayType&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;orderType&quot; column=&quot;Orders_orderType&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;orderStatus&quot; column=&quot;Orders_orderStatus&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;deliveryMoney&quot; column=&quot;Orders_deliveryMoney&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;useCoupon&quot; column=&quot;Orders_useCoupon&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;couponVal&quot; column=&quot;Orders_couponVal&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;leavingMessage&quot; column=&quot;Orders_leavingMessage&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;isLogistics&quot; column=&quot;Orders_isLogistics&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;receiverPhone&quot; column=&quot;Orders_receiverPhone&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;receiverName&quot; column=&quot;Orders_receiverName&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;receiverAddress&quot; column=&quot;Orders_receiverAddress&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;logiCom&quot; column=&quot;Orders_logiCom&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;logisticsNumber&quot; column=&quot;Orders_logisticsNumber&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;payDatetime&quot; column=&quot;Orders_payDatetime&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;completeDatetime&quot; column=&quot;Orders_completeDatetime&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;payType&quot; column=&quot;Orders_payType&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;merchantRemarks&quot; column=&quot;Orders_merchantRemarks&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;cusServiceRemarks&quot; column=&quot;Orders_cusServiceRemarks&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;gmtDatetime&quot; column=&quot;Orders_gmtDatetime&quot;/&gt;</span><br><span class="line">    &lt;result property=&quot;uptDatetime&quot; column=&quot;Orders_uptDatetime&quot;/&gt;</span><br><span class="line">    &lt;association property=&quot;muser&quot; javaType=&quot;com.rongke.model.Muser&quot;&gt;</span><br><span class="line">        &lt;id property=&quot;id&quot; column=&quot;Muser_id&quot;/&gt;</span><br><span class="line">        &lt;result property=&quot;userName&quot; column=&quot;Muser_userName&quot;/&gt;</span><br><span class="line">    &lt;/association&gt;</span><br><span class="line">    &lt;collection property=&quot;orderGoodsList&quot; ofType=&quot;com.rongke.model.OrderGoods&quot; column=&quot;OrderGoods_id&quot;&gt;</span><br><span class="line">        &lt;result property=&quot;id&quot; column=&quot;OrderGoods_id&quot;/&gt;</span><br><span class="line">        &lt;result property=&quot;goodsId&quot; column=&quot;OrderGoods_goodsId&quot;/&gt;</span><br><span class="line">        &lt;result property=&quot;skuId&quot; column=&quot;OrderGoods_skuId&quot;/&gt;</span><br><span class="line">        &lt;result property=&quot;skuCount&quot; column=&quot;OrderGoods_skuCount&quot;/&gt;</span><br><span class="line">        &lt;association property=&quot;sku&quot; javaType=&quot;com.rongke.model.Sku&quot; column=&quot;OrderGoods_skuId&quot;&gt;</span><br><span class="line">            &lt;id property=&quot;id&quot; column=&quot;Sku_id&quot;/&gt;</span><br><span class="line">            &lt;result property=&quot;price&quot; column=&quot;Sku_price&quot;/&gt;</span><br><span class="line">            &lt;result property=&quot;valuesStr&quot; column=&quot;Sku_valuesStr&quot;/&gt;</span><br><span class="line">            &lt;result property=&quot;inventory&quot; column=&quot;Sku_inventory&quot;/&gt;</span><br><span class="line">            &lt;result property=&quot;ifUniformSpec&quot; column=&quot;Sku_ifUniformSpec&quot;/&gt;</span><br><span class="line">        &lt;/association&gt;</span><br><span class="line">        &lt;association property=&quot;goods&quot; javaType=&quot;com.rongke.model.Goods&quot; column=&quot;OrderGoods_goodsId&quot;&gt;</span><br><span class="line">            &lt;id property=&quot;id&quot; column=&quot;Goods_id&quot;/&gt;</span><br><span class="line">            &lt;result property=&quot;goodsName&quot; column=&quot;Goods_goodsName&quot;/&gt;</span><br><span class="line">            &lt;result property=&quot;goodsUrl&quot; column=&quot;Goods_goodsUrl&quot;/&gt;</span><br><span class="line">        &lt;/association&gt;</span><br><span class="line">    &lt;/collection&gt;</span><br><span class="line">&lt;/resultMap&gt;</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/index/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="./images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/index/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 23:34:54 / 修改时间：18:49:37" itemprop="dateCreated datePublished" datetime="2019-02-01T23:34:54+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>window.open</title>
+<script type="text/javascript">
+  function Wopen(){
+      //window.open('http://www.imooc.com','_blank','height=600,width=400,top=100,left=100');
+			alert("字符长度超过限制，请重新注册")
+  }
+</script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+    <!-- <input name="button" type="button" onClick="Wopen()" value="点击我，打开新窗口!" / >
+    <input name="haha" ></input>
+    <input type="file" name="filefile" value="fillll">
+    <input type="submit" name="submit" value="提交交" onClick="Wopen()"> -->
+    <p>Welcome Cheetahlou's Github page,since 2017.6.28 ^_^</p>
+
+    <div id="disp">
+        Vue line:
+      <input type="text" v-model="msg">
+     
+    </div>
+    <div class="buttons">
+      <a class="button" href="mailto:1092267135@qq.com" target="_blank" rel="noopener">联系我</a>
+    </div>
+</body>
+<script type="text/javascript">
+  new Vue({
+    el:"#disp",
+    data:{
+      msg:"Hello Vue!"
+    }
+  })
+</script>
+</html>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com./2019/02/01/hello-world/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cheelou"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="./images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chee Daily"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="./2019/02/01/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 19:51:03 / 修改时间：19:13:54" itemprop="dateCreated datePublished" datetime="2019-02-01T19:51:03+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="./"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="./">1</a><span class="page-number current">2</span>
+  </nav>
+
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Cheelou</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="./archives/">
+                
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Cheelou</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v6.7.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="./lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="./lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="./lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="./js/src/utils.js?v=6.7.0"></script>
+
+  <script src="./js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="./js/src/schemes/muse.js?v=6.7.0"></script>
+
+
+
+
+  
+
+  
+
+
+  <script src="./js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
