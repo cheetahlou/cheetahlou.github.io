@@ -11,6 +11,8 @@ tags:
 ***
  - 2016.5.30杂谈
     今天先记录几个关键词吧(Android学习方面)，也很迟了zzz: 多线程、反编译（dex2jar和jdgui）、okhttp、retrofit（对okhttp进行封装）、学习网站：CSDN、Github、appxcode、博客园（cnblogs）、极客学院、CSDN学院、Android官网、Segmentfault、cnbeta（资讯类）。
+
+    <!--more-->
 ------
 
 - 2016.5.31随想

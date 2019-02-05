@@ -9,7 +9,9 @@ tags:
 ***
  1. Java中线程的sleep()和wait()有什么区别
  - 1、这两个方法来自不同的类。分别是：sleep来自Thread类，而wait来自Object类。
-sleep是Thread的静态类方法，谁调用的谁去睡觉，即使在a线程里调用了b的sleep方法，实际上还是a去睡觉，要让b线程睡觉要在b的代码中调用sleep。
+  sleep是Thread的静态类方法，谁调用的谁去睡觉，即使在a线程里调用了b的sleep方法，实际上还是a去睡觉，要让b线程睡觉要在b的代码中调用sleep。
+
+  <!--more-->
 
 ***
  - 2、最主要是**sleep方法没有释放锁**，而wait方法释放了锁，使得其他线程可以使用同步控制块或者方法。

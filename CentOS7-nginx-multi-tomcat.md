@@ -1,10 +1,14 @@
 ---
 title: CentOS7-nginx-multi-tomcat
 date: 2019-02-01 23:37:00
-tags: 
+tags: linux
 ---
 
 
+
+CentOS7环境下安装多个tomcat应用服务器
+
+<!--more-->
 
 
 ﻿>*注：本文 nginx版本：1.12.2      Tomcat版本: 9.0.2*

@@ -1,8 +1,16 @@
 ---
 title: mysql5.7-installation-CentOS7
-date: 2019-02-01 23:37:00
-tags: 
+date: 2017-12-08 10:37:59
+tags: linux
 ---
+
+
+
+
+
+CentOS7环境下安装MySQL 5.7记录Remarks一哈。
+
+<!--more-->
 
 ### 核心思想——东拼西凑
 

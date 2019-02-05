@@ -11,3 +11,5 @@ tags:
  2. 作为服务启动：
 >```redis-server --service-start```
  >```redis-server --service-stop```
+
+<!--more-->

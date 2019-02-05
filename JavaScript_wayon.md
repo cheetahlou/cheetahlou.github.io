@@ -25,10 +25,11 @@ for(attribute in obj){
     alert(obj[attribute]); 
 } 
 ```
+<!--more-->
+
 ***
  - 2017.11.21  **Snippets**
-
-	- 小数保留*位小数，整数保持整数
+  - 小数保留*位小数，整数保持整数
 ```
     //如果原来是整数等就取原来的整数，原始值为小数保留两位小数
     if (value.toString().split(".").length > 1) {

@@ -13,7 +13,10 @@ tags:
 
 #### 事件总线
 * [otto](square/otto · GitHub)
+
 * [EventBus](greenrobot/EventBus · GitHub)
+
+  <!--more-->
 
 #### 依赖注入
 * [Dagger](square/dagger · GitHub)
