@@ -374,7 +374,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://cheetahlou.github.io/2019/02/01/JavaScript_wayon/">
+    <link itemprop="mainEntityOfPage" href="https://cheetahlou.github.io/2019/02/01/Mybatis-one-many-retrieve/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Cheelou">
@@ -394,7 +394,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/02/01/JavaScript_wayon/" class="post-title-link" itemprop="url">JavaScript_wayon</a>
+                <a href="/2019/02/01/Mybatis-one-many-retrieve/" class="post-title-link" itemprop="url">Mybatis-one-many-retrieve</a>
               
             
           </h1>
@@ -436,7 +436,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-06 23:53:15" itemprop="dateModified" datetime="2019-02-06T23:53:15+08:00">2019-02-06</time>
+                <time title="修改时间：2019-02-06 23:53:41" itemprop="dateModified" datetime="2019-02-06T23:53:41+08:00">2019-02-06</time>
               
             
           </span>
@@ -472,18 +472,11 @@
       
         
           <p>﻿</p>
-<hr>
-<ul>
-<li>2017.10.26     <strong>属性名和属性值获取</strong></li>
-</ul>
-<p>&emsp;&emsp;获取js对象的所有属性的<font color="#FF5D5A">属性名数组</font>,如获取obj的属性名数组：</p>
-<p><code>var propArr = Object.getOwnPropertyNames(obj).sort();</code></p>
-<p>&emsp;&emsp;另一种获取属性名：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(attribute <span class="keyword">in</span> obj)&#123; </span><br><span class="line">    alert(attribute); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>&emsp;&emsp;获取属性名对应属性值：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(attribute <span class="keyword">in</span> obj)&#123; </span><br><span class="line">    alert(obj[attribute]); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="1-需求"><a href="#1-需求" class="headerlink" title="1.需求"></a>1.需求</h2><p>有一个需求是这样的，我要查一个订单列表，列表中的一个订单中可能有多个商品，是一对多的关系，然后需要在列表中同时查出来。结果大概是下面这样的：</p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/02/01/JavaScript_wayon/#more" rel="contents">
+              <a class="btn" href="/2019/02/01/Mybatis-one-many-retrieve/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
