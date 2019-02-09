@@ -1,7 +1,9 @@
 ---
 title: mysql5.7-installation-CentOS7
 date: 2017-12-08 10:37:59
-tags: linux
+tags:
+- linux
+- MySQL
 ---
 
 

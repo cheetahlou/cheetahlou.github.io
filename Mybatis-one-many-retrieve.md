@@ -1,7 +1,9 @@
 ---
 title: Mybatis-one-many-retrieve
 date: 2019-02-01 23:37:00
-tags: 
+tags:
+- java
+- Mybatis
 ---
 
 ﻿
