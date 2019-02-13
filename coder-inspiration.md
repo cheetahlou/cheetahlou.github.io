@@ -416,7 +416,7 @@ Can't finish GitHub sharing process
 应尽量避免在 where 子句中使用 or 来连接条件，否则将导致引擎放弃使用索引而进行**全表扫描**。而改用union之后，性能就大大提高了。
 使用"union all"的性能比"union"更高一些。因为当SQL 语句需要UNION两个查询结果集合时，这两个结果集合会以UNION-ALL的方式被合并， 然后在输出最终结果前进行排序。 如果用UNION ALL替代UNION， 这样排序就不是必要了，效率就会因此得到提高。
 
-```
+```sql
 select * from Member where MemberName = '张三' 
 union all
 select * from Member where MemberName = '李四'
@@ -461,7 +461,7 @@ httpServletResponse.setHeader("Access-Control-Allow-Origin","*");
 
 2.SpringMVC解决跨域问题的注解
 
-```
+```java
 @CrossOrigin("http://test.com")
 @CrossOrigin(origins="http://test.com",maxAge=3600)
 
@@ -522,7 +522,7 @@ httpServletResponse.setHeader("Access-Control-Allow-Origin","*");
 一、添加鼠标点击特效：
 添加鼠标点击特效，("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善")等。
 
-```
+```js
 <script type="text/javascript">
 /* 鼠标点击特效 */
 var a_idx = 0;
@@ -561,7 +561,7 @@ function() {
 二、添加评论框输入特效：
 添加以下代码到主题尾部调用即可
 
-```
+```js
 <script src="activate-power-mode.js"></script>
 <script>
 POWERMODE.colorful = true; // 控制开启/开启礼花特效  
@@ -659,7 +659,7 @@ false 为关闭
 
 ------
 
-```
+```java
 response推json:
    /**
      * 将某个对象转换成json格式并发送到客户端
@@ -682,7 +682,7 @@ response推json:
 
 - 2018.7.2 读取配置文件
 
-```
+```java
     public static String get(String key) {
         if (prop != null)
             return prop.getProperty(key);
@@ -771,7 +771,7 @@ Character、Byte、Short、Integer、Long等包装类型的equals方法，比较
 
 举栗：
 
-```
+```java
         Integer ez = 13;
         Integer ez1 = new Integer(127);
         Integer ez2 = new Integer(127);
@@ -1021,7 +1021,7 @@ public class Test {
 
 - 2018.10.26 **linux获取进程pid，杀进程命令**
 
-```
+```shell
 P_ID=`ps -ef | grep -w "$SERVICE_NAME" | grep -v "grep" | awk '{print $2}'`
 
 		if [ "$P_ID" == "" ]; then
@@ -1036,7 +1036,7 @@ P_ID=`ps -ef | grep -w "$SERVICE_NAME" | grep -v "grep" | awk '{print $2}'`
 
 重启脚本 服务.sh：
 
-```
+```shell
 #!/bin/sh
 
 ## java env
@@ -1116,7 +1116,7 @@ case "$1" in
 
 比如下载多个文件
 
-```
+```shell
  sz  file1 file2 file3
 
 ```
@@ -1137,7 +1137,7 @@ case "$1" in
 
 - 2018.12.13 **Linux开放端口**
 
-```
+```shell
  1.  查看已打开的端口  # netstat -anp
  2. 查看想开的端口是否已开 # firewall-cmd --query-port=666/tcp
   若此提示 FirewallD is not running 
@@ -1171,7 +1171,7 @@ case "$1" in
   对于数组、函数、对象来说，其关系错综复杂，使用 typeof 都会统一返回 “object” 字符串,null也会返回’object’,对NaN返回是’number’ 
   Object.prototype.toString.call(obj) == "[object String]" ?
 
-```
+```js
 console.log(Object.prototype.toString.call("jerry"));//[object String]
 console.log(Object.prototype.toString.call(12));//[object Number]
 console.log(Object.prototype.toString.call(true));//[object Boolean]
@@ -1199,5 +1199,34 @@ console.log(Object.prototype.toString.call(new Person));//[object Object]
   1. 找出应用中可能需要变化之处, 把它们独立出来. (设计系统时可以预先考虑独立出来)
   2. 针对接口编程, 而不是针对实现编程(如父类引用指向子类实例Animal a = new Dog())
   3. 多用组合，少用继承
+
+***
+
+- 2019.02.13 **反向代理 Reverse Proxy**
+
+  **正向代理:** (前向代理)表示对客户端请求的代理, 隐藏了客户端的真实地址 一定程度上保护了客户端的隐私。作为客户端的代理，将从互联网上服务器上获取资源, 再打包返回给一个或多个的客户端，服务端（如Web服务器）只知道代理的IP地址而不知道客户端的IP地址。如常见的科学上网工具就是客户端代理。
+
+  **反向代理:** 则相对于正向代理而言, 而反向代理是作为服务器端（如Web服务器）的代理使用,隐藏真实服务端，而不是客户端。简单地说就是服务器端的一个负载均衡器, 单台服务器的处理请求能力有限, 可以配置多个服务器进行负载均衡, **也意味着用户做服务器域名解析时，解析得到的IP其实是负载均衡的IP，而不是服务器的IP**
+
+**反向代理**代理的对象从客户端换成了服务器, 收发服务器的响应, 隐藏真实服务器的IP地址。
+
+由此可见, 正向代理和反向代理的概念并不冲突, 两者可以同时存在 分别服务于客户端和服务器。(BTW, 个人不是很感冒将这样的形式称为正向和反向代理, 这个名词造的真的是不太形象, 也许是为了区别原来客户端代理用了单词"*Proxy*", 命名的人用了"*Reverse Proxy*"这样随意一点词不达意的命名, 导致我们现在很难从字面上一眼看出这大概是个什么概念, 个人觉得也许用"*Server Proxy*"这样的命名会不会更好一些呢)
+
+#### 功能(via Wikipedia)
+
+反向代理的主要作用为：
+
+- 对客户端隐藏服务器（簇）的IP地址
+- 安全：作为[应用层防火墙](https://zh.wikipedia.org/wiki/%E6%87%89%E7%94%A8%E5%B1%A4%E9%98%B2%E7%81%AB%E7%89%86)，为网站提供对基于Web的攻击行为（例如[DoS](https://zh.wikipedia.org/wiki/DoS)/[DDoS](https://zh.wikipedia.org/wiki/DDoS)）的防护，更容易排查[恶意软件](https://zh.wikipedia.org/wiki/%E6%83%A1%E6%84%8F%E8%BB%9F%E9%AB%94)等
+- 为后端服务器（簇）统一提供加密和[SSL](https://zh.wikipedia.org/wiki/SSL)加速（如SSL终端代理）
+- [负载均衡](https://zh.wikipedia.org/wiki/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1)，若服务器簇中有负荷较高者，反向代理通过[URL重写](https://zh.wikipedia.org/wiki/URL%E9%87%8D%E5%AF%AB)，根据连线请求从负荷较低者获取与所需相同的资源或备援
+- 对于静态内容及短时间内有大量访问请求的动态内容提供[缓存服务](https://zh.wikipedia.org/wiki/Web%E7%BC%93%E5%AD%98)
+- 对一些内容进行[压缩](https://zh.wikipedia.org/wiki/%E8%B3%87%E6%96%99%E5%A3%93%E7%B8%AE)，以节约[带宽](https://zh.wikipedia.org/wiki/%E9%A0%BB%E5%AF%AC)或为网络带宽不佳的网络提供服务
+- 减速上传
+- 为在私有网络下（如[局域网](https://zh.wikipedia.org/wiki/%E5%8D%80%E5%9F%9F%E7%B6%B2%E8%B7%AF)）的服务器簇提供[NAT穿透](https://zh.wikipedia.org/wiki/NAT%E7%A9%BF%E9%80%8F)及外网发布服务
+- 提供HTTP访问认证[[2\]](https://zh.wikipedia.org/wiki/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86#cite_note-2)
+- 突破[互联网封锁](https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E)（不常用，因为反向代理与客户端之间的连线不一定是加密连线，非加密连线仍有遭内容审查进而遭封禁的风险；此外面对针对[域名](https://zh.wikipedia.org/wiki/%E7%B6%B2%E5%9F%9F%E5%90%8D%E7%A8%B1)的[关键字过滤](https://zh.wikipedia.org/wiki/%E9%97%9C%E9%8D%B5%E5%AD%97%E9%81%8E%E6%BF%BE)、[DNS缓存污染/投毒攻击](https://zh.wikipedia.org/wiki/DNS%E6%8A%95%E6%AF%92%E6%B1%A1%E6%9F%93)乃至[深度数据包检测](https://zh.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E5%B0%81%E5%8C%85%E6%AA%A2%E6%B8%AC)也无能为力）
+
+ [反向代理的作用](https://i.imgur.com/mGjwFtL.png)
 
 ***
