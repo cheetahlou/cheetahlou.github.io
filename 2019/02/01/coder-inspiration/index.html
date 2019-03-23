@@ -110,7 +110,7 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20171003112131947?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlZXRhaGxvdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20181212140845648.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoZWV0YWhsb3Zlcg==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://i.imgur.com/0e01FRp.jpg">
-<meta property="og:updated_time" content="2019-02-17T06:14:02.507Z">
+<meta property="og:updated_time" content="2019-03-23T06:38:40.948Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="程序员随想">
 <meta name="twitter:description" content="程序员随想  2016.5.30杂谈 今天先记录几个关键词吧(Android学习方面)，也很迟了zzz: 多线程、反编译（dex2jar和jdgui）、okhttp、retrofit（对okhttp进行封装）、学习网站：CSDN、Github、appxcode、博客园（cnblogs）、极客学院、CSDN学院、Android官网、Segmentfault、cnbeta（资讯类）。">
@@ -172,7 +172,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -182,7 +182,7 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta">
     
@@ -380,20 +380,20 @@
 
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://cheetahlou.github.io/2019/02/01/coder-inspiration/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Cheelou">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/cheetah.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Chee Daily || Diary">
     </span>
 
@@ -445,7 +445,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-17 14:14:02" itemprop="dateModified" datetime="2019-02-17T14:14:02+08:00">2019-02-17</time>
+                <time title="修改时间：2019-03-23 14:38:40" itemprop="dateModified" datetime="2019-03-23T14:38:40+08:00">2019-03-23</time>
               
             
           </span>
@@ -832,7 +832,7 @@
 </ul>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">P_ID=`ps -ef | grep -w "$SERVICE_NAME" | grep -v "grep" | awk '&#123;print $2&#125;'`</span><br><span class="line"></span><br><span class="line">		if [ "$P_ID" == "" ]; then</span><br><span class="line">            echo "=== $SERVICE_NAME process not exists or stop success"</span><br><span class="line">        else</span><br><span class="line">            echo "=== $SERVICE_NAME process pid is:$P_ID"</span><br><span class="line">            echo "=== begin kill $SERVICE_NAME process, pid is:$P_ID"</span><br><span class="line">            kill -9 $P_ID</span><br><span class="line">        fi</span><br></pre></td></tr></table></figure>
 <p>重启脚本 服务.sh：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>!/bin/sh</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span># java env</span><br><span class="line">export JAVA_HOME=/usr/java/jdk1.8.0_131</span><br><span class="line">export JRE_HOME=$JAVA_HOME/jre</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SERVICE_DIR=/usr/local/目录</span><br><span class="line">SERVICE_NAME=服务名</span><br><span class="line">JAR_NAME=$SERVICE_NAME\.jar</span><br><span class="line">PID=$SERVICE_NAME\.pid</span><br><span class="line"></span><br><span class="line">cd $SERVICE_DIR</span><br><span class="line"></span><br><span class="line">case "$1" in</span><br><span class="line"></span><br><span class="line">    start)</span><br><span class="line">        echo "$JRE_HOME/bin/java -Xms128m -Xmx512m -Dfile.encoding=UTF-8 -jar $SERVICE_DIR/$JAR_NAME"</span><br><span class="line">        echo $! &gt; $SERVICE_DIR/$PID</span><br><span class="line">        echo "=== start $SERVICE_NAME"</span><br><span class="line"><span class="meta">#</span>!/bin/sh</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span># java env</span><br><span class="line">export JAVA_HOME=/usr/java/jdk1.8.0_131</span><br><span class="line">export JRE_HOME=$JAVA_HOME/jre</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SERVICE_DIR=/usr/local/目录</span><br><span class="line">SERVICE_NAME=服务名</span><br><span class="line">JAR_NAME=$SERVICE_NAME\.jar</span><br><span class="line">PID=$SERVICE_NAME\.pid</span><br><span class="line"></span><br><span class="line">cd $SERVICE_DIR</span><br><span class="line"></span><br><span class="line">case "$1" in</span><br><span class="line"></span><br><span class="line">    start)</span><br><span class="line">        nohup $JRE_HOME/bin/java -server -Xms256m -Xmx2048m -XX:+UseG1GC -XX:ParallelGCThreads=4 -XX:SurvivorRatio=8 -XX:+DisableExplicitGC -XX:HeapDumpPath=/usr/java/activity_heap.dump -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 -jar $SERVICE_DIR/$JAR_NAME &gt;$SERVICE_DIR/logs/服务名.out 2&gt;&amp;1 &amp;</span><br><span class="line">        echo "$JRE_HOME/bin/java -Xms128m -Xmx512m -Dfile.encoding=UTF-8 -jar $SERVICE_DIR/$JAR_NAME"</span><br><span class="line">        echo $! &gt; $SERVICE_DIR/$PID</span><br><span class="line">        echo "=== start $SERVICE_NAME"</span><br><span class="line">        ;;</span><br><span class="line"></span><br><span class="line">    stop)</span><br><span class="line">        kill `cat $SERVICE_DIR/$PID`</span><br><span class="line">        rm -rf $SERVICE_DIR/$PID</span><br><span class="line">        echo "=== stop $SERVICE_NAME"</span><br><span class="line"></span><br><span class="line">        sleep 5</span><br><span class="line">        P_ID=`ps -ef | grep -w "$SERVICE_NAME" | grep -v "grep" | awk '&#123;print $2&#125;'`</span><br><span class="line">        if [ "$P_ID" == "" ]; then</span><br><span class="line">            echo "=== $SERVICE_NAME process not exists or stop success"</span><br><span class="line">        else</span><br><span class="line">            echo "=== $SERVICE_NAME process pid is:$P_ID"</span><br><span class="line">            echo "=== begin kill $SERVICE_NAME process, pid is:$P_ID"</span><br><span class="line">            kill -9 $P_ID</span><br><span class="line">        fi</span><br><span class="line">        ;;</span><br><span class="line"></span><br><span class="line">    restart)</span><br><span class="line">        $0 stop</span><br><span class="line">        sleep 2</span><br><span class="line">        $0 start</span><br><span class="line">        echo "=== restart $SERVICE_NAME"</span><br><span class="line">        ;;</span><br><span class="line"></span><br><span class="line">    *)</span><br><span class="line">        ## restart</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># java env</span></span></span><br><span class="line">export JAVA_HOME=/usr/java/jdk1.8.0_131</span><br><span class="line">export JRE_HOME=$JAVA_HOME/jre</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SERVICE_DIR=/usr/local/目录</span><br><span class="line">SERVICE_NAME=服务名</span><br><span class="line">JAR_NAME=$SERVICE_NAME\.jar</span><br><span class="line">PID=$SERVICE_NAME\.pid</span><br><span class="line"></span><br><span class="line">cd $SERVICE_DIR</span><br><span class="line"></span><br><span class="line">case "$1" in</span><br><span class="line"></span><br><span class="line">    start)</span><br><span class="line">        echo "$JRE_HOME/bin/java -Xms128m -Xmx512m -Dfile.encoding=UTF-8 -jar $SERVICE_DIR/$JAR_NAME"</span><br><span class="line">        echo $! &gt; $SERVICE_DIR/$PID</span><br><span class="line">        echo "=== start $SERVICE_NAME"</span><br><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># java env</span></span></span><br><span class="line">export JAVA_HOME=/usr/java/jdk1.8.0_131</span><br><span class="line">export JRE_HOME=$JAVA_HOME/jre</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SERVICE_DIR=/usr/local/目录</span><br><span class="line">SERVICE_NAME=服务名</span><br><span class="line">JAR_NAME=$SERVICE_NAME\.jar</span><br><span class="line">PID=$SERVICE_NAME\.pid</span><br><span class="line"></span><br><span class="line">cd $SERVICE_DIR</span><br><span class="line"></span><br><span class="line">case "$1" in</span><br><span class="line"></span><br><span class="line">    start)</span><br><span class="line">        nohup $JRE_HOME/bin/java -server -Xms256m -Xmx2048m -XX:+UseG1GC -XX:ParallelGCThreads=4 -XX:SurvivorRatio=8 -XX:+DisableExplicitGC -XX:HeapDumpPath=/usr/java/activity_heap.dump -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 -jar $SERVICE_DIR/$JAR_NAME &gt;$SERVICE_DIR/logs/服务名.out 2&gt;&amp;1 &amp;</span><br><span class="line">        echo "$JRE_HOME/bin/java -Xms128m -Xmx512m -Dfile.encoding=UTF-8 -jar $SERVICE_DIR/$JAR_NAME"</span><br><span class="line">        echo $! &gt; $SERVICE_DIR/$PID</span><br><span class="line">        echo "=== start $SERVICE_NAME"</span><br><span class="line">        ;;</span><br><span class="line"></span><br><span class="line">    stop)</span><br><span class="line">        kill `cat $SERVICE_DIR/$PID`</span><br><span class="line">        rm -rf $SERVICE_DIR/$PID</span><br><span class="line">        echo "=== stop $SERVICE_NAME"</span><br><span class="line"></span><br><span class="line">        sleep 5</span><br><span class="line">        P_ID=`ps -ef | grep -w "$SERVICE_NAME" | grep -v "grep" | awk '&#123;print $2&#125;'`</span><br><span class="line">        if [ "$P_ID" == "" ]; then</span><br><span class="line">            echo "=== $SERVICE_NAME process not exists or stop success"</span><br><span class="line">        else</span><br><span class="line">            echo "=== $SERVICE_NAME process pid is:$P_ID"</span><br><span class="line">            echo "=== begin kill $SERVICE_NAME process, pid is:$P_ID"</span><br><span class="line">            kill -9 $P_ID</span><br><span class="line">        fi</span><br><span class="line">        ;;</span><br><span class="line"></span><br><span class="line">    restart)</span><br><span class="line">        $0 stop</span><br><span class="line">        sleep 2</span><br><span class="line">        $0 start</span><br><span class="line">        echo "=== restart $SERVICE_NAME"</span><br><span class="line">        ;;</span><br><span class="line"></span><br><span class="line">    *)</span><br><span class="line">        ## restart</span><br></pre></td></tr></table></figure>
 <hr>
 <ul>
 <li>2018.11.20 <strong>Linux sz rz命令</strong></li>
@@ -884,7 +884,7 @@
 <p><strong>反向代理:</strong> 则相对于正向代理而言, 而反向代理是作为服务器端（如Web服务器）的代理使用,隐藏真实服务端，而不是客户端。简单地说就是服务器端的一个负载均衡器, 单台服务器的处理请求能力有限, 可以配置多个服务器进行负载均衡, <strong>也意味着用户做服务器域名解析时，解析得到的IP其实是负载均衡的IP，而不是服务器的IP</strong></p>
 </li>
 </ul>
-<p><strong>反向代理</strong>代理的对象从客户端换成了服务器, 收发服务器的响应, 隐藏真实服务器的IP地址。<img src="https://i.imgur.com/0e01FRp.jpg" alt=""></p>
+<p><strong>反向代理</strong>代理的对象从客户端换成了服务器, 收发服务器的响应, 隐藏真实服务器的IP地址。<img src="https://i.imgur.com/0e01FRp.jpg" alt></p>
 <div style="background-color:#ddd"><br>    由此可见, 正向代理和反向代理的概念并不冲突, 两者可以同时存在 分别服务于客户端和服务器。(BTW, 个人不是很感冒将这样的形式称为正向和反向代理, 这个名词造的真的是不太形象, 也许是为了区别原来客户端代理用了单词”<em>Proxy</em>“, 命名的人用了”<em>Reverse Proxy</em>“这样随意一点词不达意的命名, 导致我们现在很难从字面上一眼看出这大概是个什么概念, 个人觉得也许用”<em>Server Proxy</em>“这样的命名会不会更好一些呢) </div>
 
 
@@ -902,6 +902,78 @@
 <li>提供HTTP访问认证<a href="https://zh.wikipedia.org/wiki/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86#cite_note-2" target="_blank" rel="noopener">[2]</a></li>
 <li>突破<a href="https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E" target="_blank" rel="noopener">互联网封锁</a>（不常用，因为反向代理与客户端之间的连线不一定是加密连线，非加密连线仍有遭内容审查进而遭封禁的风险；此外面对针对<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E5%9F%9F%E5%90%8D%E7%A8%B1" target="_blank" rel="noopener">域名</a>的<a href="https://zh.wikipedia.org/wiki/%E9%97%9C%E9%8D%B5%E5%AD%97%E9%81%8E%E6%BF%BE" target="_blank" rel="noopener">关键字过滤</a>、<a href="https://zh.wikipedia.org/wiki/DNS%E6%8A%95%E6%AF%92%E6%B1%A1%E6%9F%93" target="_blank" rel="noopener">DNS缓存污染/投毒攻击</a>乃至<a href="https://zh.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E5%B0%81%E5%8C%85%E6%AA%A2%E6%B8%AC" target="_blank" rel="noopener">深度数据包检测</a>也无能为力）</li>
 </ul>
+<hr>
+<ul>
+<li><p>2019.02.18  <strong>Servlet</strong></p>
+<h5 id="MIME"><a href="#MIME" class="headerlink" title="MIME"></a>MIME</h5><blockquote>
+<p>MIME在浏览器和we服务器通信的过程中约定需要解释的内容类型， 在HTTP请求头中表明，Multipirpose Internet Mail Extension （多用途Internet邮件扩展），比如普通ASCII文本的MIME类型是text/plain，web页面源代码的MIME类型是text/html，此时浏览器应当将内容解释为html源代码。</p>
+</blockquote>
+<h5 id="Servlet"><a href="#Servlet" class="headerlink" title="Servlet"></a>Servlet</h5><blockquote>
+<p>早期服务器处理web请求需要创建单独进程还需要为每个单独的客户端请求打开和关闭数据库连接，Servlet在web服务器的地址空间内执行请求处理，并且使用Java因而平台独立。Tomcat是Servlet应用服务器，管理Servlet的创建销毁。<br>Servlet的生命周期init(),service(),destroy()分别是创建、处理请求和响应、销毁servlet。  </p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<ul>
+<li>2019.02.20 <strong>Git 查看某个用户名提交代码行数</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span> --author=<span class="string">"username"</span> --pretty=tformat: --numstat | awk <span class="string">'&#123; add += $1; subs += $2; loc += $1 - $2 &#125; END &#123; printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc &#125;'</span></span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>2019.02.22 <strong>IDEA 报错: Error:java: Compilation failed: internal java compiler error</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Information:java: javacTask: 源发行版 <span class="number">8</span> 需要目标发行版 <span class="number">1.8</span></span><br><span class="line">Information:java: Errors occurred <span class="keyword">while</span> compiling <span class="keyword">module</span> <span class="string">'springboot-demo'</span></span><br><span class="line">Information:javac <span class="number">1.8</span>.0_162 was used to compile java sources</span><br><span class="line">Information:<span class="number">2019</span>/<span class="number">2</span>/<span class="number">22</span> <span class="number">16</span>:<span class="number">01</span> - Build completed with <span class="number">1</span> error and <span class="number">0</span> warnings in <span class="number">5</span> s <span class="number">490</span> ms</span><br><span class="line">Error:java: Compilation failed: internal java compiler error</span><br></pre></td></tr></table></figure>
+<p>找到IDEA的设置中的java compiler 中右边的Target Bytecode Version 改到提示版本以上,我是1.5改成8</p>
+<hr>
+<ul>
+<li>2019.02.23 <strong>JDK中的设计模式</strong> </li>
+</ul>
+<p>Integer.valueOf的设计模式，享元模式。BufferReader和BufferWriter的设计模式 ，装饰模式</p>
+<blockquote>
+<p>扩展阅读： <a href="https://coolshell.cn/articles/3320.html" target="_blank" rel="noopener">JDK里的设计模式</a></p>
+</blockquote>
+<hr>
+<ul>
+<li>2019.02.28 <strong>JVM不自动回收垃圾的情况导致内存泄露</strong></li>
+</ul>
+<p>虽然Java拥有垃圾回收机制，但同样会出现内存泄露问题，比如下面提到的几种情况：</p>
+<p>(1). 诸如 HashMap、Vector 等集合类的静态使用最容易出现内存泄露，因为这些静态变量的生命周期和应用程序一致，所有的对象Object也不能被释放，因为他们也将一直被Vector等引用着。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Vector v = <span class="keyword">new</span> Vector(); </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(Vector v)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i&lt;<span class="number">100</span>; i++) &#123; </span><br><span class="line">        Object o = <span class="keyword">new</span> Object(); </span><br><span class="line">        v.add(o); </span><br><span class="line">        o = <span class="keyword">null</span>; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>　　在这个例子中，虚拟机栈中保存者 Vector 对象的引用 v 和 Object 对象的引用 o 。在 for 循环中，我们不断的生成新的对象，然后将其添加到 Vector 对象中，之后将 o 引用置空。问题是虽然我们将 o 引用置空，但当发生垃圾回收时，我们创建的 Object 对象也不能够被回收。因为垃圾回收在跟踪代码栈中的引用时会发现 v 引用，而继续往下跟踪就会发现 v 引用指向的内存空间中又存在指向 Object 对象的引用。也就是说，尽管o 引用已经被置空，但是 Object 对象仍然存在其他的引用，是可以被访问到的，所以 GC 无法将其释放掉。如果在此循环之后， Object 对象对程序已经没有任何作用，那么我们就认为此 Java 程序发生了内存泄漏。</p>
+<p>　　(2). 各种资源连接包括数据库连接、网络连接、IO连接等没有显式调用close关闭，不被GC回收导致内存泄露。</p>
+<p>　　(3). 监听器的使用，在释放对象的同时没有相应删除监听器的时候也可能导致内存泄露。</p>
+<h5 id="（附）如何理解java的垃圾回收："><a href="#（附）如何理解java的垃圾回收：" class="headerlink" title="（附）如何理解java的垃圾回收："></a>（附）如何理解java的垃圾回收：</h5><p>首先应该知道，java中创建一个对象是在堆中，但是堆的大小是有限制的，不能无限制的创建，当你创建的对象把堆放满的时候，jvm开始进行垃圾回收。（其实还有一种情况就是jvm长时间空闲的时候，也会执行垃圾回收）。<br>1）首先确定哪个对象是“垃圾”；引用计数法、可达性分析<br>2）然后明确java的垃圾回收算法；标记清除、标记整理、复制、分代算法<br>3）典型的垃圾回收器；</p>
+<p>相关链接：<a href="https://blog.csdn.net/justloveyou_/article/details/71216049" target="_blank" rel="noopener">图解Java 垃圾回收机制</a></p>
+<hr>
+<ul>
+<li>2019.03.06 <strong>Java反射机制的缺点</strong></li>
+</ul>
+<p>​        Java中的反射机制正是因为可以在运行时获取到对象的所有可以访问到所有私有的变量和方法, 这违背了私有变量和方法的设计初衷,且因为通过指定的变量名和方法名来获取的话不利于更改移植.比如更改了变量名方法名等等原来通过反射获取的代码就变得难以查找和重构.降低了可移植性.</p>
+<hr>
+<ul>
+<li>2019.03.07 <strong>二/八/十/十六进制表示</strong></li>
+</ul>
+<blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt; 整数各种进制的字面量如下：</span><br><span class="line">&gt; 十进制数，没有前缀</span><br><span class="line">&gt; 二进制数，前缀是0b</span><br><span class="line">&gt; 八进制数，前缀是0o</span><br><span class="line">&gt; 十六进制数，前缀是0x</span><br><span class="line">&gt; </span><br><span class="line">&gt; 开头的“0”令解析器更易辨认数，而“x”则代表十六进制（就如“O”代表八进制）。在“0x”中的“x”可以大写或小写。</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>Java中int最大值用 @Native 注解表示计算机本地<strong>原码</strong></p>
+<p>Integer.MAX_VALUE如下</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * A constant holding the maximum value an &#123;<span class="doctag">@code</span> int&#125; can</span></span><br><span class="line"><span class="comment"> * have, 2&lt;sup&gt;31&lt;/sup&gt;-1.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Native</span> <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span>   MAX_VALUE = <span class="number">0x7fffffff</span>;</span><br></pre></td></tr></table></figure>
+<p>0x表示十六进制数，后面的8位十六进制码表示二进制的 0111···1111，第一位符号位0表示正数，所以int最大值是正数的十进制的2^31-1，同理最小值为<code>0x8fffffff</code>,十进制为-2^31</p>
+<blockquote>
+<p>补充：</p>
+<p>所谓原码就是二进制定点表示法，即最高位为符号位，“0”表示正，“1”表示负，其余位表示数值的大小。 　　</p>
+<p>反码表示法规定：正数的反码与其原码相同；负数的反码是对其原码逐位取反，但符号位除外。 　　</p>
+<p>补码表示法规定：正数的补码与其原码相同；负数的补码是在其反码的末位加1。</p>
+<p>计算机为了简化处理器结构，只设置了加法处理器而没有减法处理器，这就导致计算机不识别减法运算，补码可以进行求补运算，可以让减法变做加法。<br>反码通常用于原码和补码之间的过渡。负数的反码+1=该数值的补码</p>
+</blockquote>
+<hr>
+<ul>
+<li><p>2019.03.18  <strong>Bootstrap3.X modal模态框关闭后页面左移</strong></p>
+<p>页面加入样式 。 <code>overflow-y</code>在没有滚动条的时候可以不加.</p>
+</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line">    <span class="selector-class">.modal-open</span>&#123;</span><br><span class="line">        <span class="attribute">overflow-y</span>: scroll;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">body</span>&#123;</span><br><span class="line">        <span class="attribute">padding-right</span>:<span class="number">0px</span><span class="meta">!important</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 <hr>
 
       
@@ -933,8 +1005,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/01/Frequently-Used-Snippets/" rel="next" title="Frequently-Used-Snippets">
-                <i class="fa fa-chevron-left"></i> Frequently-Used-Snippets
+              <a href="/2019/01/22/Charming Product Design/" rel="next" title="Charming Product Design">
+                <i class="fa fa-chevron-left"></i> Charming Product Design
               </a>
             
           </div>
@@ -943,8 +1015,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/02/01/chrome-version-nginx-ciphers/" rel="prev" title="chrome-version-nginx-ciphers">
-                chrome-version-nginx-ciphers <i class="fa fa-chevron-right"></i>
+              <a href="/2019/02/01/Mybatis-one-many-retrieve/" rel="prev" title="Mybatis-one-many-retrieve">
+                Mybatis-one-many-retrieve <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -1002,7 +1074,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/cheetah.png" alt="Cheelou">
             
@@ -1017,7 +1089,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1052,7 +1124,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1136,7 +1212,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#程序员随想"><span class="nav-number">1.</span> <span class="nav-text">程序员随想</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#功能-via-Wikipedia"><span class="nav-number">1.0.1.</span> <span class="nav-text">功能(via Wikipedia)</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#程序员随想"><span class="nav-number">1.</span> <span class="nav-text">程序员随想</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#功能-via-Wikipedia"><span class="nav-number">1.0.1.</span> <span class="nav-text">功能(via Wikipedia)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#MIME"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">MIME</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Servlet"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">Servlet</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#（附）如何理解java的垃圾回收："><span class="nav-number">1.0.1.3.</span> <span class="nav-text">（附）如何理解java的垃圾回收：</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
